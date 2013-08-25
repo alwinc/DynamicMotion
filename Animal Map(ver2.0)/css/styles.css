@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*///////////////////////////////////
+////////the header bar one//////////
+/////////////////////////////////*/
+.header-wrap {
+	margin: 0px auto;
+	border-top: none;
+	border-bottom: 2px solid white;
+	background-image: url(../image/websignlayout-01.png);
+	background-repeat: no-repeat;
+}
+.group:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+*:first-child+html .group {
+	zoom: 1;
+} /* IE7 */
+#header-one {
+	margin: 0px auto;
+	list-style: none;
+	position: relative;
+	width: 940px;
+	height: 132px;
+}
+#header-one li {
+	display: inline;
+}
+#header-one li a {
+	color: #bbb;
+	font-size: 20px;
+	display: block;
+	float: left;
+	padding: 40px 25px 4px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#header-one li a:hover {
+	color: white;
+}
+#magic-line {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 150px;
+	height: 2px;
+	background: #ca1f7e;
+}
+.current_page_item a {
+	color: white !important;
+}
+/*///////////////////////////////////
+//////////the image bar/////////////
+/////////////////////////////////*/
+.image-wrap {
+	position: relative;
+	height: 500px;
+	width: 858px;
+	top: -30px;
+	left: 27px;
+	background-color: #333;
+}
+.image-middle {
+	position: relative;
+	top: 30px;
+	left: 30px;
+}
+/*///////////////////////////////////
+//////////the middle bar////////////
+/////////////////////////////////*/
+.middle-wrap {
+	margin: 0px auto;
+	border-top: none;
+	border-bottom: 2px solid white;
+	background-image: url(../image/websignlayout-19.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -52px;
+}
+#header-two {
+	margin: 0 auto;
+	list-style: none;
+	position: relative;
+	width: 924px;
+	height: 212px;
+}
+#header-two li {
+	display: inline;
+}
+#header-two img {
+	display: block;
+	float: left;
+	padding: 15px 60px 4px 10px;
+}
+#header-two li a {
+	color: white;
+	font-size: 15px;
+	display: block;
+	float: left;
+	padding: 10px 105px 15px 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#header-two li a:hover {
+	color: #bbb;
+}
+/*///////////////////////////////////
+////////////the news////////////////
+/////////////////////////////////*/
+.news-bg {
+	width: 858px;
+	background-color: #333;
+	position: relative;
+	top: -104px;
+}
+#news-text {
+	margin: 0 auto;
+	list-style: none;
+}
+#news-text li {
+	display: inline;
+}
+#news-text li p {
+	font-family: Verdana, Geneva, sans-serif;
+	color: white;
+	text-decoration: none;
+	padding-right: 280px;
+	padding-left: 280px;
+	text-align: justify;
+	font-size: 8px;
+	font-size: 12px!important;
+}
+#news-text label {
+	height: 90px;
+	width: 100px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #F60;
+	text-align: left;
+}
+.news-image-01 {
+	position: relative;
+	top: 10px;
+	left: -30px;
+}
+.news-label-01 {
+	position: relative;
+	top: 50px;
+	left: -205px;
+}
+.news-text-01 {
+	position: relative;
+	top: 60px;
+	left: -250px;
+}
+.news-label-02 {
+	position: relative;
+	top: 60px;
+	left: 30px;
+}
+.news-text-02 {
+	position: relative;
+	top: 70px;
+	left: -250px;
+}
+.news-label-03 {
+	position: relative;
+	top: 70px;
+	left: 30px;
+}
+.news-text-03 {
+	position: relative;
+	top: 80px;
+	left: -250px;
+}
+.news-image-02 {
+	position: relative;
+	left: 340px;
+}
+.news-label-04 {
+	position: relative;
+	top: -170px;
+	left: 550px;
+}
+.news-text-04 {
+	position: relative;
+	top: -150px;
+	left: 270px;
+}
+.news-image-03 {
+	position: relative;
+	top: -160px;
+	left: 680px;
+}
+/*///////////////////////////////////
+////////////the footer//////////////
+/////////////////////////////////*/
+#footer-text {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+#footer-text li {
+	position: relative;
+	top: 20px;
+	left: 480px;
+	color: #FFF;
+	left: 400px!important;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.ie10 footer-text li {
+	position: relative;
+	left: 500px;
+}
+#footer-text ol {
+	position: relative;
+	top: 20px;
+	left: 500px;
+	color: #FFF;
+	top: 30px!important;
+	left: 450px!important;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.footer-img {
+	position: relative;
+	left: 490px!important;
+	list-style: none;
+	top: 40px;
+	left: 550px;
+}
