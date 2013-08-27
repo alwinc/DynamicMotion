@@ -20,7 +20,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 
 CREATE TABLE IF NOT EXISTS `employee` (
-  `employeeId` int(11) NOT NULL,
+  `employeeId` int(11) NOT NULL auto_increment,
   `parkId` int(11) NOT NULL,
   PRIMARY KEY (`employeeId`),
   KEY `parkId` (`parkId`)
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `employee` (
 --
 
 CREATE TABLE IF NOT EXISTS `park` (
-  `parkId` int(11) NOT NULL,
+  `parkId` int(11) NOT NULL auto_increment,
   `name` varchar(100) NOT NULL,
   `area` int(200) NOT NULL,
   PRIMARY KEY (`parkId`)
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `park` (
 --
 
 CREATE TABLE IF NOT EXISTS `person` (
-  `personId` int(11) NOT NULL,
+  `personId` int(11) NOT NULL auto_increment,
   `name` varchar(255) NOT NULL,
   `email` varchar(500) NOT NULL,
   `dateRegistered` date NOT NULL,
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `person` (
 --
 
 CREATE TABLE IF NOT EXISTS `pest` (
-  `pestId` int(11) NOT NULL,
+  `pestId` int(11) NOT NULL auto_increment,
   `soureOfId` varchar(20) NOT NULL,
   PRIMARY KEY (`pestId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -95,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `pest` (
 --
 
 CREATE TABLE IF NOT EXISTS `phone` (
-  `personId` int(11) NOT NULL,
+  `personId` int(11) NOT NULL auto_increment,
   `countryCode` int(11) NOT NULL,
   `areaCode` int(11) NOT NULL,
   `number` int(11) NOT NULL,
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `phone` (
 --
 
 CREATE TABLE IF NOT EXISTS `sighting` (
-  `sightingId` int(11) NOT NULL,
+  `sightingId` int(11) NOT NULL auto_increment,
   `pestId` int(11) NOT NULL,
   `parkId` int(11) NOT NULL,
   `personId` int(11) NOT NULL,
