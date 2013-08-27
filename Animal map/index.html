@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animal Map</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="css/index-styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+</head>
+<!--[if !IE]><!--><script>
+if (/*@cc_on!@*/false) {
+    document.documentElement.className+=' ie10';
+}
+</script><!--<![endif]-->
+<body>
+<div class="container">
+  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> </div>
+  <!-- end .header -->
+  <div class="accountbar">
+    <ul class="accountbar-bg" id="account-bar" name="account-bar">
+      <li class="support-hm"><a href="index.html">Home</a></li>
+      <li class="support-lg"><a href="login.html">login</a> or <a href="register.html">register</a></li>
+      <li class="support-ac"><a href="#">MyAccount</a></li>
+      <li class="support-sp"><a href="#">Support</a></li>
+    </ul>
+  </div>
+  <!-- end .accountbar --> 
+  <div class="header-wrap">
+    <ul class="group" id="header-one" name="header-one">
+      <li class="current_page_item"> <a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">NewLettle</a></li>
+      <li><a href="#">MyAccount</a></li>
+      <li><a href="#">Join us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <!-- end .header-warp -->
+  <div class="image-wrap"> <!-- The image while loop to right-->
+    <ul class="image-middle">
+      <div id="colee_right" style="overflow:hidden;width:800px;height:450px;">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td id="colee_right1" valign="top" align="center"><table cellpadding="2" cellspacing="0" border="0">
+                <tr align="center">
+                  <td><p><img src="image/goanna1.jpg"></p></td>
+                  <td><p><img src="image/goanna-closeup.jpg"></p></td>
+                  <td><p><img src="image/heritage-walking-track-03.jpg"></p></td>
+                  <td><p><img src="image/little-bay-01.jpg"></p></td>
+                  <td><p><img src="image/little-bay-02.jpg"></p></td>
+                  <td><p><img src="image/osprey.jpg"></p></td>
+                  <td><p><img src="image/sea-acres.jpg"></p></td>
+                  <td><p><img src="image/trial-bay.jpg"></p></td>
+                  <td><p><img src="image/wildflowers.jpg"></p></td>
+                  <td><p><img src="image/monument-hill.jpg"></p></td>
+                </tr>
+              </table></td>
+            <td id="colee_right2" valign="top"></td>
+          </tr>
+        </table>
+      </div>
+    </ul>
+  </div>
+  <!-- end .image-warp --> 
+  <script>
+		var speed=20//the speed.
+		var colee_right2=document.getElementById("colee_right2");
+		var colee_right1=document.getElementById("colee_right1");
+		var colee_right=document.getElementById("colee_right");
+		colee_right2.innerHTML=colee_right1.innerHTML
+		function Marquee4(){
+			if(colee_right.scrollLeft<=0)
+				colee_right.scrollLeft+=colee_right2.offsetWidth
+			else{
+				colee_right.scrollLeft--
+			}
+		}
+		var MyMar4=setInterval(Marquee4,speed)
+		colee_right.onmouseover=function() {clearInterval(MyMar4)}
+		colee_right.onmouseout=function() {MyMar4=setInterval(Marquee4,speed)}
+	</script> 
+  <!-- end .image-slider-script -->
+  <div class="middle-wrap">
+    <ul class="group" id="header-two" name="header-two">
+      <li><img src="image/websignlayout-15.png"></li>
+      <li><img src="image/websignlayout-16.png"></li>
+      <li><img src="image/websignlayout-17.png"></li>
+      <li><img src="image/websignlayout-18.png"></li>
+      <li><a href="#">Read me</a></li>
+      <li><a href="#">Read me</a></li>
+      <li><a href="#">Read me</a></li>
+      <li><a href="#">Read me</a></li>
+    </ul>
+  </div>
+  <!-- end .middle-wrap -->
+  <div class="news">
+    <ul class="news-bg" id="news-text" name="news-text">
+      <div style="height:105px">
+        <li class="news-image-01"><img src="image/websignlayout-21.png"></li>
+        <label class="news-label-01"> How Is This Website? </label>
+        <ol class="news-text-01">
+          <p>I just use two days to build this indext page. The hard think about to build which is the position for each button. That is so hard to get the x_scle and y_scle to each button.</p>
+        </ol>
+        <label class="news-label-02">To Create Your Account!</label>
+        <ol class="news-text-02">
+          <p>That is so simple, you just click the register button in orange bar. so you can go to the register page that to create you account.</p>
+        </ol>
+        <label class="news-label-03">Winston Yang</label>
+        <ol class="news-text-03">
+          <p> I am the developer of this site. I quite hate this job which is to modify the coordinates about the picture and buttons every day. This is a very boring job. I prefer to design some interesting ad.</p>
+        </ol>
+      </div>
+      <div style="height:105px">
+        <li class="news-image-02"><img src="image/wolf.jpg"> </li>
+      </div>
+      <div style="height:105px">
+        <label class="news-label-04">Future Planning</label>
+        <ol class="news-text-04">
+          <p> Methods for learning about the future have been in use by businesses for decades, but the process was simply too complex for most individuals. The Personal Futures Network introduces some new, easily understood approaches that will help you to think and plan like a futurist. You will be able learn about and plan for your personal futures.</p>
+          <p>Think like a futurist? What does that really mean, think like a futurist? Well, each futurist may have some different thoughts, but generally futurists think about longer term futures, usually 10 or more years ahead. Futurists believe that the future is not predetermined, but that several futures are possible.</p>
+        </ol>
+        <li class="news-image-03"><img src="image/websignlayout-22.png"></li>
+      </div>
+    </ul>
+  </div>
+  <!-- end .news --> 
+</div>
+<!-- end .container -->
+<div class="footer">
+  <ul id="footer-text" name="footer-text">
+    <li><a href="#">Bolg</a> | <a href="#">Support</a> | <a href="#">About us</a> | <a href="#">contact us</a> | <a href="#">Site map</a> | <a href="#">NewLettle</a> | <a href="#">Join us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
+    <ol>
+      ©2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
+    </ol>
+  </ul>
+  <li class="footer-img"><img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png"></li>
+</div>
+<!-- end .footer -->
+</body>
+</html>

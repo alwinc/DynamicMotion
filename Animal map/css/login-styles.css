@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*///////////////////////////////////
+/////////// logo header ////////////
+/////////////////////////////////*/
+.myHeader {
+	text-align: center;
+	font: normal Helvetica, Arial, sans-serif;
+	color: #0099CC;
+}
+.test {
+	color: blue;
+}
+/*///////////////////////////////////
+//////////// the login /////////////
+/////////////////////////////////*/
+
+label {
+	display: block;
+	color: #00B4D5;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 25px;
+	height: 45px;
+}
+#loginform-bg {
+	width: 600px;/*the backgroud width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -60px;
+}
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+ *zoom: 1;
+}
+:focus {
+	outline: 0;
+}
+.loginform {
+	width: 410px;
+	margin: 50px auto;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+	top: 60px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.loginform ul {
+	padding: 0;
+	margin: 0;
+}
+.loginform li {
+	display: inline;
+	float: left;
+}
+.loginform input:not([type=submit]) {
+	padding: 15px 140px;/*loginform white border size*/
+	margin-right: 20px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+.loginform input[type=submit] {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: #64c8ef; /* Old browsers */
+	background: -moz-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #64c8ef), color-stop(100%, #00a2e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #64c8ef 0%, #00a2e2 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2', GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	padding: 5px 15px;
+	margin-right: 0;
+	margin-top: 15px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.support-bg {
+	position: relative;
+	top: 40px;
+	left: -90px;
+}
+#support-qa {
+	margin: 0 auto;
+	list-style: none;
+}
+#support-qa li {
+	display: inline;
+}
+#support-qa h5 {
+	font-size: 0.83em;
+	margin: 1.67em 0;
+}
+#support-qa h5 a {
+	color: #00B4D5;
+	text-decoration: none;
+}
+#support-qa h5 a:hover {
+	color: #999;
+}
+/*///////////////////////////////////
+////////// the register ////////////
+/////////////////////////////////*/
+.tab-box {
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 5px;
+}
+.tab-box a {
+	border: 1px solid #DDD;
+	color: #666666;
+	padding: 5px 15px;
+	text-decoration: none;
+	background-color: #eee;
+}
+.tab-box a.activeLink {
+	background-color: #fff;
+	border-bottom: 0;
+	padding: 6px 15px;
+}
+.tabcontent {
+	border: 1px solid #ddd;
+	border-top: 0;
+}
+.hide {
+	display: none;
+}
