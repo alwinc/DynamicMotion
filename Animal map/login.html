@@ -25,22 +25,38 @@ if (/*@cc_on!@*/false) {
     </ul>
   </div>
   <!-- end .accountbar -->
+  <div class="header-wrap">
+    <ul class="group" id="header-one" name="header-one">
+      <li> <a href="index.html">Home</a></li>
+      <li class="current_page_item" name="login_loginpage"><a href="login.html">Login</a></li>
+      <li name="login_Registerpage"><a href="register.html">Register</a></li>
+      <li name="login_Userpage"><a href="#">MyAccount</a></li>
+      <li name="login_Pest Fight"><a href="#">Pest Fight</a></li>
+      <li name="login_Reportpage"><a href="#">Weekly Report</a></li>
+      <li name="login_P_Registerpage"><a href="#">Pest Register</a></li>
+    </ul>
+  </div>
+  <!-- end .header-warp -->
   <div class="login">
     <ul id="loginform-bg" name="loginform-b">
       <section class="loginform cf">
         <form name="login" action="index_submit" method="get" accept-charset="utf-8">
           <ul>
             <li><img src="image/loginpage-02.png"></li>
+            <li class="error" id="issue-massage"name="issue-massagee">
+              <p>*You have issue message:</p>
+              <p>Hello World!</p>
+            </li>
             <li>
               <label for="usermail">E-Mail Address</label>
-              <input type="email" name="usermail" placeholder="" required>
+              <input type="email" name="login_usermail" placeholder="Your_name@email.com" required>
             </li>
             <li>
               <label for="password">Password</label>
-              <input type="password" name="password" placeholder="" required>
+              <input type="password" name="login_password" placeholder="Your password" required>
             </li>
-            <li>
-              <input type="submit" value="Log in">
+            <li class="login_button" name="login_button">
+              <a href="">Log in</a><!--<input type="submit" name="login_button" value="Log in">-->
             </li>
           </ul>
           <ul class="support-bg"id="support-qa" name="support-qa">
@@ -59,7 +75,7 @@ if (/*@cc_on!@*/false) {
 <!-- end .container -->
 <div class="footer">
   <ul id="footer-text" name="footer-text">
-    <li><a href="#">Bolg</a> | <a href="#">Support</a> | <a href="#">About us</a> | <a href="#">contact us</a> | <a href="#">Site map</a> | <a href="#">NewLettle</a> | <a href="#">Join us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
+    <li><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
     <ol>
       ©2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
     </ol>

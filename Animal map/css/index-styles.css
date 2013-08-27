@@ -32,7 +32,7 @@
 	color: #FFFFFF;
 	position: relative;
 	top: 10px;
-	left:10px
+	left: 10px
 }
 #account-bar li a {
 	text-decoration: none;
@@ -66,6 +66,7 @@
 	margin: 0px auto;
 	list-style: none;
 	position: relative;
+	top:5px;
 	width: 940px;
 	height: 132px;
 }
@@ -74,7 +75,7 @@
 }
 #header-one li a {
 	color: #bbb;
-	font-size: 20px;
+	font-size: 16px;
 	display: block;
 	float: left;
 	padding: 40px 25px 4px 10px;
@@ -83,14 +84,6 @@
 }
 #header-one li a:hover {
 	color: #00B4D5;
-}
-#magic-line {
-	position: absolute;
-	bottom: -2px;
-	left: 0;
-	width: 150px;
-	height: 2px;
-	background: #ca1f7e;
 }
 .current_page_item a {
 	color: white !important;
@@ -148,6 +141,7 @@
 	text-transform: uppercase;
 }
 #header-two li a:hover {
+	/* When the mouse move on that button, the backgroud color of button will be change it*/
 	color: #00B4D5;
 }
 /*///////////////////////////////////
@@ -155,9 +149,10 @@
 /////////////////////////////////*/
 .news-bg {
 	width: 858px;
+	height:360px;
 	background-color: #333;
 	position: relative;
-	top: -104px;
+	top: -104px;/*It's the top postion about the black border.*/
 }
 #news-text {
 	margin: 0 auto;
@@ -174,7 +169,7 @@
 	padding-left: 280px;
 	text-align: justify;
 	font-size: 8px;
-	font-size: 12px!important;
+	font-size: 12px!important;/*firefox layout only!*/
 }
 #news-text ol p {
 	font-family: Verdana, Geneva, sans-serif;
@@ -184,7 +179,7 @@
 	padding-left: 280px;
 	text-align: justify;
 	font-size: 8px;
-	font-size: 12px!important;
+	font-size: 12px!important;/*firefox layout only!*/
 }
 #news-text label {
 	height: 90px;
@@ -202,37 +197,32 @@
 }
 .news-label-01 {
 	position: relative;
-	top: 50px;
+	top: 40px;
 	left: -205px;
 }
 .news-text-01 {
 	position: relative;
-	top: 60px;
+	top: 50px;
 	left: -250px;
-}
- .news-text-01 nth-of-type(1) {
- position: relative;
- top: 1000px;
- left: -250px;
 }
 .news-label-02 {
 	position: relative;
-	top: 60px;
+	top: 50px;
 	left: 30px;
 }
 .news-text-02 {
 	position: relative;
-	top: 70px;
+	top: 60px;
 	left: -250px;
 }
 .news-label-03 {
 	position: relative;
-	top: 70px;
+	top: 60px;
 	left: 30px;
 }
 .news-text-03 {
 	position: relative;
-	top: 80px;
+	top: 70px;
 	left: -250px;
 }
 .news-image-02 {

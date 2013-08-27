@@ -5,7 +5,6 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
-
 }
 /* ~~ Element/tag selectors ~~ */
 ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
@@ -49,18 +48,18 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 */
 .news {
 	padding: 10px 0;
-	width: 858px;
+	width: 858px;/*the backgroud width about the news part. the bottom one*/
 	background-color: #333;
 	position: relative;
 	left: 33px;
 }
 .login {
 	padding: 10px 0;
-	width: 600px;/*the backgroud width about the login form. the bottom one*/
-	height: 550px;
+	width: 858px;/*the backgroud width about the login form. the bottom one*/
+	height: 640px;/*the high about the black border.*/
 	background-color: #333;
 	position: relative;
-	left: 160px;
+	left: 27px;/*the left postion in here; top one in login-styles.css*/
 }
 /* ~~ The footer ~~ */
 .footer {
