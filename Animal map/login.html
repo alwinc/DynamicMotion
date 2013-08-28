@@ -38,7 +38,7 @@ if (/*@cc_on!@*/false) {
   </div>
   <!-- end .header-warp -->
   <div class="login">
-    <ul id="loginform-bg" name="loginform-b">
+    <ul id="loginform-bg" name="loginform-bg">
       <section class="loginform cf">
         <form name="login" action="index_submit" method="get" accept-charset="utf-8">
           <ul>
@@ -48,15 +48,17 @@ if (/*@cc_on!@*/false) {
               <p>Hello World!</p>
             </li>
             <li>
-              <label for="usermail">E-Mail Address</label>
-              <input type="email" name="login_usermail" placeholder="Your_name@email.com" required>
+              <label for="usermail" class="user_mail">E-Mail Address</label>
+              <input type="email" name="login_usermail" placeholder="Enter E-mail Address" required>
             </li>
             <li>
-              <label for="password">Password</label>
-              <input type="password" name="login_password" placeholder="Your password" required>
+              <label for="password" class="password">Password</label>
+              <input type="password" name="login_password" placeholder="Enter Password" required>
             </li>
-            <li class="login_button" name="login_button">
-              <a href="">Log in</a><!--<input type="submit" name="login_button" value="Log in">-->
+            <li class="login_button" name="login_button"> <a href="">Log in</a> </li>
+            <li>        
+                <input type="checkbox" name="checkboxG1" value="checkbox" id="checkboxG1">
+                <label class="checkbox">Keep me logged in</label>
             </li>
           </ul>
           <ul class="support-bg"id="support-qa" name="support-qa">
