@@ -28,3 +28,11 @@ CSS part
 * add the new class call the register"(styles.css);
 Design part
 * change all the layout about the register page.
+
+Upgrade version 2.4               29/Aug/2013
+---------------------------------------------
+HTML5 part
+* move the footer layout into the container(index.html,login.html,register.html);
+CSS part
+* change all of position about the footer text and image(index-style.css);
+* merge all the css file into one file on css folder(css/index-styles);

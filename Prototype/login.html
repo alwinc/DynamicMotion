@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <title>Animal Map</title>
 <link href="styles.css" rel="stylesheet" type="text/css">
-<link href="css/index-styles.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/login-styles.css">
+<link href="css/page-styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 </head>
 <!--[if !IE]><!--><script>
 if (/*@cc_on!@*/false) {
@@ -13,13 +13,13 @@ if (/*@cc_on!@*/false) {
 }
 </script><!--<![endif]-->
 <body>
-<div class="container">
+<div class="container-login">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> </div>
   <!-- end .header -->
   <div class="accountbar">
     <ul class="accountbar-bg" id="account-bar" name="account-bar">
       <li class="support-hm"><a href="index.html">Home</a></li>
-      <li class="support-lg"><a href="login.html">login</a> or <a href="register.html">register</a></li>
+      <li class="support-lg"><a href="login.html">Login</a> or <a href="register.html">Register</a></li>
       <li class="support-ac"><a href="#">MyAccount</a></li>
       <li class="support-sp"><a href="#">Support</a></li>
     </ul>
@@ -56,9 +56,9 @@ if (/*@cc_on!@*/false) {
               <input type="password" name="login_password" placeholder="Enter Password" required>
             </li>
             <li class="login_button" name="login_button"> <a href="">Log in</a> </li>
-            <li>        
-                <input type="checkbox" name="checkboxG1" value="checkbox" id="checkboxG1">
-                <label class="checkbox">Keep me logged in</label>
+            <li>
+              <input type="checkbox" name="checkboxG1" value="checkbox" id="checkboxG1">
+              <label class="checkbox">Keep me logged in</label>
             </li>
           </ul>
           <ul class="support-bg"id="support-qa" name="support-qa">
@@ -72,18 +72,19 @@ if (/*@cc_on!@*/false) {
       </section>
     </ul>
   </div>
-  <!-- end .login --> 
+  <!-- end .login -->
+  <div>
+    <ul id="footer-text" name="footer-text">
+      <li><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
+      <ol>
+        ©2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
+      </ol>
+    </ul>
+    <li class="footer-img"><img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png"> </li>
+  </div>
 </div>
 <!-- end .container -->
-<div class="footer">
-  <ul id="footer-text" name="footer-text">
-    <li><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
-    <ol>
-      ©2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
-    </ol>
-  </ul>
-  <li class="footer-img"><img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png"></li>
-</div>
+<div class="footer"> </div>
 <!-- end .footer -->
 </body>
 </html>
