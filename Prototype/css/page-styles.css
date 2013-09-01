@@ -586,3 +586,121 @@ size*/
 	top: 75px;
 	left: -15px;
 }
+/*///////////////////////////////////
+//////////weektly report/ //////////
+/////////////////////////////////*/
+#report-bg {
+	width: 858px;/*the backgroud width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -40px;
+}
+.reportform li {
+	display: inline;
+}
+.reportform li p{
+	color:white;
+	font-size:16px;
+}
+/*///////////////////////////////////
+////////the Pest Register //////////
+/////////////////////////////////*/
+#Pest_R-bg {
+	width: 858px;/*the backgroud width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -90px;
+}
+/*This is the update button.*/
+.update_button {
+	width: 95px;
+	height: 41px;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 120px;
+	left: -210px;
+}
+.update_button a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+.update_button a:hover {
+	color: orange;
+}
+/*This is the submit button.*/
+.submit_button {
+	width: 95px;
+	height: 41px;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 79px;
+	left: -110px;
+}
+.submit_button a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+.submit_button a:hover {
+	color: orange;
+}
+/*This is the cancel button.*/
+.cancel_button {
+	width: 95px;
+	height: 41px;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 38px;
+	left: -10px;
+}
+.cancel_button a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+.cancel_button a:hover {
+	color: orange;
+}
+/*///////////////////////////////////
+//////////// message ///////////////
+/////////////////////////////////*/
+/*This is a three button layout.*/
+#message-bg {
+	width: 858px;/*the backgroud width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -40px;
+}
+#message-layout {
+	display: inline;
+}
+.ok_button {
+	width: 95px;
+	height: 41px;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 10px;
+	left: -10px;
+}
+.ok_button a {
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+}
+.ok_button a:hover {
+	color: orange;
+}
