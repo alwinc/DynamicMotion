@@ -396,7 +396,7 @@ size*/
 #support-qa h5 a:hover {
 	color: #999;
 }
-/* The login button part*/
+/* The login button part, Home button also uses this*/
 .login_button:nth-of-type(1n) {/*IE9-10*/
 	width: 120px;
 	height: 41px;
@@ -415,6 +415,8 @@ size*/
 .login_button a:hover {
 	color: orange;
 }
+
+
 /*error massage part*/
 .error {
 	font-size: 12px;
@@ -703,4 +705,57 @@ size*/
 }
 .ok_button a:hover {
 	color: orange;
+}
+
+/*///////////////////////////////////
+//////////// animal ///////////////
+/////////////////////////////////*/
+#pest_sighting_index-bg
+{
+	width: 858px;/*the backgroud width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -90px;
+}
+.animal_wrapper {
+	width: 314px;
+	height: 1000px;
+	margin: 120px auto;
+}
+.pest-sighting-box{
+	width: 370px;
+	height: 570px;
+	margin: 50px auto;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+	top: 70px;
+}
+.pest-sighting-box ul {
+	padding: 0;
+	margin: 0;
+}
+.pest-sighting-box li {
+	display: inline;
+	float: left;
+}
+
+.feral_fox {
+	float: left;
+}
+
+.feral_dog {
+	float: right;
+}
+
+.feral_cat {
+	float: left;
+}
+
+.feral_rat {
+	float: right;
+}
+
+.feral_rabbit {
+	float:left;
 }
