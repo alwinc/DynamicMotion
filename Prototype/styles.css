@@ -14,7 +14,7 @@ ul, ol, dl {
 h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;
 	padding-right: 15px;
-	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	padding-left: 15px; /* adding the padding to the sides of the elements within the dives, instead of the dives themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
 }
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -44,17 +44,17 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .container-register {
 	width: 960px;
-	height: 1145px;
+	height: 1335px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-report {
 	width: 960px;
-	height: 1100px;
+	height: 1095px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
-.container-Pregister {
+.container-Pupdate {
 	width: 960px;
-	height: 1010px;
+	height: 950px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-button {
@@ -74,26 +74,26 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .news {
 	padding: 10px 0;
-	width: 858px;/*the backgroud width about the news part. the bottom one*/
+	width: 858px;/*the background width about the news part. the bottom one*/
 	background-color: #333;
 	position: relative;
 	left: 33px;
 }
 .login {
 	padding: 10px 0;
-	width: 858px;/*the backgroud width about the login form. the bottom one*/
+	width: 858px;/*the background width about the login form. the bottom one*/
 	height: 640px;/*the high about the black border.*/
 	background-color: #333;
 	position: relative;
-	left: 27px;/*the left postion in here; top one in login-styles.css*/
+	left: 27px;/*the left position in here; top one in login-styles.css*/
 }
 .register {
 	padding: 10px 0;
-	width: 858px;/*the backgroud width about the register form. the bottom one*/
-	height: 830px;/*the high about the black border.*/
+	width: 858px;/*the background width about the register form. the bottom one*/
+	height: 1020px;/*the high about the black border.*/
 	background-color: #333;
 	position: relative;
-	left: 27px;/*the left postion in here; top one in login-styles.css*/
+	left: 27px;/*the left position in here; top one in login-styles.css*/
 }
 .report {
 	padding: 10px 0;
@@ -103,18 +103,10 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	position: relative;
 	left: 27px;
 }
-.pest_sighting_index {
+.Pest_U {
 	padding: 10px 0;
 	width: 858px;
-	height: 836px;
-	background-color: #333;
-	position: relative;
-	left: 27px;
-}
-.Pest_R {
-	padding: 10px 0;
-	width: 858px;
-	height: 700px;
+	height: 640px;
 	background-color: #333;
 	position: relative;
 	left: 27px;
@@ -123,6 +115,14 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	padding: 10px 0;
 	width: 858px;
 	height: 200px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+.pest_sighting_index {
+	padding: 10px 0;
+	width: 858px;
+	height: 836px;
 	background-color: #333;
 	position: relative;
 	left: 27px;

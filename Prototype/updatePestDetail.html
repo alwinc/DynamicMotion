@@ -13,7 +13,7 @@ if (/*@cc_on!@*/false) {
 }
 </script><!--<![endif]-->
 <body>
-<div class="container-Pregister">
+<div class="container-Pupdate">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> </div>
   <!-- end .header -->
   <div class="accountbar">
@@ -37,33 +37,44 @@ if (/*@cc_on!@*/false) {
     </ul>
   </div>
   <!-- end .header-warp -->
-  <div class="Pest_R">
-    <ul id="Pest_R-bg" name="Pest_R-bg">
+  <div class="Pest_U">
+    <ul id="Pest_U-bg" name="Pest_U-bg">
       <section class="loginform cf">
         <form name="pest_register" action="index_submit" method="get" accept-charset="utf-8">
-          <li>
-            <label for="Register">Register Pest:</label>
-          </li>
-          <li>
-            <select name="Register">
-              <option value ="Feral_Cat">Feral Cat</option>
-              <option value ="Feral_Dog">Feral Dog</option>
-              <option value ="Feral_Rat">Feral Rat</option>
-              <option value ="European_Rabbit">European Rabbit</option>
-              <option value ="Red_Fox">Red Fox</option>
-            </select>
-          </li>
-          <li>
-            <label for="Other_Pest">Other Pest:</label>
-            <input type="text" name="Other_Pest" value="" maxlength="100" />
-          </li>
-          <li>
-            <label for="comments">Comments:</label>
-            <textarea rows="3" cols="20" name="comments"></textarea>
-          </li>
-          <li class="update_button" name="login_button"> <a href="update.html">update</a> </li>
-          <li class="submit_button" name="login_button"> <a href="confirmation.html">Submit</a> </li>
-          <li class="cancel_button" name="login_button"> <a href="cancel.html">Cancel</a> </li>
+          <ul>
+            <li><img src="image/loginpage-02.png"></li>
+            <li id = "id_update">
+              <label for="pest_id" class="pest_id">Pest ID:</label>
+              <input id = "old_up" name="pest_id_old" required type="text" placeholder="Enter Old Pest ID" />
+              <input id = "new_up" name="pest_id_new" required type="text" placeholder="Enter New Pest ID" />
+              <input id = "re_new_up" name="pest_id_confirm" required type="text" placeholder="Re-Enter New Pest ID" />
+            </li>
+            <li id = "source_update" >
+              <label for="source_up" class="source_up">Source of ID:</label>
+              <select name="source_up" id = "source_up">
+                <option value ="source_id" selected = "selected">Source ID</option>
+                <option value ="Collar">Collar</option>
+                <option value ="Micropchip">Micropchip</option>
+              </select>
+            </li>
+            <li id = "type_update">
+              <label for="type_up" class="type_up">Pest Type:</label>
+              <select name="type_up" id = "type_up">
+                <option value ="pest_type" selected = "selected">Type</option>
+                <option value ="Feral_Cat">Feral Cat</option>
+                <option value ="Feral_Dog">Feral Dog</option>
+                <option value ="Feral_Rat">Feral Rat</option>
+                <option value ="European_Rabbit">European Rabbit</option>
+                <option value ="Red_Fox">Red Fox</option>
+              </select>
+            </li>
+            <li id = "make_update">
+              <label for="make_up"class="make_up">Pest Making:</label>
+              <input id = "make_up" name="make_up" required type="text" placeholder="making"/>
+            </li>
+            <li class="submit_button" name="login_button"> <a href="confirmRegistration.html">Submit</a> </li>
+            <li class="cancel_button" name="login_button"> <a href="cancelRegistration.html">Cancel</a> </li>
+          </ul>
         </form>
       </section>
       <!--Ends the div wrapper here-->

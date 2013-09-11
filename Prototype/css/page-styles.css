@@ -39,7 +39,7 @@
 	color: #FFFFFF;
 }
 #account-bar li a:hover {
-	color: #00B4D5;
+	color: #00B4D5;/*When the mouse is over, the color change to this*/
 }
 /*///////////////////////////////////
 ////////// menu header /////////////
@@ -83,7 +83,7 @@
 	text-transform: uppercase;
 }
 #header-one li a:hover {
-	color: #00B4D5;
+	color: #00B4D5;/*When the mouse is over, the color change to this*/
 }
 .current_page_item a {
 	color: white !important;
@@ -141,8 +141,7 @@
 	text-transform: uppercase;
 }
 #header-two li a:hover {
-	/* When the mouse move on that button, the backgroud color of button will be change it*/
-	color: #00B4D5;
+	color: #00B4D5;/*When the mouse is over, the color change to this*/
 }
 /*///////////////////////////////////
 ////////////the news////////////////
@@ -394,9 +393,9 @@ size*/
 	text-decoration: none;
 }
 #support-qa h5 a:hover {
-	color: #999;
+	color: #999;/*When the mouse is over, the color change to this*/
 }
-/* The login button part, Home button also uses this*/
+/* The login button part*/
 .login_button:nth-of-type(1n) {/*IE9-10*/
 	width: 120px;
 	height: 41px;
@@ -413,10 +412,8 @@ size*/
 	margin: 15px 30px 30px 15px;
 }
 .login_button a:hover {
-	color: orange;
+	color: orange;/*When the mouse is over, the color change to this*/
 }
-
-
 /*error massage part*/
 .error {
 	font-size: 12px;
@@ -442,7 +439,7 @@ size*/
 	left: 100px;
 }
 /*///////////////////////////////////
-////////// the register ////////////
+/////// the  user register /////////
 /////////////////////////////////*/
 #header-signup {
 	font-size: 24px;
@@ -469,7 +466,7 @@ size*/
 }
 .registerform {
 	width: 375px;
-	height: 660px;/*the size about this registerform*/
+	height: 865px;/*the size about this registerform*/
 	margin: 50px auto;
 	padding: 35px;
 	background-color: white;
@@ -514,6 +511,11 @@ size*/
 }
 /*This part is about the each li position.*/
 #name_box {
+	height: 85px;
+}
+#type_box {
+	position: relative;
+	top: 10px;
 }
 #mail_box {
 	position: relative;
@@ -527,24 +529,31 @@ size*/
 	position: relative;
 	top: 45px;
 }
+#park {
+	position: relative;
+	top: 25px;
+}
 /*This part is about the each label and input.*/
 .u_name {
 	font-size: 20px;
 }
 #F_name_signup {
-	width: 140px;
+	width: 150px;
 }
 #L_name_signup {
-	width: 140px;
+	width: 150px;
+	position: relative;
+	top: -40px;
+	left: 200px;
 }
 .u_mail {
 	font-size: 20px;
 }
 #email_signup {
-	width: 330px;
+	width: 350px;
 }
 #email_signup_confirm {
-	width: 330px;
+	width: 350px;
 	position: relative;
 	top: 10px;
 }
@@ -552,15 +561,38 @@ size*/
 	font-size: 20px;
 }
 #password_signup {
-	width: 330px;
+	width: 350px;
 }
 #password_signup_confirm {
-	width: 330px;
+	width: 350px;
 	position: relative;
 	top: 10px;
 }
 .u_dob {
 	font-size: 20px;
+}
+#Day_signup {
+	width: 97px;
+}
+#Month_signup {
+	width: 97px;
+	position: relative;
+	left: -20px;
+}
+#Year_signup {
+	width: 97px;
+	position: relative;
+	top: -40px;
+	left: 252px;
+}
+.u_type {
+	font-size: 20px;
+}
+.u_park {
+	font-size: 20px;
+}
+#Park_signup {
+	width: 350px;
 }
 /*The submit button in this form.*/
 .signup_button {
@@ -569,8 +601,8 @@ size*/
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
 	position: relative;
-	top: 120px;
-	left: 20px;
+	top: 50px;
+	left: 280px;
 }
 .signup_button a {
 	text-decoration: none;
@@ -581,18 +613,18 @@ size*/
 	left: 10px;
 }
 .signup_button a:hover {
-	color: orange;
+	color: orange;/*When the mouse is over, the color change to this*/
 }
 .support-bg-s {
 	position: relative;
-	top: 75px;
-	left: -15px;
+	top: 80px;
+	left: 15px;
 }
 /*///////////////////////////////////
-//////////weektly report/ //////////
+//////////weekly report/ ///////////
 /////////////////////////////////*/
 #report-bg {
-	width: 858px;/*the backgroud width about the login form. the top one*/
+	width: 858px;/*the background width about the login form. the top one*/
 	background-color: #333;
 	position: relative;
 	top: -40px;
@@ -600,15 +632,34 @@ size*/
 .reportform li {
 	display: inline;
 }
-.reportform li p{
-	color:white;
-	font-size:16px;
+.reportform li p {
+	color: white;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	text-align: justify;
+}
+#title_report {
+	color: white;
+	font-size: 24px;
+	font-family: Verdana, Geneva, sans-serif;
+	position: relative;
+	top: 45px;
+	left: 15px;
+}
+#main_report {
+	position: relative;
+	top: 55px;
+}
+#table_report {
+	position: relative;
+	top: 75px;
+	left: 90px;
 }
 /*///////////////////////////////////
-////////the Pest Register //////////
+////////Pest Detail update /////////
 /////////////////////////////////*/
-#Pest_R-bg {
-	width: 858px;/*the backgroud width about the login form. the top one*/
+#Pest_U-bg {
+	width: 858px;/*the background width about the login form. the top one*/
 	background-color: #333;
 	position: relative;
 	top: -90px;
@@ -632,7 +683,42 @@ size*/
 	left: 10px;
 }
 .update_button a:hover {
-	color: orange;
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
+/*This part is about the each li position.*/
+#id_update {
+}
+#source_update {
+	position: relative;
+	top: 30px;
+}
+#type_update {
+	position: relative;
+	top: 65px;
+	left: -108px;
+}
+#make_update {
+	position: relative;
+	top: 35px;
+}
+/*This part is about the each label and input.*/
+#new_up {
+	position: relative;
+	top: 10px;
+}
+#re_new_up {
+	position: relative;
+	top: 15px;
+}
+#source_up {
+	position: relative;
+	top: -45px;
+	left:125px;
+}
+#type_up {
+	position: relative;
+	top: -45px;
+	left:125px;
 }
 /*This is the submit button.*/
 .submit_button {
@@ -641,8 +727,8 @@ size*/
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
 	position: relative;
-	top: 79px;
-	left: -110px;
+	top: 69px;
+	left: 170px;
 }
 .submit_button a {
 	text-decoration: none;
@@ -653,7 +739,7 @@ size*/
 	left: 10px;
 }
 .submit_button a:hover {
-	color: orange;
+	color: orange;/*When the mouse is over, the colour change to this*/
 }
 /*This is the cancel button.*/
 .cancel_button {
@@ -662,8 +748,8 @@ size*/
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
 	position: relative;
-	top: 38px;
-	left: -10px;
+	top: 69px;
+	left: 185px;
 }
 .cancel_button a {
 	text-decoration: none;
@@ -674,14 +760,14 @@ size*/
 	left: 10px;
 }
 .cancel_button a:hover {
-	color: orange;
+	color: orange;/*When the mouse is over, the colour change to this*/
 }
 /*///////////////////////////////////
 //////////// message ///////////////
 /////////////////////////////////*/
 /*This is a three button layout.*/
 #message-bg {
-	width: 858px;/*the backgroud width about the login form. the top one*/
+	width: 858px;/*the background width about the login form. the top one*/
 	background-color: #333;
 	position: relative;
 	top: -40px;
@@ -704,11 +790,10 @@ size*/
 	color: white;
 }
 .ok_button a:hover {
-	color: orange;
+	color: orange;/*When the mouse is over, the colour change to this*/
 }
-
 /*///////////////////////////////////
-//////////// animal ///////////////
+//////// animal sighting ///////////
 /////////////////////////////////*/
 #pest_sighting_index-bg
 {
@@ -759,3 +844,4 @@ size*/
 .feral_rabbit {
 	float:left;
 }
+
