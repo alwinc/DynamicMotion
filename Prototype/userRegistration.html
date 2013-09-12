@@ -28,12 +28,12 @@ if (/*@cc_on!@*/false) {
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
       <li> <a href="#">Home</a></li>
-      <li name="login_loginpage"><a href="#">Login</a></li>
-      <li class="current_page_item" name="login_Registerpage"><a href="#">Register</a></li>
-      <li name="login_Userpage"><a href="#">MyAccount</a></li>
-      <li name="login_Pest Fight"><a href="#">Pest Fight</a></li>
-      <li name="login_Reportpage"><a href="#">Weekly Report</a></li>
-      <li name="login_P_Registerpage"><a href="#">Pest Register</a></li>
+      <li><a href="#">Login</a></li>
+      <li class="current_page_item"><a href="#">Register</a></li>
+      <li><a href="#">MyAccount</a></li>
+      <li><a href="#">Pest Sight</a></li>
+      <li><a href="#">Weekly Report</a></li>
+      <li><a href="#">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -48,28 +48,28 @@ if (/*@cc_on!@*/false) {
             <li class="error" id="issue-massage"name="issue-massagee">
               <p>*You have issue message:</p>
               <p>Hello World!</p>
-            </li>           
+            </li>
             <li id="name_box">
               <label for="user_name_signup" class="u_name" data-icon="u">Name</label>
-              <input id="F_name_signup" name="F_name_signup" required type="text" placeholder="First Name" required/>
-              <input id="L_name_signup" name="L_name_signup" required type="text" placeholder="Last Name" required/>
+              <input id="F_name_signup" name="F_name_signup" required = "required"type="text" placeholder="First Name" required/>
+              <input id="L_name_signup" name="L_name_signup" required = "required"type="text" placeholder="Last Name" required/>
             </li>
             <li id="mail_box">
-              <label for="email_signup" class="u_mail" data-icon="e" >E-mail Addree</label>
-              <input id="email_signup" name="email_signupp" required type="email" placeholder="Enter E-mail Address" required/>
-              <input id="email_signup_confirm" name="email_signup_confirm" required type="email" placeholder="Re-Enter E-mail Address" required/>
+              <label for="email_signup" class="u_mail" data-icon="e" >E-mail Address</label>
+              <input id="email_signup" name="email_signupp" required = "required" type="email" placeholder="Enter E-mail Address" required/>
+              <input id="email_signup_confirm" name="email_signup_confirm" required = "required" type="email" placeholder="Re-Enter E-mail Address" required/>
             </li>
             <li id="password_box">
               <label for="password_signup" class="u_password" data-icon="p">Your password </label>
-              <input id="password_signup" name="password_signup" required type="password" placeholder="Enter Password" required/>
+              <input id="password_signup" name="password_signup" required = "required" type="password" placeholder="Enter Password" required/>
               <input id="password_signup_confirm" name="password_signup_confirm" required type="Re-Enter Password" placeholder="Re-Enter Password" required/>
             </li>
             <li id="dob">
               <label for="dob" class="u_dob" data-icon="dob">Date of Birth</label>
-              <input id="Day_signup" name="Day_signup" required type="date" placeholder="dd" required/>
-              <input id="Month_signup" name="Month_signup" required type="date" placeholder="mm" required/>
-              <input id="Year_signup" name="Year_signup" required type="date" placeholder="yy" required/>
-            </li> 
+              <input id="Day_signup" name="Day_signup" required = "required" type="text" placeholder="dd" required/>
+              <input id="Month_signup" name="Month_signup" required = "required" type="text" placeholder="mm" required/>
+              <input id="Year_signup" name="Year_signup" required = "required" type="text" placeholder="yy" required/>
+            </li>
             <li id = "type_box">
               <label for="User_type" class="u_type" data-icon="ut">User Type</label>
               <select name="User_type">
@@ -77,13 +77,12 @@ if (/*@cc_on!@*/false) {
                 <option value ="Administrator">Administrator</option>
                 <option value ="Clerical">Clericalt</option>
               </select>
-            </li> 
+            </li>
             <li id = "park">
               <label for="park" class="u_park" data-icon="up">Park Name</label>
-              <input id="Park_signup" name="Park_signup" required type="text" placeholder="Which Park?" required/>
-              </li>       
+              <input id="Park_signup" name="Park_signup" required = "required" type="text" placeholder="Which Park?" required/>
+            </li>
             <li class="signup_button" name="signup_button"> <a href="">Sign Up</a> </li>
-            
             <ul class="support-bg-s "id="support-qa" name="support-qa">
               <li>
                 <h5>Already a member ? <a href="login.html" class="login.html"> Go and log in </a> </h5>

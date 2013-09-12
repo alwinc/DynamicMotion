@@ -28,12 +28,12 @@ if (/*@cc_on!@*/false) {
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
       <li> <a href="#">Home</a></li>
-      <li class="current_page_item" name="login_loginpage"><a href="#">Login</a></li>
-      <li name="login_Registerpage"><a href="#">Register</a></li>
-      <li name="login_Userpage"><a href="#">MyAccount</a></li>
-      <li name="login_Pest Fight"><a href="#">Pest Fight</a></li>
-      <li name="login_Reportpage"><a href="#">Weekly Report</a></li>
-      <li name="login_P_Registerpage"><a href="#">Pest Register</a></li>
+      <li class="current_page_item"><a href="#">Login</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">MyAccount</a></li>
+      <li><a href="#">Pest Sight</a></li>
+      <li><a href="#">Weekly Report</a></li>
+      <li><a href="#">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
