@@ -37,6 +37,11 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	height: 1390px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
+.container-index {
+	width: 960px;
+	height: 680px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
 .container-login {
 	width: 960px;
 	height: 950px;
@@ -71,6 +76,13 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .header {
 	background-color: #FFF;
 	height: 115px;
+}
+.index {
+	padding: 10px 0;
+	width: 960px;/*the background width about the news part. the bottom one*/
+	background-color: #333;
+	position: relative;
+	left: -55px;
 }
 .news {
 	padding: 10px 0;

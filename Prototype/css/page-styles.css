@@ -1,6 +1,57 @@
 @charset "utf-8";
 /* CSS Document */
 /*///////////////////////////////////
+//////////// index page ////////////
+/////////////////////////////////*/
+.main-bg {
+	width: 968px;
+	height: 500px;
+	background-image: url(../image/indexpage-01.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -90px;
+	left: -4px;
+}
+#main-box {
+	margin: 0 auto;
+	list-style: none;
+}
+#main-box li {
+	display: inline;
+	color: #FFFFFF;
+}
+#main-box li a {
+	text-decoration: none;
+	color:#999;
+	font-size:12px;
+}
+#main-box li a:hover {
+	color: #00B4D5;/*When the mouse is over, the color change to this*/
+}
+.main-title {
+	font-size: 15px;
+	position: relative;
+	top: 190px;
+	left: 440px;
+}
+.main_siteup {
+	width: 95px;
+	height: 41px;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	position:relative;
+	top:150px;
+	left:750px;
+}
+.main_siteup a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+/*///////////////////////////////////
 ////////// account header //////////
 /////////////////////////////////*/
 .accountbar {
@@ -713,12 +764,12 @@ size*/
 #source_up {
 	position: relative;
 	top: -45px;
-	left:125px;
+	left: 125px;
 }
 #type_up {
 	position: relative;
 	top: -45px;
-	left:125px;
+	left: 125px;
 }
 /*This is the submit button.*/
 .submit_button {
@@ -795,8 +846,7 @@ size*/
 /*///////////////////////////////////
 //////// animal sighting ///////////
 /////////////////////////////////*/
-#pest_sighting_index-bg
-{
+#pest_sighting_index-bg {
 	width: 858px;/*the backgroud width about the login form. the top one*/
 	background-color: #333;
 	position: relative;
@@ -807,7 +857,7 @@ size*/
 	height: 1000px;
 	margin: 120px auto;
 }
-.pest-sighting-box{
+.pest-sighting-box {
 	width: 370px;
 	height: 570px;
 	margin: 50px auto;
@@ -824,24 +874,18 @@ size*/
 	display: inline;
 	float: left;
 }
-
 .feral_fox {
 	float: left;
 }
-
 .feral_dog {
 	float: right;
 }
-
 .feral_cat {
 	float: left;
 }
-
 .feral_rat {
 	float: right;
 }
-
 .feral_rabbit {
-	float:left;
+	float: left;
 }
-
