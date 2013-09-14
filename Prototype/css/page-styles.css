@@ -31,11 +31,12 @@
 .main-title {
 	font-size: 15px;
 	position: relative;
-	top: 190px;
+	top: 195px;
 	left: 440px;
+	font-weight: bold;
 }
 .main_siteup {
-	width: 95px;
+	width: 122px;
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
@@ -49,7 +50,7 @@
 	color: white;
 	position: relative;
 	top: 5px;
-	left: 10px;
+	left: 30px;
 }
 /*///////////////////////////////////
 ////////// account header //////////
@@ -182,7 +183,7 @@
 	float: left;
 	padding: 15px 60px 4px 10px;
 }
-#header-two li a {
+#readme a {
 	color: white;
 	font-size: 15px;
 	display: block;
@@ -191,7 +192,7 @@
 	text-decoration: none;
 	text-transform: uppercase;
 }
-#header-two li a:hover {
+#readme a:hover {
 	color: #00B4D5;/*When the mouse is over, the color change to this*/
 }
 /*///////////////////////////////////
@@ -448,7 +449,7 @@ size*/
 }
 /* The login button part*/
 .login_button:nth-of-type(1n) {/*IE9-10*/
-	width: 120px;
+	width: 122px;
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
@@ -460,7 +461,7 @@ size*/
 	text-decoration: none;
 	font-size: 22px;
 	color: white;
-	margin: 15px 30px 30px 15px;
+	margin: 20px 30px 30px 30px;
 }
 .login_button a:hover {
 	color: orange;/*When the mouse is over, the color change to this*/
@@ -647,13 +648,13 @@ size*/
 }
 /*The submit button in this form.*/
 .signup_button {
-	width: 95px;
+	width: 122px;
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
 	position: relative;
 	top: 50px;
-	left: 280px;
+	left: -5px;
 }
 .signup_button a {
 	text-decoration: none;
@@ -661,15 +662,15 @@ size*/
 	color: white;
 	position: relative;
 	top: 5px;
-	left: 10px;
+	left: 30px;
 }
 .signup_button a:hover {
 	color: orange;/*When the mouse is over, the color change to this*/
 }
 .support-bg-s {
 	position: relative;
-	top: 80px;
-	left: 15px;
+	top: 35px;
+	left: -15px;
 }
 /*///////////////////////////////////
 //////////weekly report/ ///////////
@@ -717,7 +718,7 @@ size*/
 }
 /*This is the update button.*/
 .update_button {
-	width: 95px;
+	width: 122px;
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
@@ -773,13 +774,13 @@ size*/
 }
 /*This is the submit button.*/
 .submit_button {
-	width: 95px;
+	width: 122px;
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
 	position: relative;
 	top: 69px;
-	left: 170px;
+	left: 120px;
 }
 .submit_button a {
 	text-decoration: none;
@@ -787,20 +788,20 @@ size*/
 	color: white;
 	position: relative;
 	top: 5px;
-	left: 10px;
+	left: 30px;
 }
 .submit_button a:hover {
 	color: orange;/*When the mouse is over, the colour change to this*/
 }
 /*This is the cancel button.*/
 .cancel_button {
-	width: 95px;
+	width: 122px;
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
 	position: relative;
 	top: 69px;
-	left: 185px;
+	left: 130px;
 }
 .cancel_button a {
 	text-decoration: none;
@@ -808,7 +809,7 @@ size*/
 	color: white;
 	position: relative;
 	top: 5px;
-	left: 10px;
+	left: 30px;
 }
 .cancel_button a:hover {
 	color: orange;/*When the mouse is over, the colour change to this*/
@@ -827,7 +828,7 @@ size*/
 	display: inline;
 }
 .ok_button {
-	width: 95px;
+	width: 122px;
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
