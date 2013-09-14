@@ -647,7 +647,7 @@ size*/
 	width: 350px;
 }
 /*The submit button in this form.*/
-.signup_button {
+.siteup_button {
 	width: 122px;
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
@@ -656,7 +656,7 @@ size*/
 	top: 50px;
 	left: -5px;
 }
-.signup_button a {
+.siteup_button a {
 	text-decoration: none;
 	font-size: 20px;
 	color: white;
@@ -664,7 +664,7 @@ size*/
 	top: 5px;
 	left: 30px;
 }
-.signup_button a:hover {
+.siteup_button a:hover {
 	color: orange;/*When the mouse is over, the color change to this*/
 }
 .support-bg-s {
