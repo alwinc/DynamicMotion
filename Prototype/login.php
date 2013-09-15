@@ -22,7 +22,7 @@ if (/*@cc_on!@*/false) {
   <div class="accountbar">
     <ul class="accountbar-bg" id="account-bar" name="account-bar">
       <li class="support-hm"><a href="index.html">Home</a></li>
-      <li class="support-lg"><a href="login.html">Login</a> or <a href="register.html">Register</a></li>
+      <li class="support-lg"><a href="login.php">Login</a> or <a href="register.html">Register</a></li>
       <li class="support-ac"><a href="#">MyAccount</a></li>
       <li class="support-sp"><a href="#">Support</a></li>
     </ul>
@@ -31,7 +31,7 @@ if (/*@cc_on!@*/false) {
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
       <li> <a href="index.html">Home</a></li>
-      <li class="current_page_item" name="login_loginpage"><a href="login.html">Login</a></li>
+      <li class="current_page_item" name="login_loginpage"><a href="login.php">Login</a></li>
       <li name="login_Registerpage"><a href="register.html">Register</a></li>
       <li name="login_Userpage"><a href="#">MyAccount</a></li>
       <li name="login_Pest Fight"><a href="#">Pest Fight</a></li>
