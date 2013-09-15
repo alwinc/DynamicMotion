@@ -19,7 +19,7 @@ if (/*@cc_on!@*/false) {
   <div class="accountbar">
     <ul class="accountbar-bg" id="account-bar" name="account-bar">
       <li class="support-hm"><a href="index.html">Home</a></li>
-      <li class="support-lg"><a href="login.html">Login</a> or <a href="register.html">Register</a></li>
+      <li class="support-lg"><a href="login.html">Login</a> or <a href="userRegister.html">Register</a></li>
       <li class="support-ac"><a href="#">MyAccount</a></li>
       <li class="support-sp"><a href="#">Support</a></li>
     </ul>
@@ -67,25 +67,25 @@ if (/*@cc_on!@*/false) {
             <li id="dob">
               <label for="dob" class="u_dob" data-icon="dob">Date of Birth</label>
               <input id="Day_signup" name="Day_signup" required = "required" type="text" placeholder="dd" required/>
-              <input id="Month_signup" name="Month_signup" required = "required" type="text" placeholder="mm" required/>
-              <input id="Year_signup" name="Year_signup" required = "required" type="text" placeholder="yy" required/>
+              <input id="Month_signup" name="Month_signup" required = "required" type="number" placeholder="mm" required/>
+              <input id="Year_signup" name="Year_signup" required = "required" type="number" placeholder="yyyy" required/>
             </li>
             <li id = "type_box">
               <label for="User_type" class="u_type" data-icon="ut">User Type</label>
               <select name="User_type">
                 <option value ="Ranger">Ranger</option>
                 <option value ="Administrator">Administrator</option>
-                <option value ="Clerical">Clericalt</option>
+                <option value ="Clerical">Clerical</option>
               </select>
             </li>
             <li id = "park">
-              <label for="park" class="u_park" data-icon="up">Park Name</label>
-              <input id="Park_signup" name="Park_signup" required = "required" type="text" placeholder="Which Park?" required/>
+              <label for="park" class="u_park" data-icon="up">National Park Name</label>
+              <input id="Park_signup" name="Park_signup" required = "required" type="text" placeholder="Which National Park are you sight to it?" required/>
             </li>
-            <li class="signup_button" name="signup_button"> <a href="">Sign Up</a> </li>
+            <li class="siteup_button" name="siteup_button"> <a href="">Site Up</a> </li>
             <ul class="support-bg-s "id="support-qa" name="support-qa">
               <li>
-                <h5>Already a member ? <a href="login.html" class="login.html"> Go and log in </a> </h5>
+                <h5>Already a member ? <a href="login.html"> Go and log in </a> </h5>
               </li>
             </ul>
           </ul>
