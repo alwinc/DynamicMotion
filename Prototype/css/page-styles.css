@@ -53,8 +53,9 @@
 	left: 30px;
 }
 /*///////////////////////////////////
-////////// account header //////////
+//////////// home page /////////////
 /////////////////////////////////*/
+/*This is the part of account header*/
 .accountbar {
 	width: 440px;
 	height: 40px;
@@ -93,9 +94,7 @@
 #account-bar li a:hover {
 	color: #00B4D5;/*When the mouse is over, the color change to this*/
 }
-/*///////////////////////////////////
-////////// menu header /////////////
-/////////////////////////////////*/
+/*This is the part of menu header*/
 .header-wrap {
 	margin: 0px auto;
 	border-top: none;
@@ -140,9 +139,7 @@
 .current_page_item a {
 	color: white !important;
 }
-/*///////////////////////////////////
-//////////the image bar/////////////
-/////////////////////////////////*/
+/*This is the part of image bar*/
 .image-wrap {
 	position: relative;
 	height: 500px;
@@ -156,9 +153,7 @@
 	top: 30px;
 	left: 30px;
 }
-/*///////////////////////////////////
-//////////the middle bar////////////
-/////////////////////////////////*/
+/*This is the part of middle bar*/
 .middle-wrap {
 	margin: 0px auto;
 	border-top: none;
@@ -195,9 +190,7 @@
 #readme a:hover {
 	color: #00B4D5;/*When the mouse is over, the color change to this*/
 }
-/*///////////////////////////////////
-////////////the news////////////////
-/////////////////////////////////*/
+/*/*This is the part of news*/
 .news-bg {
 	width: 858px;
 	height: 360px;
@@ -295,9 +288,7 @@
 	top: -200px;
 	left: 680px;
 }
-/*///////////////////////////////////
-////////////the footer//////////////
-/////////////////////////////////*/
+/*This is the part of footer*/
 #footer-text {
 	margin: 0 auto;
 	padding: 0;
@@ -344,7 +335,7 @@
 	color: #00B4D5;
 }
 /*///////////////////////////////////
-//////////// the login /////////////
+//////////// login page ////////////
 /////////////////////////////////*/
 
 label {
@@ -878,6 +869,7 @@ size*/
 #animal-title {
 	font-size: 14px;
 	font-weight: bold;
+	color: #00B4D5;
 	position: relative;
 	top: 70px;
 	left: -240px;
@@ -907,9 +899,29 @@ size*/
 	top: -396px;
 	left: 380px;
 }
+/*This is the part of google map.*/
 .googlemap {
-	height:10px;/*This is the google map height*/
+	height: 10px;/*This is the google map height*/
 	position: relative;
 	top: -630px;
-	left: 150px;
+	left: 140px;
+}
+#map-title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #00B4D5;
+	position: relative;
+	left: -15px;
+}
+.map-input-park {
+	position: relative;
+	left: -15px;
+}
+#map_canvas {
+	width: 600px;
+	height: 400px
+}
+#map-panel {
+	position: relative;
+	top: 15px;
 }
