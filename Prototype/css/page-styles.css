@@ -22,8 +22,8 @@
 }
 #main-box li a {
 	text-decoration: none;
-	color:#999;
-	font-size:12px;
+	color: #999;
+	font-size: 12px;
 }
 #main-box li a:hover {
 	color: #00B4D5;/*When the mouse is over, the color change to this*/
@@ -40,9 +40,9 @@
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
-	position:relative;
-	top:150px;
-	left:750px;
+	position: relative;
+	top: 150px;
+	left: 750px;
 }
 .main_siteup a {
 	text-decoration: none;
@@ -855,12 +855,12 @@ size*/
 }
 .animal_wrapper {
 	width: 314px;
-	height: 1000px;
+	height: 50px;
 	margin: 120px auto;
 }
 .pest-sighting-box {
-	width: 370px;
-	height: 570px;
+	width: 670px;
+	height: 760px;
 	margin: 50px auto;
 	padding: 35px;
 	background-color: white;
@@ -875,18 +875,41 @@ size*/
 	display: inline;
 	float: left;
 }
+#animal-title {
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	top: 70px;
+	left: -240px;
+}
+/*This is the position of five animal map button.*/
 .feral_fox {
-	float: left;
+	position: relative;
+	left: -140px;
 }
 .feral_dog {
-	float: right;
+	position: relative;
+	top: -98px;
+	left: -10px;
 }
 .feral_cat {
-	float: left;
+	position: relative;
+	top: -196px;
+	left: 120px;
 }
 .feral_rat {
-	float: right;
+	position: relative;
+	top: -296px;
+	left: 250px;
 }
 .feral_rabbit {
-	float: left;
+	position: relative;
+	top: -396px;
+	left: 380px;
+}
+.googlemap {
+	height:10px;/*This is the google map height*/
+	position: relative;
+	top: -630px;
+	left: 150px;
 }
