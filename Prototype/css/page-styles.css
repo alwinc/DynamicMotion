@@ -851,7 +851,7 @@ size*/
 }
 .pest-sighting-box {
 	width: 670px;
-	height: 760px;
+	height: 1130px;/*the height for while form.*/
 	margin: 50px auto;
 	padding: 35px;
 	background-color: white;
@@ -903,7 +903,7 @@ size*/
 .googlemap {
 	height: 10px;/*This is the google map height*/
 	position: relative;
-	top: -630px;
+	top: -1000px;
 	left: 140px;
 }
 #map-title {
@@ -924,4 +924,31 @@ size*/
 #map-panel {
 	position: relative;
 	top: 15px;
+}
+#latlng {
+	width: 350px;
+}
+/*This is the input sight form.*/
+.inputsight {
+	height: 10px;/*This is the google map height*/
+	position: relative;
+	top: -480px;
+	left: 125px;
+}
+.inputsight p {
+	font-size: 14px;
+	font-weight: bold;
+	color: #00B4D5;
+}
+#mydate {
+	width: 167px;
+}
+#mytime {
+	width: 167px;
+}
+#autodate {
+	width: 350px;
+}
+#sight-id {
+	width: 350px;
 }

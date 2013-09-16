@@ -69,7 +69,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .container-pestSightIndex {
 	width: 960px;
-	height: 1230px;
+	height: 1610px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
@@ -134,7 +134,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .pest_sighting_index {
 	padding: 10px 0;
 	width: 858px;
-	height: 920px;
+	height: 1300px;
 	background-color: #333;
 	position: relative;
 	left: 27px;
