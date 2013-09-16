@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Animal Map</title>
+<title>Animals Map</title>
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link href="css/page-styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
@@ -30,9 +30,9 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li> <a href="index.html">Home</a></li>
-      <li class="current_page_item" name="login_loginpage"><a href="login.php">Login</a></li>
-      <li name="login_Registerpage"><a href="register.html">Register</a></li>
+      <li> <a href="#">Home</a></li>
+      <li class="current_page_item" name="login_loginpage"><a href="#">Login</a></li>
+      <li name="login_Registerpage"><a href="#">Register</a></li>
       <li name="login_Userpage"><a href="#">MyAccount</a></li>
       <li name="login_Pest Fight"><a href="#">Pest Fight</a></li>
       <li name="login_Reportpage"><a href="#">Weekly Report</a></li>
@@ -60,11 +60,11 @@ if (/*@cc_on!@*/false) {
             </li>
             <li>
               <label for="usermail" class="user_mail">E-Mail Address</label>
-              <input type="email" required="required" name="login_usermail" placeholder="Enter E-mail Address" required>
+              <input type="email" required name="login_usermail" placeholder="Enter E-mail Address" required>
             </li>
             <li>
               <label for="password" class="password">Password</label>
-              <input type="password" required="required" name="login_password" placeholder="Enter Password" required>
+              <input type="password" required name="login_password" placeholder="Enter Password" required>
             </li>
             <li class="login_button" name="login_button"> <a href="checklogin.php" onclick="document.forms['login'].submit(); return false;">Log in</a> </li>
             <li>
