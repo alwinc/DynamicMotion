@@ -153,6 +153,11 @@
 	top: 30px;
 	left: 30px;
 }
+#colee_right {
+	overflow: hidden;
+	width: 800px;
+	height: 450px;
+}
 /*This is the part of middle bar*/
 .middle-wrap {
 	margin: 0px auto;

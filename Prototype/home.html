@@ -5,14 +5,14 @@
 <title>Animals Map</title>
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link href="css/page-styles.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/imageslider.js"></script>
 </head>
 <!--[if !IE]><!--><script>
 if (/*@cc_on!@*/false) {
     document.documentElement.className+=' ie10';
 }
 </script><!--<![endif]-->
-<body>
+<body onLoad="Marquee4(),Mouse()">
 <div class="container">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> </div>
   <!-- end .header -->
@@ -40,7 +40,7 @@ if (/*@cc_on!@*/false) {
   <!-- end .header-warp -->
   <div class="image-wrap"> <!-- The image while loop to right-->
     <ul class="image-middle">
-      <div id="colee_right" style="overflow:hidden;width:800px;height:450px;">
+      <div id="colee_right">
         <table cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td id="colee_right1" valign="top" align="center"><table cellpadding="2" cellspacing="0" border="0">
@@ -64,7 +64,7 @@ if (/*@cc_on!@*/false) {
     </ul>
   </div>
   <!-- end .image-warp --> 
-  <script>
+  <!--<script>
 		var speed=20//the speed.
 		var colee_right2=document.getElementById("colee_right2");
 		var colee_right1=document.getElementById("colee_right1");
@@ -80,7 +80,7 @@ if (/*@cc_on!@*/false) {
 		var MyMar4=setInterval(Marquee4,speed)
 		colee_right.onmouseover=function() {clearInterval(MyMar4)}
 		colee_right.onmouseout=function() {MyMar4=setInterval(Marquee4,speed)}
-	</script> 
+	</script> -->
   <!-- end .image-slider-script -->
   <div class="middle-wrap">
     <ul class="group" id="header-two" name="header-two">
