@@ -19,9 +19,9 @@ Design part
 Upgrade version 2.3               28/Aug/2013
 ---------------------------------------------
 HTML5 part
-* change all the code about the register page(register.html);
-* add the re confirm the email address(register.html);
-* divide the user name be come the first and last name(register.html);
+* change all the code about the register page(userRegister.php);
+* add the re confirm the email address(userRegister.php);
+* divide the user name be come the first and last name(userRegister.php);
 * add the id call "password" and "user_mail" in login page(login.html);
 CSS part
 * add the new id call the "register-bg"(login-style.css);
@@ -32,7 +32,7 @@ Design part
 Upgrade version 2.4               29/Aug/2013
 ---------------------------------------------
 HTML5 part
-* move the footer layout into the container(index.html,login.html,register.html);
+* move the footer layout into the container(index.html,login.html,userRegister.php);
 CSS part
 * change all of position about the footer text and image(index-style.css);
 * merge all the css file into one file on css folder(css/index-styles);
