@@ -1,14 +1,16 @@
 <?php
 	include('connect.inc.php');
 	
-	$firstname = $_POST['F_name_signup']; $lastname = $_POST['L_name_signup']; $username = $firstname." ".$lastname;
+	$firstname = $_POST['F_name_signup']; $lastname = $_POST['L_name_signup']; 
+	$username = $firstname." ".$lastname;
 	$email = $_POST['email_signupp'];
 	$password = $_POST['password_signup'];
 	$confirm_pass = $_POST['password_signup_confirm'];
 	$day = $_POST['Day_signup']; $month = $_POST['Month_signup']; $year = $_POST['Year_signup'];
-	$dob = $year."/".$month."/".$year;
+	$dob = $year."-".$month."-".$day;	
+	$usertype = $_POST['User_type'];
 		
-	$addingQuery = "INSERT INTO  `person` VALUES ( 'NULL','$username',  '$email',  now(),  'user',  '$dob',  '$password')";
+	$addingQuery = "INSERT INTO  `person` VALUES ( 'NULL','$username',  '$email',  now(),  '$usertype',  '$dob',  '$password')";
 	
 	$checkingQuery= "SELECT * FROM person WHERE email like '$email'";
 		
@@ -20,7 +22,6 @@
 	{
 		if(mysqli_query($link,$addingQuery))
 		{
-		echo "Successfull!";
 			header("location: registerSuccess.html");
 		}		
 		else
@@ -31,7 +32,7 @@
 	}
 	else
 	{
-		header("location: register.php?error=1");
+		header("location: userRegister.php?error=1");
 	}		
 	
 ?>

@@ -40,14 +40,21 @@ if (/*@cc_on!@*/false) {
   <div class="register">
     <ul id="register-bg" name="register-bg">
       <section class="registerform cf">
-        <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+        <form name="register" action="inputData.php" method=POST accept-charset="utf-8">
           <ul>
             <li id="header-signup">
               <h4>Account Creation</h4>
             </li>
             <li class="error" id="issue-massage"name="issue-massagee">
-              <p>*You have issue message:</p>
-              <p>Hello World!</p>
+					<p>
+						<?php	
+						//display the error msg if the login credentials are wrong!
+						if(isset($_GET['error']))
+						{
+							echo 'Email already registered!';
+						}
+						?>
+					</p>
             </li>
             <li id="name_box">
               <label for="user_name_signup" class="u_name" data-icon="u">Name</label>
@@ -62,13 +69,13 @@ if (/*@cc_on!@*/false) {
             <li id="password_box">
               <label for="password_signup" class="u_password" data-icon="p">Your password </label>
               <input id="password_signup" name="password_signup" required = "required" type="password" placeholder="Enter Password" required/>
-              <input id="password_signup_confirm" name="password_signup_confirm" required type="Re-Enter Password" placeholder="Re-Enter Password" required/>
+              <input id="password_signup_confirm" name="password_signup_confirm" required = "required" type="password" placeholder="Re-Enter Password" required/>
             </li>
             <li id="dob">
               <label for="dob" class="u_dob" data-icon="dob">Date of Birth</label>
               <input id="Day_signup" name="Day_signup" required = "required" type="text" placeholder="dd" required/>
-              <input id="Month_signup" name="Month_signup" required = "required" type="number" placeholder="mm" required/>
-              <input id="Year_signup" name="Year_signup" required = "required" type="number" placeholder="yyyy" required/>
+              <input id="Month_signup" name="Month_signup" required = "required" type="text" placeholder="mm" required/>
+              <input id="Year_signup" name="Year_signup" required = "required" type="text" placeholder="yyyy" required/>
             </li>
             <li id = "type_box">
               <label for="User_type" class="u_type" data-icon="ut">User Type</label>
@@ -82,7 +89,7 @@ if (/*@cc_on!@*/false) {
               <label for="park" class="u_park" data-icon="up">National Park Name</label>
               <input id="Park_signup" name="Park_signup" required = "required" type="text" placeholder="Which National Park are you sight to it?" required/>
             </li>
-            <li class="siteup_button" name="siteup_button"> <a href="">Site Up</a> </li>
+            <li class="siteup_button" name="siteup_button"> <a href="inputData.php" onclick="document.forms['register'].submit(); return false;">Site Up</a> </li>
             <ul class="support-bg-s "id="support-qa" name="support-qa">
               <li>
                 <h5>Already a member ? <a href="login.php"> Go and log in </a> </h5>
