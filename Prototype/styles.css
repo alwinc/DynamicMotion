@@ -57,7 +57,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	height: 1095px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
-.container-Pupdate {
+.container-pupdate {
 	width: 960px;
 	height: 950px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
