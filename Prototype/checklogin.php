@@ -34,7 +34,6 @@
 	else
 	{
 		$_SESSION['login_msg'] ="Wrong username or Password!";
-		$error = "Wrong Username or Password";
 		header("location:login.php");  
 	}
 ?>
