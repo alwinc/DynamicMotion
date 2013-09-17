@@ -62,14 +62,18 @@ if (/*@cc_on!@*/false) {
               <input id="L_name_signup" name="L_name_signup" required = "required"type="text" placeholder="Last Name" required/>
             </li>
             <li id="mail_box">
+			  <script src="js/emailConfirmation.js" type="text/javascript"></script>
               <label for="email_signup" class="u_mail" data-icon="e" >E-mail Address</label>
               <input id="email_signup" name="email_signupp" required = "required" type="email" placeholder="Enter E-mail Address" required/>
               <input id="email_signup_confirm" name="email_signup_confirm" required = "required" type="email" placeholder="Re-Enter E-mail Address" required/>
+			  <p id="email-validate-status"></p>
             </li>
             <li id="password_box">
+			  <script src="js/passwordConfirmation.js" type="text/javascript"></script>
               <label for="password_signup" class="u_password" data-icon="p">Your password </label>
               <input id="password_signup" name="password_signup" required = "required" type="password" placeholder="Enter Password" required/>
               <input id="password_signup_confirm" name="password_signup_confirm" required = "required" type="password" placeholder="Re-Enter Password" required/>
+			  <p id="password-validate-status"></p>
             </li>
             <li id="dob">
               <label for="dob" class="u_dob" data-icon="dob">Date of Birth</label>
