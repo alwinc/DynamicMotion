@@ -918,9 +918,42 @@ size*/
 	position: relative;
 	left: -15px;
 }
+.google-go {
+	height: 21px;
+	width: 45px;
+	border: none;
+	background-image: url(../image/loginpage-04.png);
+	background-repeat: no-repeat;
+	color: white;
+}
+.google-go:hover {
+	color: orange;
+}
+.google-gecode {
+	height: 23px;
+	width: 133px;
+	border: none;
+	color: white;
+	background-image: url(../image/loginpage-05.png);
+	background-repeat: no-repeat;
+}
+.google-gecode:hover {
+	color: orange;
+}
 .map-input-park {
 	position: relative;
 	left: -15px;
+}
+#autobutton {
+	height: 23px;
+	width: 79px;
+	border: none;
+	color: white;
+	background-image: url(../image/loginpage-06.png);
+	background-repeat: no-repeat;
+}
+#autobutton:hover {
+	color: orange;
 }
 #map_canvas {
 	width: 600px;

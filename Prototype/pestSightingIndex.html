@@ -64,13 +64,13 @@ if (/*@cc_on!@*/false) {
         <p id="map-title"> Enter an address and you may drag the tack to reposition it. </p>
         <p class="map-input-park">
           <input type="text" style="width:350px" name="address" value="KU-RING-GAI Chase National Park" />
-          <input type="submit" value="Go" />
+          <input class="google-go" type="submit" value="Go" />
         </p>
         <div id="map_canvas"></div>
       </form>
       <div id="map-panel">
         <input id="latlng" type="text" value="40.714224,  -73.961452">
-        <input type="button" value="Reverse Geocode" onclick="codeLatLng()">
+        <input class="google-gecode" type="button" value="Reverse Geocode" onclick="codeLatLng()">
       </div>
     </section>
   </div>
@@ -95,7 +95,7 @@ if (/*@cc_on!@*/false) {
         <p class="sight-report">Report ID </p>
         <p>
           <input id="sight-id" type="text" value="Enter report ID"/>
-          <input id="sight-submit" type="button" value="Submit"/>
+          <input id="autobutton" type="button" value="Submit"/>
         </p>
       </form>
     </section>
