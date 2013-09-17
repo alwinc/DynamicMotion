@@ -134,7 +134,7 @@
 	text-transform: uppercase;
 }
 #header-one li a:hover {
-	color: #00B4D5;/*When the mouse is over, the color change to this*/
+	color: white;/*When the mouse is over, the color change to this*/
 }
 .current_page_item a {
 	color: white !important;
@@ -762,6 +762,10 @@ size*/
 	position: relative;
 	top: -45px;
 	left: 125px;
+}
+.type_up {
+	position: relative;
+	left: 8px;
 }
 #type_up {
 	position: relative;

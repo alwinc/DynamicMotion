@@ -18,11 +18,10 @@ if (/*@cc_on!@*/false) {
   <!-- end .header -->
   <div class="accountbar">
     <ul class="accountbar-bg" id="account-bar" name="account-bar">
-      <li class="support-hm"><a href="home.html">Home</a></li>
       <li class="support-lg">Welcome, Dane</li>
       <li class="support-ac"><a href="#">MyAccount</a></li>
       <li class="support-sp"><a href="#">Support</a></li>
-      <li class="support-lo"><a href="index.html">Logof</a></li>
+      <li class="support-lo"><a href="index.html">Log off</a></li>
     </ul>
   </div>
   <!-- end .accountbar -->
@@ -45,23 +44,23 @@ if (/*@cc_on!@*/false) {
           <ul>
             <li><img src="image/loginpage-02.png"></li>
             <li id = "id_update">
-              <label for="pest_id" class="pest_id">Pest ID:</label>
+              <label for="pest_id" class="pest_id">Pest ID</label>
               <input id = "old_up" name="pest_id_old" required type="text" placeholder="Enter Old Pest ID" />
               <input id = "new_up" name="pest_id_new" required type="text" placeholder="Enter New Pest ID" />
               <input id = "re_new_up" name="pest_id_confirm" required type="text" placeholder="Re-Enter New Pest ID" />
             </li>
             <li id = "source_update" >
-              <label for="source_up" class="source_up">Source of ID:</label>
+              <label for="source_up" class="source_up">Source of ID</label>
               <select name="source_up" id = "source_up">
-                <option value ="source_id" selected = "selected">Source ID</option>
+                <option value ="None" selected = "selected">None</option>
                 <option value ="Collar">Collar</option>
                 <option value ="Micropchip">Micropchip</option>
               </select>
             </li>
             <li id = "type_update">
-              <label for="type_up" class="type_up">Pest Type:</label>
+              <label for="type_up" class="type_up">Pest Type</label>
               <select name="type_up" id = "type_up">
-                <option value ="pest_type" selected = "selected">Type</option>
+                <option value ="None" selected = "selected">None</option>
                 <option value ="Feral_Cat">Feral Cat</option>
                 <option value ="Feral_Dog">Feral Dog</option>
                 <option value ="Feral_Rat">Feral Rat</option>
@@ -70,8 +69,8 @@ if (/*@cc_on!@*/false) {
               </select>
             </li>
             <li id = "mark_update">
-              <label for="mark_up"class="mark_up">Pest Marking:</label>
-              <input id = "mark_up" name="mark_up" required type="text" placeholder="marking"/>
+              <label for="mark_up"class="mark_up">Pest Marking</label>
+              <input id = "mark_up" name="mark_up" required type="text" placeholder="Marking Number or Colour"/>
             </li>
             <li class="submit_button" name="login_button"> <a href="updateSuccess.html">Submit</a> </li>
             <li class="cancel_button" name="login_button"> <a href="cancelRegister.html">Cancel</a> </li>
