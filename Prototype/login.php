@@ -30,13 +30,13 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li> <a href="#">Home</a></li>
-      <li class="current_page_item" name="login_loginpage"><a href="#">Login</a></li>
-      <li name="login_Registerpage"><a href="#">Register</a></li>
-      <li name="login_Userpage"><a href="#">MyAccount</a></li>
-      <li name="login_Pest Fight"><a href="#">Pest Fight</a></li>
-      <li name="login_Reportpage"><a href="#">Weekly Report</a></li>
-      <li name="login_P_Registerpage"><a href="#">Pest Register</a></li>
+      <li> <a>Home</a></li>
+      <li class="current_page_item" name="login_loginpage"><a>Login</a></li>
+      <li name="login_Registerpage"><a>Register</a></li>
+      <li name="login_Userpage"><a>MyAccount</a></li>
+      <li name="login_Pest Fight"><a>Pest Fight</a></li>
+      <li name="login_Reportpage"><a>Weekly Report</a></li>
+      <li name="login_P_Registerpage"><a>Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -46,9 +46,9 @@ if (/*@cc_on!@*/false) {
         <form name="login" action="checklogin.php" method="post" accept-charset="utf-8">
           <ul>
             <li><img src="image/loginpage-02.png"></li>
-            <li class="error" id="issue-massage"name="issue-massagee">
+            <li>
               <p style="color:red;">
-					<?php	
+                <?php	
 						//display the error msg if the login credentials are wrong!
 						if(isset($_SESSION['login_msg']))
 						{
@@ -56,27 +56,33 @@ if (/*@cc_on!@*/false) {
 							unset($_SESSION['login_msg']);
 						}
 					?>
-				</p>
+              </p>
             </li>
-            <li>
+            <li class="email-out">
               <label for="usermail" class="user_mail">E-Mail Address</label>
-              <input type="email" required name="login_usermail" placeholder="Enter E-mail Address" required>
-            </li>
-            <li>
+              <p id= "email-input" >
+                <input type="email" required name="login_usermail" placeholder="Enter E-mail Address"/>
+              </p>
+              <p class="error">*error here</p>
               <label for="password" class="password">Password</label>
-              <input type="password" required name="login_password" placeholder="Enter Password" required>
+              <p id="password_input" >
+                <input type="password" required name="login_password" placeholder="Enter Password"/>
+              </p>
+              <p class="error">*error here</p>
             </li>
-            <li class="login_button" name="login_button"> <a href="checklogin.php" onclick="document.forms['login'].submit(); return false;">Log in</a> </li>
-            <li>
-              <input type="checkbox" name="checkboxG1" value="checkbox" id="checkboxG1">
+            <li class="login-button"> <a href="checklogin.php" onclick="document.forms['login'].submit(); return false;">
+              <input type="submit" id="login_button" name="login_button" value="Log In"/>
+              </a> </li>
+            <li class="login-check">
+              <input type="checkbox" name="checkboxG1" value="checkbox" id="checkboxG1"/>
               <label class="checkbox">Keep me logged in</label>
             </li>
           </ul>
           <ul class="support-bg"id="support-qa" name="support-qa">
             <li>
-              <h5>Can't <a href="">log in </a>?</h5>
-              <h5>Learn how to <a href="" onclick="document.forms[0].submit();return false;">protent your account</a>!</h5>
-              <h5>Don't have an account yet?<a href=""> Sign up now </a>! </h5>
+              <p>Can't <a href="">log in </a>?</p>
+              <p>Learn how to <a href="" onclick="document.forms[0].submit();return false;">protent your account</a>!</p>
+              <p>Don't have an account yet?<a href=""> Sign up now </a>! </p>
             </li>
           </ul>
         </form>
@@ -86,7 +92,7 @@ if (/*@cc_on!@*/false) {
   <!-- end .login -->
   <div>
     <ul id="footer-text" name="footer-text">
-      <li><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
+      <li><a>Blog</a> | <a>Support</a> | <a>About Us</a> | <a>Contact Us</a> | <a>Site Map</a> | <a>News Letter</a> | <a>Join Us</a> | <a>Disclaimer</a> | <a>Policies</a></li>
       <ol>
         ©2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
       </ol>

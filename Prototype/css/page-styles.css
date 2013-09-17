@@ -26,7 +26,7 @@
 	font-size: 12px;
 }
 #main-box li a:hover {
-	color: #00B4D5;/*When the mouse is over, the color change to this*/
+	color: #00B4D5;/*When the mouse is over, the colour change to this*/
 }
 .main-title {
 	font-size: 15px;
@@ -193,7 +193,7 @@
 	text-transform: uppercase;
 }
 #readme a:hover {
-	color: #00B4D5;/*When the mouse is over, the color change to this*/
+	color: #00B4D5;/*When the mouse is over, the colour change to this*/
 }
 /*/*This is the part of news*/
 .news-bg {
@@ -328,16 +328,11 @@
 	list-style: none;
 	left: 270px!important;
 }
-/*///////////////////////////////////
-/////////// logo header ////////////
-/////////////////////////////////*/
+/* This is logo header */
 .myHeader {
 	text-align: center;
 	font: normal Helvetica, Arial, sans-serif;
 	color: #0099CC;
-}
-.test {
-	color: #00B4D5;
 }
 /*///////////////////////////////////
 //////////// login page ////////////
@@ -348,12 +343,6 @@ label {
 	color: #00B4D5;
 	font-family: Verdana, Geneva, sans-serif;
 	height: 45px;
-}
-.user_mail {
-	font-size: 25px;/*the size about the user_mail label*/
-}
-.password {
-	font-size: 25px;/*the size about the password label*/
 }
 #loginform-bg {
 	width: 858px;/*the backgroud width about the login form. the top one*/
@@ -375,8 +364,8 @@ label {
 	outline: 0;
 }
 .loginform {
-	width: 370px;
-	height: 470px;
+	width: 400px;
+	height: 490px;
 	margin: 50px auto;
 	padding: 35px;
 	background-color: white;
@@ -392,7 +381,6 @@ label {
 }
 .loginform li {
 	display: inline;
-	float: left;
 }
 .loginform input:not([type=submit]) {
 	padding: 10px;/*loginform white border 
@@ -420,9 +408,49 @@ size*/
 	border-radius: 3px;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
+#email-input {
+	position: relative;
+	left: -13px;
+}
+#password_input {
+	position: relative;
+	left: -13px;
+}
+.user_mail {
+	font-size: 25px;/*the size about the user_mail label*/
+}
+.password {
+	font-size: 25px;/*the size about the password label*/
+}
+/* The login button part*/
+.login-button:nth-of-type(1n) {	/*IE9-10*/
+	position: relative;
+	top: -15px;
+	left: -33px;
+	top: 10px\9;
+}
+.login-button a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+#login_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	font-size: 22px;
+	color: white;
+}
+#login_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
+/*This is about the support.*/
 .support-bg {
 	position: relative;
-	top: -40px;
+	top: -60px;
 	left: -10px;
 }
 #support-qa {
@@ -432,59 +460,42 @@ size*/
 #support-qa li {
 	display: inline;
 }
-#support-qa h5 {
-	font-size: 0.83em;
-	margin: 1.67em 0;
+#support-qa p {
+	font-size: 15px;
+	font-weight: bold;
+	margin: 12px 0;
 }
-#support-qa h5 a {
+#support-qa p a {
 	color: #00B4D5;
 	text-decoration: none;
 }
-#support-qa h5 a:hover {
-	color: #999;/*When the mouse is over, the color change to this*/
-}
-/* The login button part*/
-.login_button:nth-of-type(1n) {/*IE9-10*/
-	width: 122px;
-	height: 41px;
-	background-image: url(../image/loginpage-03.png);
-	background-repeat: no-repeat;
-	position: relative;
-	top: 5px;
-	top: 10px\9;
-}
-.login_button a {
-	text-decoration: none;
-	font-size: 22px;
-	color: white;
-	margin: 20px 30px 30px 30px;
-}
-.login_button a:hover {
-	color: orange;/*When the mouse is over, the color change to this*/
+#support-qa p a:hover {
+	color: #999;/*When the mouse is over, the colour change to this*/
 }
 /*error massage part*/
 .error {
 	font-size: 12px;
 	color: red;
 }
-#issue-massage {
-/* more code in future*/
+/*check box to keep the password and user name in browser*/
+.login-check {
+	position: relative;
+	top: -30px;
+	left: 95px;
 }
-/*checkbox to keep the password and username in browser*/
-
 #checkboxG1:nth-of-type(1n) {
-	position: relative;/*the check box*/
 	width: 20px;
 	border: hidden;
-	top: 8px;
-	left: 70px;
+	position: relative;/*the check box*/
+	top: 14px;
+	left: -30px;
 	left: 65px\9;
 }
 .checkbox:nth-of-type(1n) {
-	position: relative;/*label about the checkbox*/
-	top: -15px;
+	position: relative;/*label about the check box*/
+	top: -16px;
 	top: -19px\9;
-	left: 100px;
+	left: 126px;
 }
 /*///////////////////////////////////
 /////// the  user register /////////
@@ -499,22 +510,9 @@ size*/
 	position: relative;
 	top: -90px;
 }
-.cf:before, .cf:after {
-	content: "";
-	display: table;
-}
-.cf:after {
-	clear: both;
-}
-.cf {
- *zoom: 1;
-}
-:focus {
-	outline: 0;
-}
 .registerform {
 	width: 375px;
-	height: 865px;/*the size about this registerform*/
+	height: 865px;/*the size about this register form*/
 	margin: 50px auto;
 	padding: 35px;
 	background-color: white;
@@ -533,7 +531,7 @@ size*/
 	float: left;
 }
 .registerform input:not([type=submit]) {
-	padding: 10px;/*registerform white border size*/
+	padding: 10px;/*register form white border size*/
 	width: 350px;
 	margin-right: 20px;
 	border: 2px solid rgba(0, 0, 0, 0.3);
@@ -557,7 +555,7 @@ size*/
 	border-radius: 3px;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
-/*This part is about the each li position.*/
+/*This part is about the each Li position.*/
 #name_box {
 	height: 85px;
 }
@@ -643,25 +641,28 @@ size*/
 	width: 350px;
 }
 /*The submit button in this form.*/
-.siteup_button {
-	width: 122px;
-	height: 41px;
-	background-image: url(../image/loginpage-03.png);
-	background-repeat: no-repeat;
+.siteup-button {
 	position: relative;
-	top: 50px;
-	left: -5px;
+	top: 15px;
+	left: -32px;
 }
-.siteup_button a {
+.siteup-button a {
 	text-decoration: none;
-	font-size: 20px;
-	color: white;
 	position: relative;
 	top: 5px;
 	left: 30px;
 }
-.siteup_button a:hover {
-	color: orange;/*When the mouse is over, the color change to this*/
+#siteup_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	font-size: 20px;
+	color: white;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+}
+#siteup_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
 }
 .support-bg-s {
 	position: relative;
@@ -972,7 +973,7 @@ size*/
 }
 /*This is the input sight form.*/
 .inputsight {
-	height: 10px;/*This is the google map height*/
+	height: 10px;/*This is the GOOGLE map height*/
 	position: relative;
 	top: -480px;
 	left: 125px;
