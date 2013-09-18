@@ -18,7 +18,7 @@
 }
 #main-box li {
 	display: inline;
-	color: #FFFFFF;
+	color: #FFF;
 }
 #main-box li a {
 	text-decoration: none;
@@ -26,7 +26,7 @@
 	font-size: 12px;
 }
 #main-box li a:hover {
-	color: #00B4D5;/*When the mouse is over, the colour change to this*/
+	color: #FFF;/*When the mouse is over, the colour change to this*/
 }
 .main-title {
 	font-size: 15px;
@@ -50,7 +50,7 @@
 	color: white;
 	position: relative;
 	top: 5px;
-	left: 30px;
+	left: 25px;
 }
 /*///////////////////////////////////
 //////////// home page /////////////
@@ -743,12 +743,11 @@ size*/
 }
 #type_update {
 	position: relative;
-	top: 65px;
-	left: -108px;
+	left: -8px;
 }
 #mark_update {
 	position: relative;
-	top: 35px;
+	top: -25px;
 }
 /*This part is about the each label and input.*/
 #new_up {
@@ -774,45 +773,52 @@ size*/
 	left: 125px;
 }
 /*This is the submit button.*/
-.submit_button {
-	width: 122px;
-	height: 41px;
-	background-image: url(../image/loginpage-03.png);
-	background-repeat: no-repeat;
+.submit-button {
 	position: relative;
-	top: 69px;
-	left: 120px;
+	top: -20px;
+	left: -30px;
 }
-.submit_button a {
+.submit-button a {
 	text-decoration: none;
-	font-size: 20px;
-	color: white;
 	position: relative;
 	top: 5px;
 	left: 30px;
 }
-.submit_button a:hover {
+#submit_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	font-size: 20px;
+	color: white;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+}
+#submit_button:hover {
 	color: orange;/*When the mouse is over, the colour change to this*/
 }
 /*This is the cancel button.*/
-.cancel_button {
+.cancel-button{
+	position: relative;
+	top: -20px;
+	left: -10px;
+}
+#cancel_button {
 	width: 122px;
 	height: 41px;
-	background-image: url(../image/loginpage-03.png);
-	background-repeat: no-repeat;
-	position: relative;
-	top: 69px;
-	left: 130px;
-}
-.cancel_button a {
-	text-decoration: none;
+	border:none;
 	font-size: 20px;
 	color: white;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	
+}
+.cancel-button a {
+	text-decoration: none;	
 	position: relative;
 	top: 5px;
 	left: 30px;
 }
-.cancel_button a:hover {
+#cancel_button:hover {
 	color: orange;/*When the mouse is over, the colour change to this*/
 }
 /*///////////////////////////////////
@@ -843,6 +849,13 @@ size*/
 	color: white;
 }
 .ok_button a:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
+#goback a {
+	text-decoration: none;
+	color: #FFF;
+}
+#goback a:hover {
 	color: orange;/*When the mouse is over, the colour change to this*/
 }
 /*///////////////////////////////////

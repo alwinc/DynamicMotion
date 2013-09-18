@@ -27,12 +27,12 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li> <a href="#">Home</a></li>
+      <li> <a href="home.html">Home</a></li>
       <li><a href="#">Login</a></li>
       <li><a href="#">Register</a></li>
       <li><a href="#">MyAccount</a></li>
-      <li><a href="#">Pest Sight</a></li>
-      <li><a href="#">Weekly Report</a></li>
+      <li><a href="pestSightingIndex.html">Pest Sight</a></li>
+      <li><a href="managementReport.html">Weekly Report</a></li>
       <li class="current_page_item"><a href="#">Pest Register</a></li>
     </ul>
   </div>
@@ -72,8 +72,12 @@ if (/*@cc_on!@*/false) {
               <label for="mark_up"class="mark_up">Pest Marking</label>
               <input id = "mark_up" name="mark_up" required type="text" placeholder="Marking Number or Colour"/>
             </li>
-            <li class="submit_button" name="login_button"> <a href="confirmuserRegister.php">Submit</a> </li>
-            <li class="cancel_button" name="login_button"> <a href="cancelRegistration.html">Cancel</a> </li>
+            <li class="submit-button"> <a href="confirmuserRegister.php">
+              <input type="submit" id="submit_button" name="submit_button" value="Submit"/>
+              </a></li>
+            <li class="cancel-button"> <a href="cancelRegistration.html">
+              <input type="submit" id="cancel_button" name="cancel_button" value="Cancel"/>
+              </a></li>
           </ul>
         </form>
       </section>
