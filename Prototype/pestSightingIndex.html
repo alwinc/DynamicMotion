@@ -42,64 +42,57 @@ if (/*@cc_on!@*/false) {
   <!-- end .header-warp -->
   <div class="pest_sighting_index">
     <ul id="pest_sighting_index-bg" name="pest_sighting_index-bg">
-      <section class="pest-sighting-box">
-      <li><img src="image/loginpage-02.png"></li>
-      <li id="animal-title"> Select an animal: </li>
-      <div class="animal_wrapper">
-        <div class="feral_fox"><a href="#"><img src="image/sightpage-01.png"></a></div>
-        <div class="feral_dog"><a href="#"><img src="image/sightpage-02.png"></a></div>
-        <div class="feral_cat"><a href="#"> <img src="image/sightpage-03.png"></a></div>
-        <div class="feral_rat"><a href="#"> <img src="image/sightpage-04.png"></a> </div>
-        <div class="feral_rabbit"> <img src="image/sightpage-05.png"> </div>
-      </div>
+      <section class="googlemap cf">
+        <li><img src="image/loginpage-02.png"></li>
+        <li id="animal-title"> Select an animal: </li>
+        <div class="animal_wrapper">
+          <div class="feral_fox"><a href="#"><img src="image/sightpage-01.png"></a></div>
+          <div class="feral_dog"><a href="#"><img src="image/sightpage-02.png"></a></div>
+          <div class="feral_cat"><a href="#"> <img src="image/sightpage-03.png"></a></div>
+          <div class="feral_rat"><a href="#"> <img src="image/sightpage-04.png"></a> </div>
+          <div class="feral_rabbit"> <img src="image/sightpage-05.png"> </div>
+        </div>       
+        <!-- end animal button -->
+          <form name="google-map" action="#" onsubmit="showAddress(this.address.value); return false">
+            <div>
+              <p> Enter an address and you may drag the tack to reposition it. </p>
+              <p class="map-input-park">
+                <input type="text" style="width:350px" name="address" value="KU-RING-GAI Chase National Park" />
+                <input class="google-go" type="submit" value="Go" />
+              </p>
+              <div id="map_canvas"></div>
+              <div id="map-panel">
+                <input id="latlng" type="text" value="40.714224,  -73.961452">
+                <input class="google-gecode" type="submit" value="Reverse Geocode" onclick="codeLatLng()">
+              </div>
+            </div>
+            <div id="sighting-bottom">
+              <p class="sight-time">Your date and time </p>
+              <p id="my-datetime">
+                <input id="mydate" type="date" value="dd/mm/yyyy"/>
+                <input id="mytime" type="time" value="mm/hh"/>
+              </p>
+              <p class="sight-time-auto">Automatism date and time </p>
+              <p id="auto-datetime">
+                <input id="autodate" type="datatime-local" value="17/08/2013------11:25"/>
+               <a href="#"> <input id="autobutton" type="submit" value="Auto Time"/></a>
+              </p>
+              <p class="sight-inform">Additional Information </p>
+              <p>
+                <textarea name="sight-commond" cols="60" rows="4"></textarea>
+              </p>
+              <p class="sight-report">Report ID </p>
+              <p>
+                <input id="sight-id" type="text" value="Enter report ID"/>
+                <a href="#"><input id="autobutton" type="submit" value="Submit"/></a>
+              </p>
+            </div>
+          </form>
+        <!--end .googlemap--> 
+      </section>
     </ul>
-    </section>
-    </ul>
   </div>
-  <!-- end animal button -->
-  <div>
-    <section class="googlemap">
-      <form name="google-map" action="#" onsubmit="showAddress(this.address.value); return false">
-        <p id="map-title"> Enter an address and you may drag the tack to reposition it. </p>
-        <p class="map-input-park">
-          <input type="text" style="width:350px" name="address" value="KU-RING-GAI Chase National Park" />
-          <input class="google-go" type="submit" value="Go" />
-        </p>
-        <div id="map_canvas"></div>
-      </form>
-      <div id="map-panel">
-        <input id="latlng" type="text" value="40.714224,  -73.961452">
-        <input class="google-gecode" type="button" value="Reverse Geocode" onclick="codeLatLng()">
-      </div>
-    </section>
-  </div>
-  <!-- end .googlemap -->
-  <div>
-    <section class="inputsight">
-      <form name="input-sight">
-        <p class="sight-time">Your date and time </p>
-        <p id="my-datetime">
-          <input id="mydate" type="date" value="dd/mm/yyyy"/>
-          <input id="mytime" type="time" value="mm/hh"/>
-        </p>
-        <p class="sight-time-auto">Automatism date and time </p>
-        <p id="auto-datetime">
-          <input id="autodate" type="datatime-local" value="17/08/2013------11:25"/>
-          <input id="autobutton" type="button" value="Auto Time"/>
-        </p>
-        <p class="sight-inform">Additional Information </p>
-        <p>
-          <textarea name="sight-commond" cols="60" rows="4"></textarea>
-        </p>
-        <p class="sight-report">Report ID </p>
-        <p>
-          <input id="sight-id" type="text" value="Enter report ID"/>
-          <input id="autobutton" type="button" value="Submit"/>
-        </p>
-      </form>
-    </section>
-  </div>
-  <!-- end .inputsight -->
+  <!-- end .pest_sighting_index -->
   <div>
     <ul id="footer-text" name="footer-text">
       <li><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>

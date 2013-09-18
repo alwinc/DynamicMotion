@@ -797,7 +797,7 @@ size*/
 	color: orange;/*When the mouse is over, the colour change to this*/
 }
 /*This is the cancel button.*/
-.cancel-button{
+.cancel-button {
 	position: relative;
 	top: -20px;
 	left: -10px;
@@ -805,15 +805,14 @@ size*/
 #cancel_button {
 	width: 122px;
 	height: 41px;
-	border:none;
+	border: none;
 	font-size: 20px;
 	color: white;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
-	
 }
 .cancel-button a {
-	text-decoration: none;	
+	text-decoration: none;
 	position: relative;
 	top: 5px;
 	left: 30px;
@@ -834,23 +833,6 @@ size*/
 #message-layout {
 	display: inline;
 }
-.ok_button {
-	width: 122px;
-	height: 41px;
-	background-image: url(../image/loginpage-03.png);
-	background-repeat: no-repeat;
-	position: relative;
-	top: 10px;
-	left: -10px;
-}
-.ok_button a {
-	text-decoration: none;
-	font-size: 25px;
-	color: white;
-}
-.ok_button a:hover {
-	color: orange;/*When the mouse is over, the colour change to this*/
-}
 #goback a {
 	text-decoration: none;
 	color: #FFF;
@@ -867,25 +849,43 @@ size*/
 	position: relative;
 	top: -90px;
 }
-.animal_wrapper {
-	width: 314px;
-	height: 50px;
-	margin: 120px auto;
-}
-.pest-sighting-box {
+.googlemap {
 	width: 670px;
-	height: 1130px;/*the height for while form.*/
+	height: 1210px;/*the height for while form.*/
 	margin: 50px auto;
 	padding: 35px;
 	background-color: white;
 	position: relative;
 	top: 70px;
 }
-.pest-sighting-box ul {
+.googlemap input:not([type=submit]) {
+	padding: 5px;/*register form white border size*/
+	margin-right: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+.googlemap input[type=submit] {
+	border: none;
+	color: #fff;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.googlemap input[type=submit]:hover {
+	color: orange;
+}
+.googlemap p {
+	font-size: 14px;
+	font-weight: bold;
+	color: #00B4D5;
+}
+.googlemap a {
+	text-decoration: none;
+}
+.googlemap ul {
 	padding: 0;
 	margin: 0;
 }
-.pest-sighting-box li {
+.googlemap li {
 	display: inline;
 	float: left;
 }
@@ -896,6 +896,11 @@ size*/
 	position: relative;
 	top: 70px;
 	left: -240px;
+}
+.animal_wrapper {
+	width: 314px;
+	height: 50px;
+	margin: 120px auto;
 }
 /*This is the position of five animal map button.*/
 .feral_fox {
@@ -922,79 +927,25 @@ size*/
 	top: -396px;
 	left: 380px;
 }
-/*This is the part of google map.*/
-.googlemap {
-	height: 10px;/*This is the google map height*/
+/*This is top layout.*/
+sight-time {
 	position: relative;
-	top: -1000px;
-	left: 140px;
-}
-#map-title {
-	font-size: 14px;
-	font-weight: bold;
-	color: #00B4D5;
-	position: relative;
-	left: -15px;
-}
-.google-go {
-	height: 21px;
-	width: 45px;
-	border: none;
-	background-image: url(../image/loginpage-04.png);
-	background-repeat: no-repeat;
-	color: white;
-}
-.google-go:hover {
-	color: orange;
-}
-.google-gecode {
-	height: 23px;
-	width: 133px;
-	border: none;
-	color: white;
-	background-image: url(../image/loginpage-05.png);
-	background-repeat: no-repeat;
-}
-.google-gecode:hover {
-	color: orange;
-}
-.map-input-park {
-	position: relative;
-	left: -15px;
-}
-#autobutton {
-	height: 23px;
-	width: 79px;
-	border: none;
-	color: white;
-	background-image: url(../image/loginpage-06.png);
-	background-repeat: no-repeat;
-}
-#autobutton:hover {
-	color: orange;
+	left: -35px;
 }
 #map_canvas {
 	width: 600px;
-	height: 400px
+	height: 400px;
+	position: relative;
+	left: 15px;
 }
 #map-panel {
 	position: relative;
 	top: 15px;
+	left: 15px;
 }
-#latlng {
-	width: 350px;
-}
-/*This is the input sight form.*/
-.inputsight {
-	height: 10px;/*This is the GOOGLE map height*/
+#sighting-bottom {
 	position: relative;
-	top: -480px;
-	left: 125px;
-}
-.inputsight p {
-	font-size: 14px;
-	font-weight: bold;
-	color: #00B4D5;
+	top: 25px;
 }
 #mydate {
 	width: 167px;
@@ -1003,6 +954,29 @@ size*/
 	width: 167px;
 }
 #autodate {
+	width: 350px;
+}
+/*this is all of input box css*/
+
+.google-go {
+	height: 21px;
+	width: 45px;
+	background-image: url(../image/loginpage-04.png);
+	background-repeat: no-repeat;
+}
+.google-gecode {
+	height: 23px;
+	width: 133px;
+	background-image: url(../image/loginpage-05.png);
+	background-repeat: no-repeat;
+}
+#autobutton {
+	height: 23px;
+	width: 79px;
+	background-image: url(../image/loginpage-06.png);
+	background-repeat: no-repeat;
+}
+#latlng {
 	width: 350px;
 }
 #sight-id {
