@@ -81,7 +81,7 @@ if (/*@cc_on!@*/false) {
           <ul class="support-bg"id="support-qa" name="support-qa">
             <li>
               <p>Can't <a href="">log in </a>?</p>
-              <p>Learn how to <a href="" onclick="document.forms[0].submit();return false;">protent your account</a>!</p>
+              <p>Learn how to <a href="" onclick="document.forms[0].submit();return false;">protect your account</a>!</p>
               <p>Don't have an account yet?<a href=""> Sign up now </a>! </p>
             </li>
           </ul>
