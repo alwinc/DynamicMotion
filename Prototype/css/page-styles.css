@@ -4,13 +4,14 @@
 //////////// index page ////////////
 /////////////////////////////////*/
 .main-bg {
-	width: 968px;
+	width: 960px;
 	height: 500px;
 	background-image: url(../image/indexpage-01.png);
 	background-repeat: no-repeat;
 	position: relative;
 	top: -90px;
-	left: -4px;
+	left:-3px;
+
 }
 #main-box {
 	margin: 0 auto;
@@ -904,27 +905,91 @@ size*/
 }
 /*This is the position of five animal map button.*/
 .feral_fox {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-01.png);
+	background-repeat: no-repeat;
+	position: relative;
+	left: -140px;
+}
+.feral_fox:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-06.png);
+	background-repeat: no-repeat;
 	position: relative;
 	left: -140px;
 }
 .feral_dog {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-02.png);
+	background-repeat: no-repeat;
 	position: relative;
-	top: -98px;
+	top: -94px;
+	left: -10px;
+}
+.feral_dog:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-07.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -94px;
 	left: -10px;
 }
 .feral_cat {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-03.png);
+	background-repeat: no-repeat;
 	position: relative;
-	top: -196px;
+	top: -187px;
+	left: 120px;
+}
+.feral_cat:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-08.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -187px;
 	left: 120px;
 }
 .feral_rat {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-04.png);
+	background-repeat: no-repeat;
 	position: relative;
-	top: -296px;
+	top: -282px;
+	left: 250px;
+}
+.feral_rat:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-09.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -282px;
 	left: 250px;
 }
 .feral_rabbit {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-05.png);
+	background-repeat: no-repeat;
 	position: relative;
-	top: -396px;
+	top: -376px;
+	left: 380px;
+}
+.feral_rabbit:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-10.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -376px;
 	left: 380px;
 }
 /*This is top layout.*/
