@@ -10,8 +10,7 @@
 	background-repeat: no-repeat;
 	position: relative;
 	top: -90px;
-	left:-3px;
-
+	left: -3px;
 }
 #main-box {
 	margin: 0 auto;
@@ -828,14 +827,27 @@ size*/
 #message-bg {
 	width: 858px;/*the background width about the login form. the top one*/
 	background-color: #333;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
 	position: relative;
 	top: -40px;
 }
 #message-layout {
 	display: inline;
 }
+#message-title {
+	color: #00B4D5;
+	height: 60px;
+	font-size: 30px;
+}
+#message-text {
+	color: #FFF;
+	font-size: 20px;
+}
 #goback a {
 	text-decoration: none;
+	font-size: 14px;
 	color: #FFF;
 }
 #goback a:hover {
