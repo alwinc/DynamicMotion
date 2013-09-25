@@ -14,15 +14,16 @@ if (/*@cc_on!@*/false) {
 </script><!--<![endif]-->
 <body onLoad="Marquee4(),Mouse()">
 <div class="container">
-  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> </div>
-  <!-- end .header -->
-  <div class="accountbar">
-    <ul class="accountbar-bg" id="account-bar" name="account-bar">
-      <li class="support-lg">Welcome, Dane</li>
-      <li class="support-ac"><a href="#">MyAccount</a></li>
-      <li class="support-sp"><a href="#">Support</a></li>
-      <li class="support-lo"><a href="index.html">Log off</a></li>
-    </ul>
+  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
+    <!-- end .header -->
+    <div class="accountbar">
+      <ul class="accountbar-bg" id="account-bar" name="account-bar">
+        <li class="support-lg">Welcome, Dane</li>
+        <li class="support-ac"><a href="#">MyAccount</a></li>
+        <li class="support-sp"><a href="#">Support</a></li>
+        <li class="support-lo"><a href="index.html">Log off</a></li>
+      </ul>
+    </div>
   </div>
   <!-- end .accountbar -->
   <div class="header-wrap">
@@ -62,31 +63,13 @@ if (/*@cc_on!@*/false) {
       </div>
     </ul>
   </div>
-  <!-- end .image-warp --> 
-  <!--<script>
-		var speed=20//the speed.
-		var colee_right2=document.getElementById("colee_right2");
-		var colee_right1=document.getElementById("colee_right1");
-		var colee_right=document.getElementById("colee_right");
-		colee_right2.innerHTML=colee_right1.innerHTML
-		function Marquee4(){
-			if(colee_right.scrollLeft<=0)
-				colee_right.scrollLeft+=colee_right2.offsetWidth
-			else{
-				colee_right.scrollLeft--
-			}
-		}
-		var MyMar4=setInterval(Marquee4,speed)
-		colee_right.onmouseover=function() {clearInterval(MyMar4)}
-		colee_right.onmouseout=function() {MyMar4=setInterval(Marquee4,speed)}
-	</script> -->
-  <!-- end .image-slider-script -->
+  <!-- end .image-warp -->
   <div class="middle-wrap">
     <ul class="group" id="header-two" name="header-two">
       <li><a href="managementReport.html"><img src="image/websignlayout-15.png"></a></li>
       <li><a href="#"><img src="image/websignlayout-16.png"></a></li>
       <li><a href="pestSightingIndex.html"><img src="image/websignlayout-17.png"></a></li>
-      <li><a href="pestuserRegister.php"><img src="image/websignlayout-18.png"></a></li>
+      <li><a href="pestRegister.html"><img src="image/websignlayout-18.png"></a></li>
       <li id="readme"><a href="#">Read me</a></li>
       <li id="readme"><a href="#">Read me</a></li>
       <li id="readme"><a href="#">Read me</a></li>
@@ -96,43 +79,40 @@ if (/*@cc_on!@*/false) {
   <!-- end .middle-wrap -->
   <div class="news">
     <ul class="news-bg" id="news-text" name="news-text">
-      <div style="height:105px">
-        <li class="news-image-01"><img src="image/websignlayout-21.png"></li>
+      <ol class="news-image-01">
+      </ol>
+      <li>
         <label class="news-label-01"> How to help? </label>
-        <ol class="news-text-01">
-          <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.﻿</p>
-        </ol>
+        <p class="news-text-01">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.﻿</p>
         <label class="news-label-02">Award Winner!</label>
-        <ol class="news-text-02">
-          <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.</p>
-        </ol>
+        <p class="news-text-02">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.</p>
         <label class="news-label-03">Winston Yang</label>
-        <ol class="news-text-03">
-          <p> I'm a web developer. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.</p>
-        </ol>
-      </div>
-      <div style="height:105px">
-        <li class="news-image-02"><img src="image/wolf.jpg"> </li>
-      </div>
-      <div style="height:105px">
+        <p class="news-text-03"> I'm a web developer. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.</p>
+      </li>
+      <ol class="news-image-02">
+      </ol>
+      <li>
         <label class="news-label-04">Future Planning</label>
         <ol class="news-text-04">
           <p>Methods for learning about the future have been in use by businesses for decades, but the process was simply too complex for most individuals. The Personal Futures Network introduces some new, easily understood approaches that will help you to think and plan like a futurist. You will be able learn about and plan for your personal futures.</p>
           <p>Think like a futurist? What does that really mean, think like a futurist? Well, each futurist may have some different thoughts, but generally futurists think about longer term futures, usually 10 or more years ahead. Futurists believe that the future is not predetermined, but that several futures are possible.</p>
         </ol>
-        <li class="news-image-03"><img src="image/websignlayout-22.png"></li>
-      </div>
+      </li>
+      <ol class="news-image-03">
+      </ol>
     </ul>
   </div>
   <!-- end .news -->
-  <div>
+  <div class="footer-bg">
     <ul id="footer-text" name="footer-text">
-      <li><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
-      <ol>
+      <p class="footer-title"><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></p>
+      <ol class="footer-copyright">
         ©2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
       </ol>
+      <ol class="footer-img">
+        <img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png">
+      </ol>
     </ul>
-    <li class="footer-img"><img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png"></li>
   </div>
 </div>
 <!-- end .container -->

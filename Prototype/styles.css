@@ -34,12 +34,12 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 /* ~~ this fixed width container surrounds the other divs ~~ */
 .container {
 	width: 960px;
-	height: 1390px;
+	height: 1490px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-index {
 	width: 960px;
-	height: 565px;
+	height: 575px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-login {
@@ -54,42 +54,39 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .container-report {
 	width: 960px;
-	height: 1095px;
+	height: 1105px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-pupdate {
 	width: 960px;
-	height: 950px;
+	height: 960px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-button {
 	width: 960px;
-	height: 510px;
+	height: 520px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-pestSightIndex {
 	width: 960px;
-	height: 1680px;
+	height: 1690px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
 .header {
 	background-color: #FFF;
-	height: 115px;
+	height: 165px;
 }
 .index {
-	width: 950px;/*the background width about the news part. the bottom one*/
-	height: 410px;
+	width: 955px;/*the background width about the news part. the bottom one*/
+	height: 515px;
 	background-color: #333;
-	position: relative;
-	left: -55px;
+	margin-left: -50px;
 }
 .news {
-	padding: 10px 0;
 	width: 858px;/*the background width about the news part. the bottom one*/
 	background-color: #333;
-	position: relative;
-	left: 33px;
+	margin-left: 33px;
 }
 .login {
 	padding: 10px 0;

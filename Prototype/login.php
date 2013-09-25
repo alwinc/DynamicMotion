@@ -17,15 +17,16 @@ if (/*@cc_on!@*/false) {
 </script><!--<![endif]-->
 <body>
 <div class="container-login">
-  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> </div>
-  <!-- end .header -->
-  <div class="accountbar">
-    <ul class="accountbar-bg" id="account-bar" name="account-bar">
-      <li class="support-hm"><a href="index.html">Home</a></li>
-      <li class="support-lg"><a href="login.php">Login</a> or <a href="userRegister.php">Register</a></li>
-      <li class="support-ac"><a href="#">MyAccount</a></li>
-      <li class="support-sp"><a href="#">Support</a></li>
-    </ul>
+  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
+    <!-- end .header -->
+    <div class="accountbar">
+      <ul class="accountbar-bg" id="account-bar" name="account-bar">
+        <li class="support-hm"><a href="index.html">Home</a></li>
+        <li class="support-lg"><a href="login.php">Login</a> or <a href="userRegister.php">Register</a></li>
+        <li class="support-ac"><a href="#">MyAccount</a></li>
+        <li class="support-sp"><a href="#">Support</a></li>
+      </ul>
+    </div>
   </div>
   <!-- end .accountbar -->
   <div class="header-wrap">

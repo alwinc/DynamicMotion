@@ -8,12 +8,10 @@
 	height: 500px;
 	background-image: url(../image/indexpage-01.png);
 	background-repeat: no-repeat;
-	position: relative;
-	top: -90px;
-	left: -3px;
+	margin-top: 20px;
+	margin-left: -3px;
 }
 #main-box {
-	margin: 0 auto;
 	list-style: none;
 }
 #main-box li {
@@ -60,9 +58,8 @@
 	width: 440px;
 	height: 40px;
 	background-color: #8CC63E;
-	position: relative;
-	top: -110px;
-	left: 465px;
+	margin-top: -165px;
+	margin-left: 465px;
 }
 *:first-child+html .accountbar-bg {
 	zoom: 1;
@@ -160,18 +157,15 @@
 }
 /*This is the part of middle bar*/
 .middle-wrap {
-	margin: 0px auto;
 	border-top: none;
 	border-bottom: 2px solid white;
 	background-image: url(../image/websignlayout-19.png);
 	background-repeat: no-repeat;
-	position: relative;
-	top: -52px;
+	margin-top: -52px;
 }
 #header-two {
 	margin: 0 auto;
 	list-style: none;
-	position: relative;
 	width: 924px;
 	height: 212px;
 }
@@ -184,7 +178,8 @@
 	padding: 15px 60px 4px 10px;
 }
 #readme a {
-	color: white;
+	height: 25px;
+	color: #FFF;
 	font-size: 15px;
 	display: block;
 	float: left;
@@ -198,41 +193,32 @@
 /*/*This is the part of news*/
 .news-bg {
 	width: 858px;
-	height: 360px;
+	height: 580px;
 	background-color: #333;
-	position: relative;
-	top: -104px;/*It's the top position about the black border.*/
+	margin-top: -42px;/*It's the top position about the black border.*/
 }
 #news-text {
-	margin: 0 auto;
 	list-style: none;
+	float: left;
+}
+#news-text div {
+	width: 300px;
 }
 #news-text li {
 	display: inline;
 }
-#news-text li p {
+#news-text p {
+	width: 210px;
 	font-family: Verdana, Geneva, sans-serif;
-	color: white;
+	color: #FFF;
 	text-decoration: none;
-	padding-right: 280px;
-	padding-left: 280px;
-	text-align: justify;
-	font-size: 8px;
-	font-size: 12px!important;/*Mozilla Firefox layout only!*/
-}
-#news-text ol p {
-	font-family: Verdana, Geneva, sans-serif;
-	color: white;
-	text-decoration: none;
-	padding-right: 280px;
-	padding-left: 280px;
 	text-align: justify;
 	font-size: 8px;
 	font-size: 12px!important;/*Mozilla Firefox layout only!*/
 }
 #news-text label {
-	height: 90px;
-	width: 130px;
+	height: 20px;
+	width: 120px;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 13px;
 	font-weight: bold;
@@ -240,58 +226,59 @@
 	text-align: left;
 }
 .news-image-01 { /*bar "Support to the user"*/
-	position: relative;
-	top: 10px;
-	left: -30px;
+	width: 231px;
+	height: 57px;
+	background-image: url(../image/websignlayout-21.png);
+	background-repeat: no-repeat;
+	margin-top: 30px;
+	margin-left: -30px;
 }
 .news-label-01 { /*label "How to help"*/
-	position: relative;
-	top: 20px;
-	left: 30px;
+	margin-top: 20px;
+	margin-left: 50px;
 }
 .news-text-01 {
-	position: relative;
-	top: -40px;
-	left: -250px;
+	margin-top: 10px;
+	margin-left: 40px;
 }
 .news-label-02 { /*label "Award winner!"*/
-	position: relative;
-	top: -40px;
-	left: 30px;
+	margin-top: 15px;
+	margin-left: 50px;
 }
 .news-text-02 {
-	position: relative;
-	top: -100px;
-	left: -250px;
+	margin-top: 10px;
+	margin-left: 40px;
 }
 .news-label-03 {  /*label "Winston Yang!"*/
-	position: relative;
-	top: -90px;
-	left: 30px;
+	margin-left: 50px;
 }
 .news-text-03 {
-	position: relative;
-	top: -150px;
-	left: -250px;
+	margin-top: 10px;
+	margin-left: 40px;
 }
 .news-image-02 { /*image "Wolf and Moon"*/
-	position: relative;
-	left: 340px;
+	height: 300px;
+	width: 200px;
+	background-image: url(../image/wolf.jpg);
+	background-repeat: no-repeat;
+	margin-top: -380px;
+	margin-left: 340px;
 }
 .news-label-04 { /*label "Future Planning!"*/
-	position: relative;
-	top: -170px;
-	left: 550px;
+	margin-top: -420px;
+	margin-left: 595px;
 }
 .news-text-04 {
-	position: relative;
-	top: -210px;
-	left: 270px;
+	margin-top: 10px;
+	margin-left: 580px;
 }
 .news-image-03 { /*bar "Read by Future"*/
-	position: relative;
-	top: -200px;
-	left: 680px;
+	width: 231px;
+	height: 57px;
+	background-image: url(../image/websignlayout-22.png);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-left: 655px;
 }
 /*This is the part of footer*/
 #footer-text {

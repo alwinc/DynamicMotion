@@ -14,15 +14,16 @@ if (/*@cc_on!@*/false) {
 </script><!--<![endif]-->
 <body>
 <div class="container-register">
-  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> </div>
-  <!-- end .header -->
-  <div class="accountbar">
-    <ul class="accountbar-bg" id="account-bar" name="account-bar">
-      <li class="support-hm"><a href="index.html">Home</a></li>
-      <li class="support-lg"><a href="login.php">Login</a> or <a href="userRegister.php">Register</a></li>
-      <li class="support-ac"><a href="#">MyAccount</a></li>
-      <li class="support-sp"><a href="#">Support</a></li>
-    </ul>
+  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
+    <!-- end .header -->
+    <div class="accountbar">
+      <ul class="accountbar-bg" id="account-bar" name="account-bar">
+        <li class="support-hm"><a href="index.html">Home</a></li>
+        <li class="support-lg"><a href="login.php">Login</a> or <a href="userRegister.php">Register</a></li>
+        <li class="support-ac"><a href="#">MyAccount</a></li>
+        <li class="support-sp"><a href="#">Support</a></li>
+      </ul>
+    </div>
   </div>
   <!-- end .accountbar -->
   <div class="header-wrap">
@@ -46,34 +47,34 @@ if (/*@cc_on!@*/false) {
               <h4>Account Creation</h4>
             </li>
             <li class="error" id="issue-massage"name="issue-massagee">
-					<p>
-						<?php	
+              <p>
+                <?php	
 						//display the error msg if the login credentials are wrong!
 						if(isset($_GET['error']))
 						{
 							echo 'Email already registered!';
 						}
 						?>
-					</p>
+              </p>
             </li>
             <li id="name_box">
               <label for="user_name_signup" class="u_name" data-icon="u">Name</label>
               <input id="F_name_signup" name="F_name_signup" required = "required"type="text" placeholder="First Name" required/>
               <input id="L_name_signup" name="L_name_signup" required = "required"type="text" placeholder="Last Name" required/>
             </li>
-            <li id="mail_box">
-			  <script src="js/emailConfirmation.js" type="text/javascript"></script>
+            <li id="mail_box"> 
+              <script src="js/emailConfirmation.js" type="text/javascript"></script>
               <label for="email_signup" class="u_mail" data-icon="e" >E-mail Address</label>
               <input id="email_signup" name="email_signupp" required = "required" type="email" placeholder="Enter E-mail Address" required/>
               <input id="email_signup_confirm" name="email_signup_confirm" required = "required" type="email" placeholder="Re-Enter E-mail Address" required/>
-			  <p id="email-validate-status"></p>
+              <p id="email-validate-status"></p>
             </li>
-            <li id="password_box">
-			  <script src="js/passwordConfirmation.js" type="text/javascript"></script>
+            <li id="password_box"> 
+              <script src="js/passwordConfirmation.js" type="text/javascript"></script>
               <label for="password_signup" class="u_password" data-icon="p">Your password </label>
               <input id="password_signup" name="password_signup" required = "required" type="password" placeholder="Enter Password" required/>
               <input id="password_signup_confirm" name="password_signup_confirm" required = "required" type="password" placeholder="Re-Enter Password" required/>
-			  <p id="password-validate-status"></p>
+              <p id="password-validate-status"></p>
             </li>
             <li id="dob">
               <label for="dob" class="u_dob" data-icon="dob">Date of Birth</label>
@@ -109,7 +110,7 @@ if (/*@cc_on!@*/false) {
   <!-- end .register -->
   <div>
     <ul id="footer-text" name="footer-text">
-      <li><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
+      <li><a>Blog</a> | <a>Support</a> | <a>About Us</a> | <a>Contact Us</a> | <a>Site Map</a> | <a>News Letter</a> | <a>Join Us</a> | <a>Disclaimer</a> | <a>Policies</a></li>
       <ol>
         ©2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
       </ol>
