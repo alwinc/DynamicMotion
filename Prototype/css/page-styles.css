@@ -707,10 +707,10 @@ size*/
 ///////Pest Detail register ////////
 /////////////////////////////////*/
 #show-id {
-	color:red;
-	position:relative;
-	top:-5px;
-	left:-15px;
+	color: red;
+	position: relative;
+	top: -5px;
+	left: -15px;
 }
 #source_register {
 	position: relative;
@@ -1135,15 +1135,13 @@ sight-time {
 .trackingform input[type=submit] {
 	border: none;
 	color: #fff;
-	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 .trackingform input:not([type=submit]) {
 	padding: 10px;/*register form white border size*/
- width:
- margin-right: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.3);
+	width: 480px;
+	margin-right: 20px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
 	border-radius: 3px;
-	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
 }
 /*inside the tracking page*/
@@ -1159,13 +1157,13 @@ sight-time {
 }
 .search_result {
 	position: relative;
-	top: 50px;
+	top: 40px;
 }
 /*submit button in search page*/
 .submit-search {
 	position: relative;
-	top: 5px;
-	left: 30px;
+	top: 15px;
+	left: -30px;
 }
 .submit-search a {
 	text-decoration: none;
@@ -1176,7 +1174,7 @@ sight-time {
 #submit_button_search {
 	width: 122px;
 	height: 41px;
-	border: none;
+	/*border: none;*/
 	font-size: 20px;
 	color: white;
 	background-image: url(../image/loginpage-03.png);
