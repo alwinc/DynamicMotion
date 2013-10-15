@@ -656,17 +656,17 @@ size*/
 	top: 35px;
 	left: -15px;
 }
-#email-validate-status{
-	color:red;
+#email-validate-status {
+	color: red;
 	position: relative;
 	top: -250px;
-	left:124px;
+	left: 124px;
 }
-#password-validate-status{
-	color:green;	
+#password-validate-status {
+	color: green;
 	position: relative;
 	top: -22px;
-	left:294px;
+	left: 294px;
 }
 /*///////////////////////////////////
 //////////weekly report/ ///////////
@@ -702,6 +702,52 @@ size*/
 	position: relative;
 	top: 75px;
 	left: 90px;
+}
+/*///////////////////////////////////
+///////Pest Detail register ////////
+/////////////////////////////////*/
+#show-id {
+	color:red;
+	position:relative;
+	top:-5px;
+	left:-15px;
+}
+#source_register {
+	position: relative;
+	top: -10px;
+}
+#type_register {
+	position: relative;
+	top: -35px;
+	left: -8px;
+}
+#mark_register {
+	position: relative;
+	top: -55px;
+}
+/*This is the submit button.*/
+.submit-button-register {
+	position: relative;
+	top: -45px;
+	left: -30px;
+}
+.submit-button-register a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+/*This is the cancel button*/
+.cancel-button-register {
+	position: relative;
+	top: -45px;
+	left: -10px;
+}
+.cancel-button-register a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
 }
 /*///////////////////////////////////
 ////////Pest Detail update /////////
@@ -801,6 +847,12 @@ size*/
 	top: -20px;
 	left: -10px;
 }
+.cancel-button a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
 #cancel_button {
 	width: 122px;
 	height: 41px;
@@ -809,12 +861,6 @@ size*/
 	color: white;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
-}
-.cancel-button a {
-	text-decoration: none;
-	position: relative;
-	top: 5px;
-	left: 30px;
 }
 #cancel_button:hover {
 	color: orange;/*When the mouse is over, the colour change to this*/
@@ -1066,4 +1112,76 @@ sight-time {
 	background-color: #333;
 	position: relative;
 	top: -90px;
+}
+.trackingform {
+	width: 600px;
+	height: 490px;
+	margin: 50px auto;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+	top: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.trackingform ul {
+	padding: 0;
+	margin: 0;
+}
+.trackingform li {
+	display: inline;
+}
+.trackingform input[type=submit] {
+	border: none;
+	color: #fff;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.trackingform input:not([type=submit]) {
+	padding: 10px;/*register form white border size*/
+ width:
+ margin-right: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+/*inside the tracking page*/
+#search_bar {
+}
+.pest_search {
+	position: relative;
+	top: 20px;
+}
+#search_input {
+	position: relative;
+	top: 10px;
+}
+.search_result {
+	position: relative;
+	top: 50px;
+}
+/*submit button in search page*/
+.submit-search {
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+.submit-search a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+#submit_button_search {
+	width: 122px;
+	height: 41px;
+	border: none;
+	font-size: 20px;
+	color: white;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+}
+#submit_button_search:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
 }

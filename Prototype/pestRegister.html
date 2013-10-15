@@ -46,11 +46,9 @@ if (/*@cc_on!@*/false) {
             <li><img src="image/loginpage-02.png"></li>
             <li id = "id_update">
               <label for="pest_id" class="pest_id">Pest ID</label>
-              <input id = "new_up" name="pest_id_new" required type="text" placeholder="Enter New Pest ID" />
-              </p>
-              <input id = "re_new_up" name="pest_id_confirm" required type="text" placeholder="Re-Enter New Pest ID" />
+              <p id="show-id">TBRC12865</p>
             </li>
-            <li id = "source_update" >
+            <li id = "source_register" >
               <label for="source_up" class="source_up">Source of ID</label>
               <select name="source_up" id = "source_up">
                 <option value ="None" selected = "selected">None</option>
@@ -58,7 +56,7 @@ if (/*@cc_on!@*/false) {
                 <option value ="Microchip">Microchip</option>
               </select>
             </li>
-            <li id = "type_update">
+            <li id = "type_register">
               <label for="type_up" class="type_up">Pest Type</label>
               <select name="type_up" id = "type_up">
                 <option value ="None" selected = "selected">None</option>
@@ -69,14 +67,14 @@ if (/*@cc_on!@*/false) {
                 <option value ="Red_Fox">Red Fox</option>
               </select>
             </li>
-            <li id = "mark_update">
+            <li id = "mark_register">
               <label for="mark_up"class="mark_up">Pest Marking</label>
               <input id = "mark_up" name="mark_up" required type="text" placeholder="Marking Number or Colour"/>
             </li>
-            <li class="submit-button"> <a href="confirmuserRegister.php">
+            <li class="submit-button-register"> <a href="confirmuserRegister.php">
               <input type="submit" id="submit_button" name="submit_button" value="Submit"/>
               </a></li>
-            <li class="cancel-button"> <a href="cancelRegistration.html">
+            <li class="cancel-button-register"><a href="cancelRegistration.html">
               <input type="submit" id="cancel_button" name="cancel_button" value="Cancel"/>
               </a></li>
           </ul>
