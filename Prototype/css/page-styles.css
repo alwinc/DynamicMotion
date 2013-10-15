@@ -656,6 +656,18 @@ size*/
 	top: 35px;
 	left: -15px;
 }
+#email-validate-status{
+	color:red;
+	position: relative;
+	top: -250px;
+	left:124px;
+}
+#password-validate-status{
+	color:green;	
+	position: relative;
+	top: -22px;
+	left:294px;
+}
 /*///////////////////////////////////
 //////////weekly report/ ///////////
 /////////////////////////////////*/
@@ -1045,4 +1057,13 @@ sight-time {
 }
 #sight-id {
 	width: 350px;
+}
+/*///////////////////////////////////
+///////// pest tracking ////////////
+/////////////////////////////////*/
+#Pest_track-bg {
+	width: 858px;/*the background width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -90px;
 }
