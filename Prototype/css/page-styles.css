@@ -1,15 +1,65 @@
 @charset "utf-8";
 /* CSS Document */
 /*///////////////////////////////////
-////////// account header //////////
+//////////// index page ////////////
 /////////////////////////////////*/
+.main-bg {
+	width: 960px;
+	height: 500px;
+	background-image: url(../image/indexpage-01.png);
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-left: -3px;
+}
+#main-box {
+	list-style: none;
+}
+#main-box li {
+	display: inline;
+	color: #FFF;
+}
+#main-box li a {
+	text-decoration: none;
+	color: #999;
+	font-size: 12px;
+}
+#main-box li a:hover {
+	color: #FFF;/*When the mouse is over, the colour change to this*/
+}
+.main-title {
+	font-size: 15px;
+	position: relative;
+	top: 195px;
+	left: 440px;
+	font-weight: bold;
+}
+.main_siteup {
+	width: 122px;
+	height: 41px;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 150px;
+	left: 750px;
+}
+.main_siteup a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	position: relative;
+	top: 5px;
+	left: 25px;
+}
+/*///////////////////////////////////
+//////////// home page /////////////
+/////////////////////////////////*/
+/*This is the part of account header*/
 .accountbar {
 	width: 440px;
 	height: 40px;
 	background-color: #8CC63E;
-	position: relative;
-	top: -110px;
-	left: 465px;
+	margin-top: -165px;
+	margin-left: 465px;
 }
 *:first-child+html .accountbar-bg {
 	zoom: 1;
@@ -39,11 +89,9 @@
 	color: #FFFFFF;
 }
 #account-bar li a:hover {
-	color: #00B4D5;
+	color: #00B4D5;/*When the mouse is over, the color change to this*/
 }
-/*///////////////////////////////////
-////////// menu header /////////////
-/////////////////////////////////*/
+/*This is the part of menu header*/
 .header-wrap {
 	margin: 0px auto;
 	border-top: none;
@@ -83,14 +131,12 @@
 	text-transform: uppercase;
 }
 #header-one li a:hover {
-	color: #00B4D5;
+	color: white;/*When the mouse is over, the color change to this*/
 }
 .current_page_item a {
 	color: white !important;
 }
-/*///////////////////////////////////
-//////////the image bar/////////////
-/////////////////////////////////*/
+/*This is the part of image bar*/
 .image-wrap {
 	position: relative;
 	height: 500px;
@@ -104,22 +150,22 @@
 	top: 30px;
 	left: 30px;
 }
-/*///////////////////////////////////
-//////////the middle bar////////////
-/////////////////////////////////*/
+#colee_right {
+	overflow: hidden;
+	width: 800px;
+	height: 450px;
+}
+/*This is the part of middle bar*/
 .middle-wrap {
-	margin: 0px auto;
 	border-top: none;
 	border-bottom: 2px solid white;
 	background-image: url(../image/websignlayout-19.png);
 	background-repeat: no-repeat;
-	position: relative;
-	top: -52px;
+	margin-top: -52px;
 }
 #header-two {
 	margin: 0 auto;
 	list-style: none;
-	position: relative;
 	width: 924px;
 	height: 212px;
 }
@@ -131,8 +177,9 @@
 	float: left;
 	padding: 15px 60px 4px 10px;
 }
-#header-two li a {
-	color: white;
+#readme a {
+	height: 25px;
+	color: #FFF;
 	font-size: 15px;
 	display: block;
 	float: left;
@@ -140,50 +187,38 @@
 	text-decoration: none;
 	text-transform: uppercase;
 }
-#header-two li a:hover {
-	/* When the mouse move on that button, the backgroud color of button will be change it*/
-	color: #00B4D5;
+#readme a:hover {
+	color: #00B4D5;/*When the mouse is over, the colour change to this*/
 }
-/*///////////////////////////////////
-////////////the news////////////////
-/////////////////////////////////*/
+/*/*This is the part of news*/
 .news-bg {
 	width: 858px;
-	height: 360px;
+	height: 580px;
 	background-color: #333;
-	position: relative;
-	top: -104px;/*It's the top position about the black border.*/
+	margin-top: -42px;/*It's the top position about the black border.*/
 }
 #news-text {
-	margin: 0 auto;
 	list-style: none;
+	float: left;
+}
+#news-text div {
+	width: 300px;
 }
 #news-text li {
 	display: inline;
 }
-#news-text li p {
+#news-text p {
+	width: 210px;
 	font-family: Verdana, Geneva, sans-serif;
-	color: white;
+	color: #FFF;
 	text-decoration: none;
-	padding-right: 280px;
-	padding-left: 280px;
-	text-align: justify;
-	font-size: 8px;
-	font-size: 12px!important;/*Mozilla Firefox layout only!*/
-}
-#news-text ol p {
-	font-family: Verdana, Geneva, sans-serif;
-	color: white;
-	text-decoration: none;
-	padding-right: 280px;
-	padding-left: 280px;
 	text-align: justify;
 	font-size: 8px;
 	font-size: 12px!important;/*Mozilla Firefox layout only!*/
 }
 #news-text label {
-	height: 90px;
-	width: 130px;
+	height: 20px;
+	width: 120px;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 13px;
 	font-weight: bold;
@@ -191,62 +226,61 @@
 	text-align: left;
 }
 .news-image-01 { /*bar "Support to the user"*/
-	position: relative;
-	top: 10px;
-	left: -30px;
+	width: 231px;
+	height: 57px;
+	background-image: url(../image/websignlayout-21.png);
+	background-repeat: no-repeat;
+	margin-top: 30px;
+	margin-left: -30px;
 }
 .news-label-01 { /*label "How to help"*/
-	position: relative;
-	top: 20px;
-	left: 30px;
+	margin-top: 20px;
+	margin-left: 50px;
 }
 .news-text-01 {
-	position: relative;
-	top: -40px;
-	left: -250px;
+	margin-top: 10px;
+	margin-left: 40px;
 }
 .news-label-02 { /*label "Award winner!"*/
-	position: relative;
-	top: -40px;
-	left: 30px;
+	margin-top: 15px;
+	margin-left: 50px;
 }
 .news-text-02 {
-	position: relative;
-	top: -100px;
-	left: -250px;
+	margin-top: 10px;
+	margin-left: 40px;
 }
 .news-label-03 {  /*label "Winston Yang!"*/
-	position: relative;
-	top: -90px;
-	left: 30px;
+	margin-left: 50px;
 }
 .news-text-03 {
-	position: relative;
-	top: -150px;
-	left: -250px;
+	margin-top: 10px;
+	margin-left: 40px;
 }
 .news-image-02 { /*image "Wolf and Moon"*/
-	position: relative;
-	left: 340px;
+	height: 300px;
+	width: 200px;
+	background-image: url(../image/wolf.jpg);
+	background-repeat: no-repeat;
+	margin-top: -380px;
+	margin-left: 340px;
 }
 .news-label-04 { /*label "Future Planning!"*/
-	position: relative;
-	top: -170px;
-	left: 550px;
+	margin-top: -420px;
+	margin-left: 595px;
 }
 .news-text-04 {
-	position: relative;
-	top: -210px;
-	left: 270px;
+	margin-top: 10px;
+	margin-left: 580px;
 }
 .news-image-03 { /*bar "Read by Future"*/
-	position: relative;
-	top: -200px;
-	left: 680px;
+	width: 231px;
+	height: 57px;
+	background-image: url(../image/websignlayout-22.png);
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-left: 655px;
 }
-/*///////////////////////////////////
-////////////the footer//////////////
-/////////////////////////////////*/
+/*This is the part of footer*/
 #footer-text {
 	margin: 0 auto;
 	padding: 0;
@@ -281,19 +315,14 @@
 	list-style: none;
 	left: 270px!important;
 }
-/*///////////////////////////////////
-/////////// logo header ////////////
-/////////////////////////////////*/
+/* This is logo header */
 .myHeader {
 	text-align: center;
 	font: normal Helvetica, Arial, sans-serif;
 	color: #0099CC;
 }
-.test {
-	color: #00B4D5;
-}
 /*///////////////////////////////////
-//////////// the login /////////////
+//////////// login page ////////////
 /////////////////////////////////*/
 
 label {
@@ -301,12 +330,6 @@ label {
 	color: #00B4D5;
 	font-family: Verdana, Geneva, sans-serif;
 	height: 45px;
-}
-.user_mail {
-	font-size: 25px;/*the size about the user_mail label*/
-}
-.password {
-	font-size: 25px;/*the size about the password label*/
 }
 #loginform-bg {
 	width: 858px;/*the backgroud width about the login form. the top one*/
@@ -328,8 +351,8 @@ label {
 	outline: 0;
 }
 .loginform {
-	width: 370px;
-	height: 470px;
+	width: 400px;
+	height: 490px;
 	margin: 50px auto;
 	padding: 35px;
 	background-color: white;
@@ -345,7 +368,6 @@ label {
 }
 .loginform li {
 	display: inline;
-	float: left;
 }
 .loginform input:not([type=submit]) {
 	padding: 10px;/*loginform white border 
@@ -373,9 +395,49 @@ size*/
 	border-radius: 3px;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
+#email-input {
+	position: relative;
+	left: -13px;
+}
+#password_input {
+	position: relative;
+	left: -13px;
+}
+.user_mail {
+	font-size: 25px;/*the size about the user_mail label*/
+}
+.password {
+	font-size: 25px;/*the size about the password label*/
+}
+/* The login button part*/
+.login-button:nth-of-type(1n) {	/*IE9-10*/
+	position: relative;
+	top: -15px;
+	left: -33px;
+	top: 10px\9;
+}
+.login-button a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+#login_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	font-size: 22px;
+	color: white;
+}
+#login_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
+/*This is about the support.*/
 .support-bg {
 	position: relative;
-	top: -40px;
+	top: -60px;
 	left: -10px;
 }
 #support-qa {
@@ -385,62 +447,45 @@ size*/
 #support-qa li {
 	display: inline;
 }
-#support-qa h5 {
-	font-size: 0.83em;
-	margin: 1.67em 0;
+#support-qa p {
+	font-size: 15px;
+	font-weight: bold;
+	margin: 12px 0;
 }
-#support-qa h5 a {
+#support-qa p a {
 	color: #00B4D5;
 	text-decoration: none;
 }
-#support-qa h5 a:hover {
-	color: #999;
-}
-/* The login button part*/
-.login_button:nth-of-type(1n) {/*IE9-10*/
-	width: 120px;
-	height: 41px;
-	background-image: url(../image/loginpage-03.png);
-	background-repeat: no-repeat;
-	position: relative;
-	top: 5px;
-	top: 10px\9;
-}
-.login_button a {
-	text-decoration: none;
-	font-size: 22px;
-	color: white;
-	margin: 15px 30px 30px 15px;
-}
-.login_button a:hover {
-	color: orange;
+#support-qa p a:hover {
+	color: #999;/*When the mouse is over, the colour change to this*/
 }
 /*error massage part*/
 .error {
 	font-size: 12px;
 	color: red;
 }
-#issue-massage {
-/* more code in future*/
+/*check box to keep the password and user name in browser*/
+.login-check {
+	position: relative;
+	top: -30px;
+	left: 95px;
 }
-/*checkbox to keep the password and username in browser*/
-
 #checkboxG1:nth-of-type(1n) {
-	position: relative;/*the check box*/
 	width: 20px;
 	border: hidden;
-	top: 8px;
-	left: 70px;
+	position: relative;/*the check box*/
+	top: 14px;
+	left: -30px;
 	left: 65px\9;
 }
 .checkbox:nth-of-type(1n) {
-	position: relative;/*label about the checkbox*/
-	top: -15px;
+	position: relative;/*label about the check box*/
+	top: -16px;
 	top: -19px\9;
-	left: 100px;
+	left: 126px;
 }
 /*///////////////////////////////////
-////////// the register ////////////
+/////// the  user register /////////
 /////////////////////////////////*/
 #header-signup {
 	font-size: 24px;
@@ -452,22 +497,9 @@ size*/
 	position: relative;
 	top: -90px;
 }
-.cf:before, .cf:after {
-	content: "";
-	display: table;
-}
-.cf:after {
-	clear: both;
-}
-.cf {
- *zoom: 1;
-}
-:focus {
-	outline: 0;
-}
 .registerform {
 	width: 375px;
-	height: 660px;/*the size about this registerform*/
+	height: 865px;/*the size about this register form*/
 	margin: 50px auto;
 	padding: 35px;
 	background-color: white;
@@ -486,7 +518,7 @@ size*/
 	float: left;
 }
 .registerform input:not([type=submit]) {
-	padding: 10px;/*registerform white border size*/
+	padding: 10px;/*register form white border size*/
 	width: 350px;
 	margin-right: 20px;
 	border: 2px solid rgba(0, 0, 0, 0.3);
@@ -510,8 +542,13 @@ size*/
 	border-radius: 3px;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
-/*This part is about the each li position.*/
+/*This part is about the each Li position.*/
 #name_box {
+	height: 85px;
+}
+#type_box {
+	position: relative;
+	top: 10px;
 }
 #mail_box {
 	position: relative;
@@ -525,24 +562,31 @@ size*/
 	position: relative;
 	top: 45px;
 }
+#park {
+	position: relative;
+	top: 25px;
+}
 /*This part is about the each label and input.*/
 .u_name {
 	font-size: 20px;
 }
 #F_name_signup {
-	width: 140px;
+	width: 150px;
 }
 #L_name_signup {
-	width: 140px;
+	width: 150px;
+	position: relative;
+	top: -40px;
+	left: 200px;
 }
 .u_mail {
 	font-size: 20px;
 }
 #email_signup {
-	width: 330px;
+	width: 350px;
 }
 #email_signup_confirm {
-	width: 330px;
+	width: 350px;
 	position: relative;
 	top: 10px;
 }
@@ -550,47 +594,85 @@ size*/
 	font-size: 20px;
 }
 #password_signup {
-	width: 330px;
+	width: 350px;
 }
 #password_signup_confirm {
-	width: 330px;
+	width: 350px;
 	position: relative;
 	top: 10px;
 }
 .u_dob {
 	font-size: 20px;
 }
-/*The submit button in this form.*/
-.signup_button {
-	width: 95px;
-	height: 41px;
-	background-image: url(../image/loginpage-03.png);
-	background-repeat: no-repeat;
-	position: relative;
-	top: 120px;
-	left: 20px;
+#Day_signup {
+	width: 97px;
 }
-.signup_button a {
-	text-decoration: none;
+#Month_signup {
+	width: 97px;
+	position: relative;
+	left: -20px;
+}
+#Year_signup {
+	width: 97px;
+	position: relative;
+	top: -40px;
+	left: 252px;
+}
+.u_type {
 	font-size: 20px;
-	color: white;
+}
+.u_park {
+	font-size: 20px;
+}
+#Park_signup {
+	width: 350px;
+}
+/*The submit button in this form.*/
+.siteup-button {
+	position: relative;
+	top: 15px;
+	left: -32px;
+}
+.siteup-button a {
+	text-decoration: none;
 	position: relative;
 	top: 5px;
-	left: 10px;
+	left: 30px;
 }
-.signup_button a:hover {
-	color: orange;
+#siteup_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	font-size: 20px;
+	color: white;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+}
+#siteup_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
 }
 .support-bg-s {
 	position: relative;
-	top: 75px;
+	top: 35px;
 	left: -15px;
 }
+#email-validate-status {
+	color: green;
+	position: relative;
+	top: -22px;
+	left: 300px;
+}
+#password-validate-status {
+	color: green;
+	position: relative;
+	top: -22px;
+	left: 298px;
+}
 /*///////////////////////////////////
-//////////weektly report/ //////////
+//////////weekly report/ ///////////
 /////////////////////////////////*/
 #report-bg {
-	width: 858px;/*the backgroud width about the login form. the top one*/
+	width: 858px;/*the background width about the login form. the top one*/
 	background-color: #333;
 	position: relative;
 	top: -40px;
@@ -598,22 +680,87 @@ size*/
 .reportform li {
 	display: inline;
 }
-.reportform li p{
-	color:white;
-	font-size:16px;
+.reportform li p {
+	color: white;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	text-align: justify;
+}
+#title_report {
+	color: white;
+	font-size: 24px;
+	font-family: Verdana, Geneva, sans-serif;
+	position: relative;
+	top: 45px;
+	left: 15px;
+}
+#main_report {
+	position: relative;
+	top: 55px;
+}
+#table_report {
+	position: relative;
+	top: 75px;
+	left: 90px;
 }
 /*///////////////////////////////////
-////////the Pest Register //////////
+///////Pest Detail register ////////
 /////////////////////////////////*/
-#Pest_R-bg {
-	width: 858px;/*the backgroud width about the login form. the top one*/
+#show-id {
+	color: red;
+	position: relative;
+	top: -5px;
+	left: -15px;
+}
+#source_register {
+	position: relative;
+	top: -10px;
+}
+#type_register {
+	position: relative;
+	top: -35px;
+	left: -8px;
+}
+#mark_register {
+	position: relative;
+	top: -55px;
+}
+/*This is the submit button.*/
+.submit-button-register {
+	position: relative;
+	top: -45px;
+	left: -30px;
+}
+.submit-button-register a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+/*This is the cancel button*/
+.cancel-button-register {
+	position: relative;
+	top: -45px;
+	left: -10px;
+}
+.cancel-button-register a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+/*///////////////////////////////////
+////////Pest Detail update /////////
+/////////////////////////////////*/
+#Pest_U-bg {
+	width: 858px;/*the background width about the login form. the top one*/
 	background-color: #333;
 	position: relative;
 	top: -90px;
 }
 /*This is the update button.*/
 .update_button {
-	width: 95px;
+	width: 122px;
 	height: 41px;
 	background-image: url(../image/loginpage-03.png);
 	background-repeat: no-repeat;
@@ -630,77 +777,409 @@ size*/
 	left: 10px;
 }
 .update_button a:hover {
-	color: orange;
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
+/*This part is about the each li position.*/
+#id_update {
+}
+#source_update {
+	position: relative;
+	top: 30px;
+}
+#type_update {
+	position: relative;
+	left: -8px;
+}
+#mark_update {
+	position: relative;
+	top: -25px;
+}
+/*This part is about the each label and input.*/
+#new_up {
+	position: relative;
+	top: 10px;
+}
+#re_new_up {
+	position: relative;
+	top: 15px;
+}
+#source_up {
+	position: relative;
+	top: -45px;
+	left: 125px;
+}
+.type_up {
+	position: relative;
+	left: 8px;
+}
+#type_up {
+	position: relative;
+	top: -45px;
+	left: 125px;
 }
 /*This is the submit button.*/
-.submit_button {
-	width: 95px;
-	height: 41px;
-	background-image: url(../image/loginpage-03.png);
-	background-repeat: no-repeat;
+.submit-button {
 	position: relative;
-	top: 79px;
-	left: -110px;
+	top: -20px;
+	left: -30px;
 }
-.submit_button a {
+.submit-button a {
 	text-decoration: none;
-	font-size: 20px;
-	color: white;
 	position: relative;
 	top: 5px;
-	left: 10px;
+	left: 30px;
 }
-.submit_button a:hover {
-	color: orange;
+#submit_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	font-size: 20px;
+	color: white;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+}
+#submit_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
 }
 /*This is the cancel button.*/
-.cancel_button {
-	width: 95px;
-	height: 41px;
-	background-image: url(../image/loginpage-03.png);
-	background-repeat: no-repeat;
+.cancel-button {
 	position: relative;
-	top: 38px;
+	top: -20px;
 	left: -10px;
 }
-.cancel_button a {
+.cancel-button a {
 	text-decoration: none;
-	font-size: 20px;
-	color: white;
 	position: relative;
 	top: 5px;
-	left: 10px;
+	left: 30px;
 }
-.cancel_button a:hover {
-	color: orange;
+#cancel_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	font-size: 20px;
+	color: white;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+}
+#cancel_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
 }
 /*///////////////////////////////////
 //////////// message ///////////////
 /////////////////////////////////*/
 /*This is a three button layout.*/
 #message-bg {
-	width: 858px;/*the backgroud width about the login form. the top one*/
+	width: 858px;/*the background width about the login form. the top one*/
 	background-color: #333;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
 	position: relative;
 	top: -40px;
 }
 #message-layout {
 	display: inline;
 }
-.ok_button {
-	width: 95px;
-	height: 41px;
-	background-image: url(../image/loginpage-03.png);
+#message-title {
+	color: #00B4D5;
+	height: 60px;
+	font-size: 30px;
+}
+#message-text {
+	color: #FFF;
+	font-size: 20px;
+}
+#goback a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #FFF;
+}
+#goback a:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
+/*///////////////////////////////////
+//////// animal sighting ///////////
+/////////////////////////////////*/
+#pest_sighting_index-bg {
+	width: 858px;/*the backgroud width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -90px;
+}
+.googlemap {
+	width: 670px;
+	height: 1210px;/*the height for while form.*/
+	margin: 50px auto;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+	top: 70px;
+}
+.googlemap input:not([type=submit]) {
+	padding: 5px;/*register form white border size*/
+	margin-right: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+.googlemap input[type=submit] {
+	border: none;
+	color: #fff;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.googlemap input[type=submit]:hover {
+	color: orange;
+}
+.googlemap p {
+	font-size: 14px;
+	font-weight: bold;
+	color: #00B4D5;
+}
+.googlemap a {
+	text-decoration: none;
+}
+.googlemap ul {
+	padding: 0;
+	margin: 0;
+}
+.googlemap li {
+	display: inline;
+	float: left;
+}
+#animal-title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #00B4D5;
+	position: relative;
+	top: 70px;
+	left: -240px;
+}
+.animal_wrapper {
+	width: 314px;
+	height: 50px;
+	margin: 120px auto;
+}
+/*This is the position of five animal map button.*/
+.feral_fox {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-01.png);
 	background-repeat: no-repeat;
 	position: relative;
-	top: 10px;
+	left: -140px;
+}
+.feral_fox:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-06.png);
+	background-repeat: no-repeat;
+	position: relative;
+	left: -140px;
+}
+.feral_dog {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-02.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -94px;
 	left: -10px;
 }
-.ok_button a {
-	text-decoration: none;
-	font-size: 25px;
-	color: white;
+.feral_dog:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-07.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -94px;
+	left: -10px;
 }
-.ok_button a:hover {
-	color: orange;
+.feral_cat {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-03.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -187px;
+	left: 120px;
+}
+.feral_cat:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-08.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -187px;
+	left: 120px;
+}
+.feral_rat {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-04.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -282px;
+	left: 250px;
+}
+.feral_rat:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-09.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -282px;
+	left: 250px;
+}
+.feral_rabbit {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-05.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -376px;
+	left: 380px;
+}
+.feral_rabbit:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-10.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -376px;
+	left: 380px;
+}
+/*This is top layout.*/
+sight-time {
+	position: relative;
+	left: -35px;
+}
+#map_canvas {
+	width: 600px;
+	height: 400px;
+	position: relative;
+	left: 15px;
+}
+#map-panel {
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+#sighting-bottom {
+	position: relative;
+	top: 25px;
+}
+#mydate {
+	width: 167px;
+}
+#mytime {
+	width: 167px;
+}
+#autodate {
+	width: 350px;
+}
+/*this is all of input box css*/
+
+.google-go {
+	height: 21px;
+	width: 45px;
+	background-image: url(../image/loginpage-04.png);
+	background-repeat: no-repeat;
+}
+.google-gecode {
+	height: 23px;
+	width: 133px;
+	background-image: url(../image/loginpage-05.png);
+	background-repeat: no-repeat;
+}
+#autobutton {
+	height: 23px;
+	width: 79px;
+	background-image: url(../image/loginpage-06.png);
+	background-repeat: no-repeat;
+}
+#latlng {
+	width: 350px;
+}
+#sight-id {
+	width: 350px;
+}
+/*///////////////////////////////////
+///////// pest tracking ////////////
+/////////////////////////////////*/
+#Pest_track-bg {
+	width: 858px;/*the background width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -90px;
+}
+.trackingform {
+	width: 600px;
+	height: 490px;
+	margin: 50px auto;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+	top: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.trackingform ul {
+	padding: 0;
+	margin: 0;
+}
+.trackingform li {
+	display: inline;
+}
+.trackingform input[type=submit] {
+	border: none;
+	color: #fff;
+}
+.trackingform input:not([type=submit]) {
+	padding: 10px;/*register form white border size*/
+	width: 480px;
+	margin-right: 20px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+/*inside the tracking page*/
+#search_bar {
+}
+.pest_search {
+	position: relative;
+	top: 20px;
+}
+#search_input {
+	position: relative;
+	top: 10px;
+}
+.search_result {
+	position: relative;
+	top: 40px;
+}
+/*submit button in search page*/
+.submit-search {
+	position: relative;
+	top: 15px;
+	left: -30px;
+}
+.submit-search a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+#submit_button_search {
+	width: 122px;
+	height: 41px;
+	/*border: none;*/
+	font-size: 20px;
+	color: white;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+}
+#submit_button_search:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
 }
