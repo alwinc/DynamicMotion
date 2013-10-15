@@ -657,16 +657,16 @@ size*/
 	left: -15px;
 }
 #email-validate-status {
-	color: red;
+	color: green;
 	position: relative;
-	top: -250px;
-	left: 124px;
+	top: -22px;
+	left: 300px;
 }
 #password-validate-status {
 	color: green;
 	position: relative;
 	top: -22px;
-	left: 294px;
+	left: 298px;
 }
 /*///////////////////////////////////
 //////////weekly report/ ///////////
