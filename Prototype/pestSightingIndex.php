@@ -58,31 +58,56 @@ if (/*@cc_on!@*/false) {
             <div>
               <p> Enter an address and you may drag the tack to reposition it. </p>
               <p class="map-input-park">
-                <input type="text" style="width:350px" name="address" value="KU-RING-GAI Chase National Park" />
+				  
+				  <!-- Dynamic Select Box based on Database -->
+				  <select name="address" id="address">
+						<option value="">-- Select Park --</option>
+							<?php
+								include('connect.inc.php');						        
+								
+									$parkquery = "SELECT name FROM  `park`";
+									if(mysqli_query($link,$parkquery)){    
+									$parkresult = mysqli_query($link,$parkquery);    
+									while($row = mysqli_fetch_array($parkresult)) {
+										echo "<option value=\"".$row['name']."\">".$row['name']."</option>\n  ";										
+									}
+								}
+								else{
+									echo '<option value="QueryFail"> Query Fail </option>';
+								}
+							?>
+							<script type="text/javascript">
+								document.getElementById('Park').value = <?php echo json_encode(trim($_POST['Park']));?>;
+							</script>
+					</select>
+				<!--End of Dynamic Select Box -->
+                <input type="hidden" id="Latitude" value=""/>
                 <input class="google-go" type="submit" value="Go" />
               </p>
               <div id="map_canvas"></div>
-              <div id="map-panel">
+              <!--<div id="map-panel">
                 <input id="latlng" type="text" value="40.714224,  -73.961452">
                 <input class="google-gecode" type="submit" value="Reverse Geocode" onclick="codeLatLng()">
-              </div>
+              </div>-->
             </div>
-            <div id="sighting-bottom">
-              <p class="sight-time">Your date and time </p>
+            <div id="sighting-bottom">			
+              <p class="sight-time"><input type="radio" name="dateandtime" id="dateandtime">Your date and time </p>
               <p id="my-datetime">
                 <input id="mydate" type="date" value="dd/mm/yyyy"/>
                 <input id="mytime" type="time" value="mm/hh"/>
-              </p>
-              <p class="sight-time-auto">Automatism date and time </p>
+              </p>            
+              <p class="sight-time-auto"><input type="radio" name="dateandtime" id="autodateandtime">Automatism date and time </p>
               <p id="auto-datetime">
-                <input id="autodate" type="datatime-local" value="17/08/2013------11:25"/>
-               <a href="#"> <input id="autobutton" type="submit" value="Auto Time"/></a>
+                <input id="autodate" name="autodate" value="<?
+                date_default_timezone_set('Australia/Sydney');
+                echo date('m/d/Y, G:i:s');
+                ?>"/>
               </p>
               <p class="sight-inform">Additional Information </p>
               <p>
                 <textarea name="sight-commond" cols="60" rows="4"></textarea>
               </p>
-              <p class="sight-report">Report ID </p>
+              <p class="sight-report">Number of Pest Sighted</p>
               <p>
                 <input id="sight-id" type="text" value="Enter report ID"/>
                 <a href="#"><input id="autobutton" type="submit" value="Submit"/></a>

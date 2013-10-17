@@ -33,7 +33,12 @@ function codeLatLng() {
 	var lng = parseFloat(latlngStr[1]);
 	map.setCenter(new GLatLng(lat,lng), 13);
 }
-	
+
+function passLat(LatLong)
+{
+	document.getElementById('Latitude').value = LatLong;
+}	
+
 function showAddress(address) {
 	if (geocoder) {
 		geocoder.getLatLng(
@@ -47,9 +52,11 @@ function showAddress(address) {
               map.addOverlay(marker);
               GEvent.addListener(marker, "dragend", function() {
                 marker.openInfoWindowHtml(marker.getLatLng().toUrlValue(6));
+                passLat(marker.getLatLng());
               });
               GEvent.addListener(marker, "click", function() {
                 marker.openInfoWindowHtml(marker.getLatLng().toUrlValue(6));
+                passLat(marker.getLatLng());
               });
 	     GEvent.trigger(marker, "click");
         }
