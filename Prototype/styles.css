@@ -32,10 +32,19 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	text-decoration: none;
 }
 /* ~~ this fixed width container surrounds the other divs ~~ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
 .container {
 	width: 960px;
-	height: 1490px;
+	height: 1630px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+}
+@media screen and (min--moz-device-pixel-ratio:0) {/*Mozilla Firefox layout only!*/
+.container {
+	width: 960px;
+	height: 1550px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
 }
 .container-index {
 	width: 960px;
@@ -120,7 +129,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	position: relative;
 	left: 27px;
 }
-.Pest_tracking{
+.Pest_tracking {
 	padding: 10px 0;
 	width: 858px;
 	height: 740px;
