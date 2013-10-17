@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `phone` (
 --
 
 CREATE TABLE IF NOT EXISTS `sighting` (
-  `sightingId` int(11) NOT NULL auto_increment,
+  `sightingId` int(11) NOT NULL auto_increment PRIMARY KEY,
   `pestId` int(11) NOT NULL,
   `parkId` int(11) NOT NULL,
   `personId` int(11) NOT NULL,
