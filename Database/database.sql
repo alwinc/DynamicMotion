@@ -126,7 +126,7 @@ CREATE TABLE IF NOT EXISTS `sighting` (
   `time` datetime NOT NULL,
   `latitude` decimal(10,0) NOT NULL,
   `longitude` decimal(10,0) NOT NULL,
-  `pestName` varchar(10) NOT NULL
+  `pestDetails` varchar(300) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
