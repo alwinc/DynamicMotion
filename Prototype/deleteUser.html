@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animals Map</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="css/page-styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+</head>
+<!--[if !IE]><!--><script>
+if (/*@cc_on!@*/false) {
+    document.documentElement.className+=' ie10';
+}
+</script>
+<body>
+<div class="container-register">
+  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a>
+    <!-- end .header -->
+    <div class="accountbar">
+      <ul class="accountbar-bg" id="account-bar" name="account-bar">
+        <li class="support-lg">Welcome, Dane</li>
+        <li class="support-ac"><a href="#">MyAccount</a></li>
+        <li class="support-sp"><a href="#">Support</a></li>
+        <li class="support-lo"><a href="index.html">Log off</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end .accountbar -->
+  <div class="header-wrap">
+    <ul class="group" id="header-one" name="header-one">
+      <li> <a href="#">Home</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">MyAccount</a></li>
+      <li><a href="#">Pest Sights</a></li>
+      <li><a href="#">Weekly Report</a></li>
+      <li><a href="#">Pest Register</a></li>
+    </ul>
+  </div>
+  <!-- end .header-warp -->
+  <div class="register">
+    <ul id="register-bg" name="register-bg">
+      <section class="registerform cf">
+        <form name="deleteUser" action="deleteUser.php" method=POST accept-charset="utf-8">
+          <ul>
+            <li id="header-signup">
+              <h4>Delete User</h4>
+            </li>
+<li id="mail_box"> 
+              <label for="email_signup" class="u_mail" data-icon="e">E-mail Address</label>
+              <input id="email_signup" name="email_signupp" required ="required" type="email" placeholder="Enter E-mail Address" required/>
+            </li>
+<li id="password_box">
+<label for="user_id_box" class="u_password" data-icon="p">User ID</label>
+<input id="password_signup" name="userID" required ="required" type="text" placeholder="Enter userID" required/>
+<input id="password_signup" name="retype-userID" required = "required" type="text" placeholder="retype userID" required/>
+</li>
+<li class="siteup-button"> <a href="deleteUser.php" onclick="document.forms['deleteUser'].submit(); return false;">
+<input type="submit" id="siteup_button" name="siteup_button" value="Submit"/>
+</a></li>
+</ul>
+</form>
+</section>
+</ul>
+</div>
+<div>
+<ul id="footer-text" name="footer-text">
+<li><a>Blog</a> | <a>Support</a> | <a>About Us</a> | <a>Contact Us</a> | <a>Site Map</a> | <a>News Letter</a> | <a>Join Us</a> | <a>Disclaimer</a> | <a>Policies</a></li>
+<ol>
+?2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
+</ol>
+</ul>
+<li class="footer-img"><img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png"> </li>
+</div>
+</div>
+<!-- end .container -->
+<div class="footer"> </div>
+<!-- end .footer -->
+</body>
+</html>
