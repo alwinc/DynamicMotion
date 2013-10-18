@@ -17,7 +17,7 @@ if (/*@cc_on!@*/false) {
 </script><!--<![endif]-->
 <body>
 <div class="container-login">
-  <div class="header"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
+  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
     <div class="accountbar">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
@@ -33,9 +33,9 @@ if (/*@cc_on!@*/false) {
     <ul class="group" id="header-one" name="header-one">
       <li> <a>Home</a></li>
       <li class="current_page_item" name="login_loginpage"><a>Login</a></li>
-      <li name="login_Registerpage"><a href = "userRegister.php">Register</a></li>
+      <li name="login_Registerpage"><a>Register</a></li>
       <li name="login_Userpage"><a>MyAccount</a></li>
-      <li name="login_Pest Fight"><a>Pest Sighting</a></li>
+      <li name="login_Pest Fight"><a>Pest Fight</a></li>
       <li name="login_Reportpage"><a>Weekly Report</a></li>
       <li name="login_P_Registerpage"><a>Pest Register</a></li>
     </ul>
@@ -64,10 +64,12 @@ if (/*@cc_on!@*/false) {
               <p id= "email-input" >
                 <input type="email" required name="login_usermail" placeholder="Enter E-mail Address"/>
               </p>
+              <p class="error">*error here</p>
               <label for="password" class="password">Password</label>
               <p id="password_input" >
                 <input type="password" required name="login_password" placeholder="Enter Password"/>
               </p>
+              <p class="error">*error here</p>
             </li>
             <li class="login-button"> <a href="checklogin.php" onclick="document.forms['login'].submit(); return false;">
               <input type="submit" id="login_button" name="login_button" value="Log In"/>

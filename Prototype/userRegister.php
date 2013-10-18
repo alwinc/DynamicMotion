@@ -29,7 +29,7 @@ if (/*@cc_on!@*/false) {
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
       <li> <a href="#">Home</a></li>
-      <li><a href="login.php">Login</a></li>
+      <li><a href="#">Login</a></li>
       <li class="current_page_item"><a href="#">Register</a></li>
       <li><a href="#">MyAccount</a></li>
       <li><a href="#">Pest Sight</a></li>
