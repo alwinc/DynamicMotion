@@ -13,18 +13,30 @@ if (/*@cc_on!@*/false) {
 }
 </script><!--<![endif]-->
 <body onLoad="Marquee4(),Mouse()">
-<div class="container">
+<div class="container-After">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
-    <div class="accountbar">
+    <div class="accountbar-after">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
-        <li class="support-lg">Welcome, Dane</li>
+        
+        <!-- Check if already login then write welcome-->
         <li class="support-ac"><a href="#">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
         <li class="support-lo"><a href="index.html">Log off</a></li>
       </ul>
     </div>
   </div>
+  <!--Welcome word for user login--> 
+  <!--li class="support-lg"-->
+  <p class ="php-user">
+    <?php
+			session_start();
+			if(isset($_GET['username']))
+			{
+				echo "Welcome, ". $_GET['username'];
+			}
+		?>
+  </p>
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
@@ -79,41 +91,33 @@ if (/*@cc_on!@*/false) {
   <!-- end .middle-wrap -->
   <div class="news">
     <ul class="news-bg" id="news-text" name="news-text">
-      <ol class="news-image-01">
-      </ol>
-      <li>
-        <label class="news-label-01"> How to help? </label>
-        <p class="news-text-01">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.﻿</p>
-        <label class="news-label-02">Award Winner!</label>
-        <p class="news-text-02">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.</p>
-        <label class="news-label-03">Winston Yang</label>
-        <p class="news-text-03"> I'm a web developer. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.</p>
+      <p class="news-image-01"></p>
+      <label class="news-label-01"> How to help? </label>
+      <p class="news-text-01">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.﻿</p>
+      <label class="news-label-02">Award Winner!</label>
+      <p class="news-text-02">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.</p>
+      <label class="news-label-03">Winston Yang</label>
+      <p class="news-text-03"> I'm a web developer. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.</p>
+      <p class="news-image-02"> </p>
+      <label class="news-label-04">Future Planning</label>
+      <li class="news-text-04">
+        <p>Methods for learning about the future have been in use by businesses for decades, but the process was simply too complex for most individuals. The Personal Futures Network introduces some new, easily understood approaches that will help you to think and plan like a futurist. You will be able learn about and plan for your personal futures.</p>
+        <p>Think like a futurist? What does that really mean, think like a futurist? Well, each futurist may have some different thoughts, but generally futurists think about longer term futures, usually 10 or more years ahead. Futurists believe that the future is not predetermined, but that several futures are possible.</p>
       </li>
-      <ol class="news-image-02">
-      </ol>
-      <li>
-        <label class="news-label-04">Future Planning</label>
-        <ol class="news-text-04">
-          <p>Methods for learning about the future have been in use by businesses for decades, but the process was simply too complex for most individuals. The Personal Futures Network introduces some new, easily understood approaches that will help you to think and plan like a futurist. You will be able learn about and plan for your personal futures.</p>
-          <p>Think like a futurist? What does that really mean, think like a futurist? Well, each futurist may have some different thoughts, but generally futurists think about longer term futures, usually 10 or more years ahead. Futurists believe that the future is not predetermined, but that several futures are possible.</p>
-        </ol>
-      </li>
-      <ol class="news-image-03">
-      </ol>
+      <p class="news-image-03"> </p>
     </ul>
   </div>
   <!-- end .news -->
   <div>
     <ul id="footer-text" name="footer-text">
-      <p><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></p>
+      <li><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="userRegistration.html">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
       <ol>
         ©2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
       </ol>
     </ul>
-    <li class="footer-img"> <img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png"> </li>
+    <li class="footer-img"><img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png"></li>
   </div>
 </div>
-<!-- end .container -->
 <!-- end .container -->
 <div class="footer"> </div>
 <!-- end .footer -->

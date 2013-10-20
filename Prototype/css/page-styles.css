@@ -8,8 +8,9 @@
 	height: 500px;
 	background-image: url(../image/indexpage-01.png);
 	background-repeat: no-repeat;
-	margin-top: 20px;
-	margin-left: -3px;
+	position:relative;
+	top: 30px;
+	left: -3px;
 }
 #main-box {
 	list-style: none;
@@ -61,6 +62,13 @@
 	margin-top: -165px;
 	margin-left: 465px;
 }
+.accountbar-after {
+	width: 300px;
+	height: 40px;
+	background-color: #8CC63E;
+	margin-top: -165px;
+	margin-left: 608px;
+}
 *:first-child+html .accountbar-bg {
 	zoom: 1;
 } /* IE7 */
@@ -90,6 +98,12 @@
 }
 #account-bar li a:hover {
 	color: #00B4D5;/*When the mouse is over, the color change to this*/
+}
+.php-user {
+	color: #0099CC;
+	position: relative;
+	top: 20px;
+	margin-left: 630px;
 }
 /*This is the part of menu header*/
 .header-wrap {
@@ -299,7 +313,8 @@
 	width: 858px;
 	background-color: #333;
 	margin-top: -42px;/*It's the top position about the black border.*/
-	height: 630px;/
+	height: 700px;
+/
 }
 #news-text p {
 	width: 230px;
@@ -320,13 +335,13 @@
 }
 .news-label-04 { /*label "Future Planning!"*/
 	position: relative;
+	top: -830px;
 	left: 595px;
-	top: -800px;
 }
 .news-text-04 {
 	position: relative;
+	top: -800px;
 	left: 580px;
-	top: -780px;
 }
 .news-image-03 { /*bar "Read by Future"*/
 	width: 231px;
@@ -384,12 +399,6 @@
 	left: 550px;
 	list-style: none;
 	left: 270px!important;
-}
-/* This is logo header */
-.myHeader {
-	text-align: center;
-	font: normal Helvetica, Arial, sans-serif;
-	color: #0099CC;
 }
 /*///////////////////////////////////
 //////////// login page ////////////
