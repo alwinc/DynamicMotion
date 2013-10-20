@@ -9,7 +9,7 @@
 	background-image: url(../image/indexpage-01.png);
 	background-repeat: no-repeat;
 	position:relative;
-	top: 30px;
+	top: -150px;
 	left: -3px;
 }
 #main-box {
@@ -59,15 +59,17 @@
 	width: 440px;
 	height: 40px;
 	background-color: #8CC63E;
-	margin-top: -165px;
-	margin-left: 465px;
+	position:relative;
+	top: -165px;
+	left: 465px;
 }
 .accountbar-after {
 	width: 300px;
 	height: 40px;
 	background-color: #8CC63E;
-	margin-top: -165px;
-	margin-left: 608px;
+	position:relative;
+	top: -165px;
+	left: 608px;
 }
 *:first-child+html .accountbar-bg {
 	zoom: 1;
@@ -103,7 +105,7 @@
 	color: #0099CC;
 	position: relative;
 	top: 20px;
-	margin-left: 630px;
+	left: 630px;
 }
 /*This is the part of menu header*/
 .header-wrap {

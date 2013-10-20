@@ -2,8 +2,6 @@
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
 	background-color: white;
-	margin: 0;
-	padding: 0;
 	color: #000;
 }
 /* ~~ Element/tag selectors ~~ */
@@ -48,7 +46,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .container-index {
 	width: 960px;
-	height: 570px;
+	height: 560px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-login {
@@ -88,7 +86,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .index {
 	width: 955px;/*the background width about the news part. the bottom one*/
-	height:550px;
+	height:370px;
 	position: relative;
 	left: -50px;
 }
