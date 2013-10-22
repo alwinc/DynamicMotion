@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -41,13 +41,32 @@ if (/*@cc_on!@*/false) {
   <div class="Pest_U">
     <ul id="Pest_U-bg" name="Pest_U-bg">
       <section class="loginform cf">
-        <form name="pest_register" action="index_submit" method="get" accept-charset="utf-8">
+        <form name="pest_register" action="pestregistration.php" method="post" accept-charset="utf-8">
           <ul>
             <li><img src="image/loginpage-02.png"></li>
+			
+			
+			<!--PEST ID-->
             <li id = "id_update">
               <label for="pest_id" class="pest_id">Pest ID</label>
-              <p id="show-id">TBRC12865</p>
+              <p id="show-id">
+				<?php
+					//conncect to the database
+					include_once('connect.inc.php');
+					
+					$get_Last_Row = "SELECT pestId FROM pest ORDER BY `pestId` DESC LIMIT 1";
+
+					$result = mysqli_query($link,$get_Last_Row);
+					$row = mysqli_fetch_assoc($result);
+					$pestid = $row['pestId'];
+					$increase_pest_id = $pestid + 1;
+					echo "$increase_pest_id";
+				?>
+			  </p>
             </li>
+			
+			
+			<!--SOURCE OF ID-->
             <li id = "source_register" >
               <label for="source_up" class="source_up">Source of ID</label>
               <select name="source_up" id = "source_up">
@@ -56,27 +75,34 @@ if (/*@cc_on!@*/false) {
                 <option value ="Microchip">Microchip</option>
               </select>
             </li>
+			
+			<!--TYPE OF REGISTER-->
             <li id = "type_register">
               <label for="type_up" class="type_up">Pest Type</label>
               <select name="type_up" id = "type_up">
                 <option value ="None" selected = "selected">None</option>
-                <option value ="Feral_Cat">Feral Cat</option>
+                <option value ="FeralCat">Feral Cat</option>
                 <option value ="Feral_Dog">Feral Dog</option>
                 <option value ="Feral_Rat">Feral Rat</option>
                 <option value ="European_Rabbit">European Rabbit</option>
                 <option value ="Red_Fox">Red Fox</option>
               </select>
             </li>
+			
+			<!--PEST MARKING-->
             <li id = "mark_register">
               <label for="mark_up"class="mark_up">Pest Marking</label>
               <input id = "mark_up" name="mark_up" required type="text" placeholder="Marking Number or Colour"/>
             </li>
-            <li class="submit-button-register"> <a href="confirmuserRegister.php">
-              <input type="submit" id="submit_button" name="submit_button" value="Submit"/>
-              </a></li>
+			
+			<!-- button for submit and cancel registration -->
+			
+            <li class="submit-button-register"> <a href="pestregistration.php" onclick="document.forms['submit'].submit(); return false;">
+			  <input type="submit" id="submit_button" name="submit_button" value="Submit"/>
+			</a></li>
             <li class="cancel-button-register"><a href="cancelRegistration.html">
-              <input type="submit" id="cancel_button" name="cancel_button" value="Cancel"/>
-              </a></li>
+			  <input type="submit" id="cancel_button" name="cancel_button" value="Cancel"/>
+			  </a></li>
           </ul>
         </form>
       </section>
