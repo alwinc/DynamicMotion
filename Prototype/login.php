@@ -64,12 +64,10 @@ if (/*@cc_on!@*/false) {
               <p id= "email-input" >
                 <input type="email" required name="login_usermail" placeholder="Enter E-mail Address"/>
               </p>
-              <p class="error">*error here</p>
               <label for="password" class="password">Password</label>
               <p id="password_input" >
                 <input type="password" required name="login_password" placeholder="Enter Password"/>
               </p>
-              <p class="error">*error here</p>
             </li>
             <li class="login-button"> <a href="checklogin.php" onclick="document.forms['login'].submit(); return false;">
               <input type="submit" id="login_button" name="login_button" value="Log In"/>
