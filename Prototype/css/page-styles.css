@@ -8,7 +8,7 @@
 	height: 500px;
 	background-image: url(../image/indexpage-01.png);
 	background-repeat: no-repeat;
-	position:relative;
+	position: relative;
 	top: -150px;
 	left: -3px;
 }
@@ -59,7 +59,7 @@
 	width: 440px;
 	height: 40px;
 	background-color: #8CC63E;
-	position:relative;
+	position: relative;
 	top: -165px;
 	left: 465px;
 }
@@ -67,7 +67,7 @@
 	width: 300px;
 	height: 40px;
 	background-color: #8CC63E;
-	position:relative;
+	position: relative;
 	top: -165px;
 	left: 608px;
 }
@@ -109,7 +109,6 @@
 }
 /*This is the part of menu header*/
 .header-wrap {
-	margin: 0px auto;
 	border-top: none;
 	border-bottom: 2px solid white;
 	background-image: url(../image/websignlayout-01.png);
@@ -127,7 +126,6 @@
 	zoom: 1;
 } /* IE7 */
 #header-one {
-	margin: 0px auto;
 	list-style: none;
 	position: relative;
 	top: 5px;
@@ -136,15 +134,50 @@
 }
 #header-one li {
 	display: inline;
+	width: 80px;
 }
 #header-one li a {
 	color: #bbb;
+	width: 150px;
 	font-size: 16px;
 	display: block;
-	float: left;
-	padding: 40px 25px 4px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+#home-wrap {
+	position: relative;
+	top: 18px;
+	left: 40px;
+}
+#login-wrap {
+	position: relative;
+	top: -5px;
+	left: 120px;
+}
+#user-wrap {
+	position: relative;
+	top: -28px;
+	left: 200px;
+}
+#account-wrap {
+	position: relative;
+	top: -50px;
+	left: 320px;
+}
+#sighing-wrap {
+	position: relative;
+	top: -73px;
+	left: 450px;
+}
+#report-wrap {
+	position: relative;
+	top: -95px;
+	left: 580px;
+}
+#register-wrap {
+	position: relative;
+	top: -118px;
+	left: 750px;
 }
 #header-one li a:hover {
 	color: white;/*When the mouse is over, the color change to this*/

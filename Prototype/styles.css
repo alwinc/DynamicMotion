@@ -4,6 +4,11 @@ body {
 	background-color: white;
 	color: #000;
 }
+.background {
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
 /* ~~ Element/tag selectors ~~ */
 ul, ol, dl {
 	padding: 0;
@@ -33,14 +38,14 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 .container-After {
 	width: 960px;
-	height: 1630px;
+	height: 1650px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 }
 @media screen and (min--moz-device-pixel-ratio:0) {/*Mozilla Firefox layout only!*/
 .container-After {
 	width: 960px;
-	height: 1655px;
+	height: 1640px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 }
@@ -51,7 +56,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .container-login {
 	width: 960px;
-	height: 950px;
+	height: 955px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-register {
@@ -86,13 +91,13 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .index {
 	width: 955px;/*the background width about the news part. the bottom one*/
-	height:370px;
+	height: 370px;
 	position: relative;
 	left: -50px;
 }
 .news {
 	width: 858px;/*the background width about the news part. the bottom one*/
-	height:680px;
+	height: 680px;
 	background-color: #333;
 	position: relative;
 	left: 33px;

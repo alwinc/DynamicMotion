@@ -28,13 +28,13 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li> <a href="#">Home</a></li>
-      <li><a href="login.php">Login</a></li>
-      <li class="current_page_item"><a href="#">Register</a></li>
-      <li><a href="#">MyAccount</a></li>
-      <li><a href="#">Pest Sight</a></li>
-      <li><a href="#">Weekly Report</a></li>
-      <li><a href="#">Pest Register</a></li>
+      <li id="home-wrap" class="current_page_item"> <a href="#">Home</a></li>
+      <li id="login-wrap"><a href="login.php">Login</a></li>
+      <li id="user-wrap"><a href="userRegister.php">Register</a></li>
+      <li id="account-wrap"><a href="#">MyAccount</a></li>
+      <li id="sighing-wrap"><a href="pestSightingIndex.html">Pest Sight</a></li>
+      <li id="report-wrap"><a href="#">Weekly Report</a></li>
+      <li id="register-wrap"><a href="pestRegister.html">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -48,15 +48,13 @@ if (/*@cc_on!@*/false) {
             </li>
             <li class="error" id="issue-massage"name="issue-massagee">
               <p>
-              
                 <?php	
-			//display the error msg if the login credentials are wrong!
-			if(isset($_GET['error']))
-			{
-				echo 'Email already registered!';
-			}
-		?>
-		
+						//display the error msg if the login credentials are wrong!
+						if(isset($_GET['error']))
+						{
+							echo 'Email already registered!';
+						}
+						?>
               </p>
             </li>
             <li id="name_box">
@@ -88,6 +86,7 @@ if (/*@cc_on!@*/false) {
               <label for="User_type" class="u_type" data-icon="ut">User Type</label>
               <select name="User_type">
                 <option value ="Ranger">Ranger</option>
+                <option value ="Administrator">Administrator</option>
                 <option value ="Clerical">Clerical</option>
               </select>
             </li>
