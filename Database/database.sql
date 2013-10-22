@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `pest` (
   `pestId` int(11) NOT NULL auto_increment,
   `soureOfId` varchar(20) NOT NULL,
   `pestType` varchar(20) NOT NULL,
-  `pestMarking` int(11) NOT NULL,
+  `pestMarking` varchar(11) NOT NULL,
   PRIMARY KEY (`pestId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
