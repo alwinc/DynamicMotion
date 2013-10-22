@@ -31,8 +31,8 @@
 	}
 	else
 	{
-		$_SESSION['login_msg'] = 1;
 		$error = "Wrong Username or Password";
+		$_SESSION['login_msg'] = $error;
 		header("location:login.php");  
 	}
 ?>
