@@ -48,13 +48,15 @@ if (/*@cc_on!@*/false) {
             </li>
             <li class="error" id="issue-massage"name="issue-massagee">
               <p>
+              
                 <?php	
-						//display the error msg if the login credentials are wrong!
-						if(isset($_GET['error']))
-						{
-							echo 'Email already registered!';
-						}
-						?>
+			//display the error msg if the login credentials are wrong!
+			if(isset($_GET['error']))
+			{
+				echo 'Email already registered!';
+			}
+		?>
+		
               </p>
             </li>
             <li id="name_box">
@@ -86,7 +88,6 @@ if (/*@cc_on!@*/false) {
               <label for="User_type" class="u_type" data-icon="ut">User Type</label>
               <select name="User_type">
                 <option value ="Ranger">Ranger</option>
-                <option value ="Administrator">Administrator</option>
                 <option value ="Clerical">Clerical</option>
               </select>
             </li>
