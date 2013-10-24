@@ -1,6 +1,9 @@
 <?php
 include('connect.inc.php');
 
+mysqli_select_db($link, 'person');
+
+$email = $_POST['email'];
 $firstname = $_POST['F_name_update']; $lastname = $_POST['L_name_update'];
 $username = $firstname." ".$lastname;
 $newPassword = $_POST['newPassword'];
@@ -9,9 +12,16 @@ $day = $_POST['Day_update']; $month = $_POST['Month_update']; $year = $_POST['Ye
 $dob = $year."-".$month."-".$day;	
 $usertype = $_POST['change_type'];
 
-$updateQuery = "UPDATE `person` VALUES ( 'NULL','$username', 'NULL', 'NULL', $usertype, $dob, '$newPassword') WHERE personId = '_SESSION['sys_user_id']'";
+$updateQuery = "UPDATE `person` SET name='$username', type='$usertype', dob='$dob', password='$newPassword' WHERE email = '$email'";
 
-if($newPassword == $confirmPassword)
+
+	$checkingQuery= "SELECT * FROM person WHERE email like '$email'";
+		
+	$result = mysqli_query($link, $checkingQuery);
+	
+	$count = mysqli_num_rows($result);
+
+if($count == 1)
 {
     if(mysqli_query($link,$updateQuery))
     {
@@ -25,7 +35,6 @@ if($newPassword == $confirmPassword)
 }
 else
 {
-      echo "The first password is different from the retyped                   password <br>";
       header("location: userUpdate.php?error=1");
 }	
 

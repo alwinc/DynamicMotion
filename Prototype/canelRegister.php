@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -11,12 +11,12 @@
 if (/*@cc_on!@*/false) {
     document.documentElement.className+=' ie10';
 }
-</script>
+</script><!--<![endif]-->
 <body>
-<div class="container-delete">
+<div class="container-button">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
-    <div class="accountbar-after">
+        <div class="accountbar-after">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
@@ -35,8 +35,9 @@ if (/*@cc_on!@*/false) {
       </ul>
     </div>
     <!--Welcome word for user login--> 
-    <!--li class="support-lg"--> 
+    <!--li class="support-lg"-->    
   </div>
+  
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
@@ -50,50 +51,30 @@ if (/*@cc_on!@*/false) {
     </ul>
   </div>
   <!-- end .header-warp -->
-  <div class="delete_user">
-    <ul id="Pest_U-bg" name="Pest_U-bgg">
-      <section class="deleteform cf">
-        <form name="deleteUser" action="userDelete.php" method=POST accept-charset="utf-8">
-          <ul>
-            <li id="header-signup">
-              <h4>Delete User</h4>
-            </li>
-            <li class="error" id="issue-massage"name="issue-massagee">
-              <p>
-                <?php	
-						if(isset($_GET['error']))
-						{
-							echo 'Account does not exsit';
-						}
-						?>
-                <?php
-if(isset($_GET['success']))
-                 {
-                         echo 'Account has ben deleted';
-                  }
-?>
-              </p>
-            </li>
-            <li id="mail_box">
-              <label for="email_signup" class="u_mail" data-icon="e">E-mail Address</label>
-              <input id="email_signup" name="email" required ="required" type="email" placeholder="Enter E-mail Address" required/>
-            </li>
-            <li class="siteup-button"> <a href="deleteUser.php" onclick="document.forms['deleteUser'].submit(); return false;">
-              <input type="submit" id="siteup_button" name="siteup_button" value="Submit"/>
-              </a></li>
-          </ul>
-        </form>
-      </section>
-    </ul>
-  </div>
-  <div>
-    <ul id="footer-text" name="footer-text">
-      <li><a>Blog</a> | <a>Support</a> | <a>About Us</a> | <a>Contact Us</a> | <a>Site Map</a> | <a>News Letter</a> | <a>Join Us</a> | <a>Disclaimer</a> | <a>Policies</a></li>
-      <ol>
-        ?2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
+  <div class="message">
+    <ul id="message-bg" name="message-bg">
+      <p>&nbsp;</p>
+      <ol id="message-title">
+        Success!
+      </ol>
+      <ol id="message-text">
+        Your registration has been cancelled
+      </ol>
+      <p>&nbsp;</p>
+      <ol id="goback">
+        <a href="home.html">Back to Home page</a>
       </ol>
     </ul>
-    <li class="footer-img"><img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png"> </li>
+  </div>
+  <!-- end .news -->
+  <div>
+    <ul id="footer-text" name="footer-text">
+      <li><a href="#">Blog</a> | <a href="#">Support</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Site Map</a> | <a href="#">News Letter</a> | <a href="#">Join Us</a> | <a href="#">Disclaimer</a> | <a href="#">Policies</a></li>
+      <ol>
+        ©2013 Dynamic Motion, INC. ALL RIGHTS RESERVED
+      </ol>
+    </ul>
+    <li class="footer-img"> <img src="image/websignlayout-23.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/CompanyLogodesign-04.png"> </li>
   </div>
 </div>
 <!-- end .container -->

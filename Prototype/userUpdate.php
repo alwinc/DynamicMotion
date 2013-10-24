@@ -16,25 +16,37 @@ if (/*@cc_on!@*/false) {
 <div class="container-register">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a>
     <!-- end .header -->
-    <div class="accountbar">
+    <div class="accountbar-after">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
-        <li class="support-lg">Welcome, Dane</li>
+        
+        <!-- Check if already login then write welcome-->
         <li class="support-ac"><a href="#">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
         <li class="support-lo"><a href="index.html">Log off</a></li>
+        <li class ="php-user">
+          <?php
+			session_start();
+			if(isset($_GET['username']))
+			{
+				echo "Welcome, ". $_GET['username'];
+			}
+		?>
+        </li>
       </ul>
     </div>
+    <!--Welcome word for user login--> 
+    <!--li class="support-lg"-->    
   </div>
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li> <a href="#">Home</a></li>
-      <li><a href="#">Login</a></li>
-      <li><a href="#">Register</a></li>
-      <li class="current_page_item"><a href="#">MyAccount</a></li>
-      <li><a href="#">Pest Sights</a></li>
-      <li><a href="#">Weekly Report</a></li>
-      <li><a href="#">Pest Register</a></li>
+      <li id="home-wrap" class="current_page_item"> <a href="#">Home</a></li>
+      <li id="login-wrap"><a href="login.php">Login</a></li>
+      <li id="user-wrap"><a href="userRegister.php">Register</a></li>
+      <li id="account-wrap"><a href="#">MyAccount</a></li>
+      <li id="sighing-wrap"><a href="pestSightingIndex.html">Pest Sight</a></li>
+      <li id="report-wrap"><a href="#">Weekly Report</a></li>
+      <li id="register-wrap"><a href="pestRegister.html">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -46,6 +58,19 @@ if (/*@cc_on!@*/false) {
             <li id="header-signup">
               <h4>Profile  Update</h4>
             </li>
+<li class="error" id="issue-massage"name="issue-massagee">
+              <p>
+                <?php	
+						if(isset($_GET['error']))
+						{
+							echo 'Account does not exsit';
+						}
+						?>
+              </p>
+            </li>
+<li id="mail_box"> 
+              <label for="email_signup" class="u_mail" data-icon="e" >E-mail Address</label>
+              <input id="email_signup" name="email" required = "required" type="email" placeholder="Enter E-mail Address" required/>
 <li id="name_box">
 <label for="user_name_signup" class="u_name" data-icon="u">Name</label>
 <input id="F_name_signup" name="F_name_update" required = "required"type="text" placeholder="First Name" required/>
