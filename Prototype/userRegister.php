@@ -86,7 +86,6 @@ if (/*@cc_on!@*/false) {
               <label for="User_type" class="u_type" data-icon="ut">User Type</label>
               <select name="User_type">
                 <option value ="Ranger">Ranger</option>
-                <option value ="Administrator">Administrator</option>
                 <option value ="Clerical">Clerical</option>
               </select>
             </li>
