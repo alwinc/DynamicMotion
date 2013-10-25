@@ -45,22 +45,30 @@ if (/*@cc_on!@*/false) {
     <ul id="pest_sighting_index-bg" name="pest_sighting_index-bg">
       <section class="googlemap cf">
         <li><img src="image/loginpage-02.png"></li>
-        <li id="animal-title"> Select an animal: </li>
-        <div class="animal_wrapper">
-          <div class="feral_fox"><a href="#"></a></div>
-          <div class="feral_dog"><a href="#"></a></div>
-          <div class="feral_cat"><a href="#"></a></div>
-          <div class="feral_rat"><a href="#"></a></div>
-          <div class="feral_rabbit"><a href="#"></a></div>
-        </div>       
+        <form name="google-map" action="inputPestSighting.php" method="post">
+        <legend id="animal-title"> *Select an animal: </legend>
+        <div class="animal_wrapper">	
+				<label for="fox" class="feral_fox"><input type="radio" name="animaltype" id="fox" value="1" checked /></label>       
+				<label for="dog" class="feral_dog"><input type="radio" name="animaltype" id="dog" value="2"/></label>       
+				<label for="cat" class="feral_cat"><input type="radio" name="animaltype" id="cat" value="3"/></label>       
+				<label for="rat" class="feral_rat" ><input type="radio" name="animaltype" id="rat" value="4" /></label>       
+				<label for="rabbit" class="feral_rabbit"><input type="radio" name="animaltype" id="5" value="rabbit"/></label>
+		</div>       
         <!-- end animal button -->
-          <form name="google-map" action="#" onsubmit="showAddress(this.address.value); return false">
+          
             <div>
-              <p> Enter an address and you may drag the tack to reposition it. </p>
+              <p>
+				  <?php				
+					if(isset($_GET['error']))
+						{
+							echo "<font color=\"red\">Please fill the required form.</font>";
+						}
+				  ?>
+              <br> *Choose the park you sighted in: </p>
               <p class="map-input-park">
 				  
 				  <!-- Dynamic Select Box based on Database -->
-				  <select name="address" id="address">
+				  <select name="address" id="address" onchange="showAddress(this.value); return false">
 						<option value="">-- Select Park --</option>
 							<?php
 								include('connect.inc.php');						        
@@ -81,36 +89,39 @@ if (/*@cc_on!@*/false) {
 							</script>
 					</select>
 				<!--End of Dynamic Select Box -->
-                <input type="hidden" id="Latitude" value=""/>
-                <input class="google-go" type="submit" value="Go" />
+                <input type="hidden" name="Latlng" id="Latitude" value=""/>
               </p>
               <div id="map_canvas"></div>
               <!--<div id="map-panel">
                 <input id="latlng" type="text" value="40.714224,  -73.961452">
                 <input class="google-gecode" type="submit" value="Reverse Geocode" onclick="codeLatLng()">
-              </div>-->
+              </div>--><p align="right">*Drag pinpoint to report accurately.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
             </div>
-            <div id="sighting-bottom">			
-              <p class="sight-time"><input type="radio" name="dateandtime" id="dateandtime">Your date and time </p>
-              <p id="my-datetime">
-                <input id="mydate" type="date" value="dd/mm/yyyy"/>
-                <input id="mytime" type="time" value="mm/hh"/>
-              </p>            
-              <p class="sight-time-auto"><input type="radio" name="dateandtime" id="autodateandtime">Automatism date and time </p>
-              <p id="auto-datetime">
+            <div id="sighting-bottom">
+				<p class="sight-time">				  
+					<label for="manualdateandtime">
+						<input type="radio" name="dateandtime" id="manualdateandtime" />Your date and time
+					</label>
+                <input name="mydate" id="mydate" type="date" value="dd/mm/yyyy"/>
+                <input name="mytime" id="mytime" type="time" value="mm/hh"/>
+              </p>
+				<p class="sight-time">
+					<label for="autodateandtime">
+						<input type="radio" name="dateandtime" id="autodateandtime" checked />Automatic date and time
+					</label>
                 <input id="autodate" name="autodate" value="<?
                 date_default_timezone_set('Australia/Sydney');
                 echo date('m/d/Y, G:i:s');
                 ?>"/>
               </p>
-              <p class="sight-inform">Additional Information </p>
+					<p class="sight-report">*Number of Pest Sighted</p>
               <p>
-                <textarea name="sight-commond" cols="60" rows="4"></textarea>
+					<input id="sight-id" name="numberOfSighting" type="text" placeholder="How many pest do you sight approximately?"/>
               </p>
-              <p class="sight-report">Number of Pest Sighted</p>
+					<p class="sight-inform">Additional Information </p>					
               <p>
-                <input id="sight-id" type="text" value="Enter report ID"/>
-                <a href="#"><input id="autobutton" type="submit" value="Submit"/></a>
+					<textarea name="sight-commond" cols="60" rows="4" placeholder="Any Markings?"></textarea>               
+					<a href="#"><input id="autobutton" type="submit" value="Submit"/></a>
               </p>
             </div>
           </form>
