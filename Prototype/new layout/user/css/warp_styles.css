@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*This is the part of account header*/
+.header-wrap {
+	border-top: none;
+	border-bottom: 2px solid white;
+	background-image: url(../image/websignlayout-01.png);
+	background-repeat: no-repeat;
+}
+.group:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+*:first-child+html .group {
+	zoom: 1;
+} /* IE7 */
+#header-one {
+	list-style: none;
+	position: relative;
+	top: 5px;
+	width: 940px;
+	height: 132px;
+}
+#header-one li {
+	display: inline;
+	width: 80px;
+}
+#header-one li a {
+	color: #bbb;
+	width: 150px;
+	font-size: 16px;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#home-wrap {
+	position: relative;
+	top: 18px;
+	left: 40px;
+}
+#login-wrap {
+	position: relative;
+	top: -5px;
+	left: 120px;
+}
+#user-wrap {
+	position: relative;
+	top: -28px;
+	left: 200px;
+}
+#account-wrap {
+	position: relative;
+	top: -50px;
+	left: 320px;
+}
+#sighing-wrap {
+	position: relative;
+	top: -73px;
+	left: 450px;
+}
+#report-wrap {
+	position: relative;
+	top: -95px;
+	left: 580px;
+}
+#register-wrap {
+	position: relative;
+	top: -118px;
+	left: 750px;
+}
+#header-one li a:hover {
+	color: white;/*When the mouse is over, the color change to this*/
+}
+.current_page_item a {
+	color: white !important;
+}
