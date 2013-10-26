@@ -1,6 +1,29 @@
 @charset "utf-8";
 /* CSS Document */
 /*///////////////////////////////////
+//////////// admin page ////////////
+/////////////////////////////////*/
+#admin_pest_register-wrap {
+	position: relative;
+	top: 18px;
+	left: 40px;
+}
+#admin_update_past-wrap {
+	position: relative;
+	top: -5px;
+	left: 200px;
+}
+#admin_update_user-wrap {
+	position: relative;
+	top: -28px;
+	left: 360px;
+}
+#admin_delete_user-wrap {
+	position: relative;
+	top: -50px;
+	left: 520px;
+}
+/*///////////////////////////////////
 //////////// index page ////////////
 /////////////////////////////////*/
 .main-bg {

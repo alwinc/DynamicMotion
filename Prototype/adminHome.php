@@ -13,7 +13,7 @@ if (/*@cc_on!@*/false) {
 }
 </script><!--<![endif]-->
 <body>
-<div class="container-button">
+<div class="container-admin">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
         <div class="accountbar-after">
@@ -40,14 +40,14 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li id="home-wrap" class="current_page_item"> <a href="pestRegister.php">Pest Register</a></li>
-      <li id="sighing-wrap"><a href="updatePestDetail.php">Pest update</a></li>
-      <li id="account-wrap"><a href="userUpdate.php">Update User</a></li>
-      <li id="login-wrap"><a href="deleteUser.php">Delete User</a></li>
+      <li id="admin_pest_register-wrap" class="current_page_item"> <a href="pestRegister.php">Pest Register</a></li>
+      <li id="admin_update_past-wrap"><a href="updatePestDetail.php">Pest update</a></li>
+      <li id="admin_update_user-wrap"><a href="userUpdate.php">Update User</a></li>
+      <li id="admin_delete_user-wrap"><a href="deleteUser.php">Delete User</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
-  <div class="message">
+  <div class="message-admin">
     <ul id="message-bg" name="message-bg">
       <p>&nbsp;</p>
       <ol id="message-title">
