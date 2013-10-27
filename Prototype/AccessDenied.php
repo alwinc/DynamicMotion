@@ -55,7 +55,7 @@ if (/*@cc_on!@*/false) {
     <ul id="message-bg" name="message-bg">
       <p>&nbsp;</p>
       <ol id="message-title">
-        AccessDenied!
+        <font color="red">AccessDenied!</font>
       </ol>
       <ol id="message-text">
 		  Please log in as administrator.
