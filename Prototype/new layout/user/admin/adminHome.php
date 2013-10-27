@@ -20,11 +20,11 @@ if (/*@cc_on!@*/false) {
 <div class="container-admin">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
-        <div class="accountbar-after">
+    <div class="accountbar-after">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="../myAccount.php">MyAccount</a></li>
+        <li class="support-ac"><a href="../edit/myAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
         <li class="support-lo"><a href="../../index.html">Log off</a></li>
         <li class ="php-user">
@@ -39,15 +39,19 @@ if (/*@cc_on!@*/false) {
       </ul>
     </div>
     <!--Welcome word for user login--> 
-    <!--li class="support-lg"-->    
-  </div>  
-  <!-- end .account bar -->
+    <!--li class="support-lg"--> 
+  </div>
+  
+  <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li id="admin_pest_register-wrap" class="current_page_item"> <a href="pestRegister.php">Pest Register</a></li>
-      <li id="admin_update_past-wrap"><a href="../pest/edit/updatePestDetail.php">Pest update</a></li>
-      <li id="admin_update_user-wrap"><a href="../edit/userUpdate.php">Update User</a></li>
-      <li id="admin_delete_user-wrap"><a href="../edit/deleteUser.php">Delete User</a></li>
+      <li id="home-wrap" class="current_page_item"> <a href="../home/home.php">Home</a></li>
+      <li id="login-wrap"><a href="../login.php">Login</a></li>
+      <li id="user-wrap"><a href="../userRegister.php">Register</a></li>
+      <li id="account-wrap"><a href="../edit/myAccount.php">MyAccount</a></li>
+      <li id="sighing-wrap"><a href="../pest/sight/pestSightingIndex.php">Pest Sight</a></li>
+      <li id="report-wrap"><a href="../report/managementReport.php">Weekly Report</a></li>
+      <li id="register-wrap"><a href="../pest/pestRegister.php">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->

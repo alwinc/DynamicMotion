@@ -17,39 +17,27 @@ if (/*@cc_on!@*/false) {
 </script><!--<![endif]-->
 <body>
 <div class="container-button">
-  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
+  <div class="header"> <a href="../index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
-        <div class="accountbar-after">
+    <div class="accountbar">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
-        
-        <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="#">MyAccount</a></li>
-        <li class="support-sp"><a href="#">Support</a></li>
-        <li class="support-lo"><a href="index.html">Log off</a></li>
-        <li class ="php-user">
-          <?php
-			session_start();
-			if(isset($_GET['username']))
-			{
-				echo "Welcome, ". $_GET['username'];
-			}
-		?>
-        </li>
+        <li class="support-hm"><a href="../index.html">Home</a></li>
+        <li class="support-lg"><a href="login.php">Login</a> or <a href="userRegister.php">Register</a></li>
+        <li class="support-ac"><a href="login.php">MyAccount</a></li>
+        <li class="support-sp"><a href="login.php">Support</a></li>
       </ul>
     </div>
-    <!--Welcome word for user login--> 
-    <!--li class="support-lg"-->    
-  </div>  
+  </div>
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li id="home-wrap" class="current_page_item"> <a href="#">Home</a></li>
-      <li id="login-wrap"><a href="login.php">Login</a></li>
+      <li id="home-wrap"> <a href="../index.html">Home</a></li>
+      <li id="login-wrap" class="current_page_item"><a href="login.php">Login</a></li>
       <li id="user-wrap"><a href="userRegister.php">Register</a></li>
-      <li id="account-wrap"><a href="#">MyAccount</a></li>
-      <li id="sighing-wrap"><a href="pestSightingIndex.html">Pest Sight</a></li>
-      <li id="report-wrap"><a href="#">Weekly Report</a></li>
-      <li id="register-wrap"><a href="pestRegister.html">Pest Register</a></li>
+      <li id="account-wrap"><a href="login.php">MyAccount</a></li>
+      <li id="sighing-wrap"><a href="login.php">Pest Sight</a></li>
+      <li id="report-wrap"><a href="login.php">Weekly Report</a></li>
+      <li id="register-wrap"><a href="login.php">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -64,7 +52,7 @@ if (/*@cc_on!@*/false) {
       </ol>
       <p>&nbsp;</p>
       <ol id="goback">
-        <a href="../home/home.php">Back to Home page</a>
+        <a href="../index.html">Back to Home page</a>
       </ol>
     </ul>
   </div>
