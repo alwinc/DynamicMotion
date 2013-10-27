@@ -1,0 +1,215 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: white;
+	color: #000;
+}
+.background {
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the dives, instead of the dives themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+/* ~~ this fixed width container surrounds the other divs ~~ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.container-After {
+	width: 960px;
+	height: 1650px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+}
+@media screen and (min--moz-device-pixel-ratio:0) {/*Mozilla Firefox layout only!*/
+.container-After {
+	width: 960px;
+	height: 1640px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+}
+.container-index {
+	width: 960px;
+	height: 560px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-login {
+	width: 960px;
+	height: 955px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-register {
+	width: 960px;
+	height: 1335px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-report {
+	width: 960px;
+	height: 1105px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-pupdate {
+	width: 960px;
+	height: 960px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-button {
+	width: 960px;
+	height: 520px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-pestSightIndex {
+	width: 960px;
+	height: 1690px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-delete {
+	width: 960px;
+	height: 740px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-tracking {
+	width: 960px;
+	height: 1000px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-admin {
+	width: 960px;
+	height: 570px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #FFF;
+	height: 165px;
+}
+.index {
+	width: 955px;/*the background width about the news part. the bottom one*/
+	height: 370px;
+	position: relative;
+	left: -50px;
+}
+.news {
+	width: 858px;/*the background width about the news part. the bottom one*/
+	height: 680px;
+	background-color: #333;
+	position: relative;
+	left: 33px;
+}
+.login {
+	padding: 10px 0;
+	width: 858px;/*the background width about the login form. the bottom one*/
+	height: 640px;/*the high about the black border.*/
+	background-color: #333;
+	position: relative;
+	left: 27px;/*the left position in here; top one in login-styles.css*/
+}
+.register {
+	padding: 10px 0;
+	width: 858px;/*the background width about the register form. the bottom one*/
+	height: 1020px;/*the high about the black border.*/
+	background-color: #333;
+	position: relative;
+	left: 27px;/*the left position in here; top one in login-styles.css*/
+}
+.report {
+	padding: 10px 0;
+	width: 858px;
+	height: 785px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+.Pest_U {
+	padding: 10px 0;
+	width: 858px;
+	height: 640px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+.pest_tracking {
+	padding: 10px 0;
+	width: 858px;
+	height: 680px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+.message {
+	padding: 10px 0;
+	width: 858px;
+	height: 200px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+.message-admin {
+	padding: 10px 0;
+	width: 858px;
+	height: 250px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+.pest_sighting_index {
+	padding: 10px 0;
+	width: 858px;
+	height: 1370px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+.delete_user {
+	padding: 10px 0;
+	width: 858px;
+	height: 420px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-image: url(image/footer.png);
+	width: auto;
+	height: 160px;
+	margin: 0 auto;
+	background-repeat: repeat-x;
+}
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}

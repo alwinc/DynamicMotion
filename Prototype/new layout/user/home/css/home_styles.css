@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document */
+/*///////////////////////////////////
+//////////// home page /////////////
+/////////////////////////////////*/
+/*This is the part of image bar*/
+.image-wrap {
+	position: relative;
+	height: 500px;
+	width: 858px;
+	top: -30px;
+	left: 27px;
+	background-color: #333;
+}
+.image-middle {
+	position: relative;
+	top: 30px;
+	left: 30px;
+}
+#colee_right {
+	overflow: hidden;
+	width: 800px;
+	height: 450px;
+}
+/*This is the part of middle bar*/
+.middle-wrap {
+	border-top: none;
+	border-bottom: 2px solid white;
+	background-image: url(../image/websignlayout-19.png);
+	background-repeat: no-repeat;
+	margin-top: -52px;
+}
+#header-two {
+	margin: 0 auto;
+	list-style: none;
+	width: 924px;
+	height: 212px;
+}
+#header-two li {
+	display: inline;
+}
+#header-two img {
+	display: block;
+	float: left;
+	padding: 15px 60px 4px 10px;
+}
+#readme a {
+	height: 25px;
+	color: #FFF;
+	font-size: 15px;
+	display: block;
+	float: left;
+	padding: 10px 105px 15px 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#readme a:hover {
+	color: #00B4D5;/*When the mouse is over, the colour change to this*/
+}
+/*/*This is the part of news*/
+#news-text {
+	list-style: none;
+	float: left;
+}
+#news-text div {
+	width: 300px;
+}
+#news-text li {
+	display: inline;
+}
+#news-text label {
+	height: 20px;
+	width: 150px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #F60;
+	text-align: left;
+}
+.news-image-01 { /*bar "Support to the user"*/
+	width: 231px;
+	height: 57px;
+	background-image: url(../image/websignlayout-21.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: 30px;
+	left: -30px;
+}
+.news-label-01 { /*label "How to help"*/
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+.news-text-01 {
+	position: relative;
+	top: 60px;
+	left: 40px;
+}
+.news-label-02 { /*label "Award winner!"*/
+	position: relative;
+	top: 60px;
+	left: 50px;
+}
+.news-text-02 {
+	position: relative;
+	top: 70px;
+	left: 40px;
+}
+.news-label-03 {  /*label "Winston Yang!"*/
+	position: relative;
+	top: 60px;
+	left: 50px;
+}
+.news-text-03 {
+	position: relative;
+	top: 70px;
+	left: 40px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {/*This is hacks about the chrome*/
+.news-bg {
+	width: 858px;
+	height: 710px;
+	background-color: #333;
+	margin-top: -42px;/*It's the top position about the black border.*/
+}
+#news-text p {
+	width: 230px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	text-decoration: none;
+	text-align: justify;
+	font-size: 6px;
+}
+.news-image-02 { /*image "Wolf and Moon"*/
+	height: 300px;
+	width: 200px;
+	background-image: url(../image/wolf.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -380px;
+	left: 340px;
+}
+.news-label-04 {
+	position: relative;
+	top: -880px;
+	left: 595px;
+}
+.news-text-04 {
+	position: relative;
+	top: -850px;
+	left: 580px;
+}
+.news-image-03 { /*bar "Read by Future"*/
+	width: 231px;
+	height: 57px;
+	background-image: url(../image/websignlayout-22.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -850px;
+	left: 655px;
+}
+}
+@media screen and (min--moz-device-pixel-ratio:0) {/*Mozilla Firefox layout only!*/
+.news-bg {
+	width: 858px;
+	background-color: #333;
+	margin-top: -42px;/*It's the top position about the black border.*/
+	height: 700px;
+}
+#news-text p {
+	width: 230px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	text-decoration: none;
+	text-align: justify;
+	font-size: 14px;
+}
+.news-image-02 { /*image "Wolf and Moon"*/
+	height: 300px;
+	width: 200px;
+	background-image: url(../image/wolf.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -330px;
+	left: 340px;
+}
+.news-label-04 { /*label "Future Planning!"*/
+	position: relative;
+	top: -830px;
+	left: 595px;
+}
+.news-text-04 {
+	position: relative;
+	top: -800px;
+	left: 580px;
+}
+.news-image-03 { /*bar "Read by Future"*/
+	width: 231px;
+	height: 57px;
+	background-image: url(../image/websignlayout-22.png);
+	background-repeat: no-repeat;
+	position: relative;
+	left: 655px;
+	top: -760px;
+}
+}
