@@ -102,8 +102,8 @@ if (/*@cc_on!@*/false) {
 					<label for="manualdateandtime">
 						<input type="radio" name="dateandtime" id="manualdateandtime" />Your date and time
 					</label>
-                <input name="mydate" id="mydate" type="date" value="dd/mm/yyyy"/>
-                <input name="mytime" id="mytime" type="time" value="mm/hh"/>
+                <input name="mydate" id="mydate" type="date" value="yyyy-mm-dd"/>
+                <input name="mytime" id="mytime" type="time" value="hh:mm"/>
               </p>
 				<p class="sight-time">
 					<label for="autodateandtime">
@@ -111,7 +111,7 @@ if (/*@cc_on!@*/false) {
 					</label>
                 <input id="autodate" name="autodate" value="<?
                 date_default_timezone_set('Australia/Sydney');
-                echo date('m/d/Y, G:i:s');
+                echo date('Y-m-d G:i:s');
                 ?>"/>
               </p>
 					<p class="sight-report">*Number of Pest Sighted</p>

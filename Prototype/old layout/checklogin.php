@@ -16,10 +16,10 @@
 	$currentpassword = mysqli_real_escape_string($link,$currentpassword);
 	
 	//query for checking usermail and pass
-	$query = "SELECT name FROM person WHERE Email='$currentusermail' and password = '$currentpassword'";
+	$query = "SELECT name,personId FROM person WHERE Email='$currentusermail' and password = '$currentpassword'";
 	$result = mysqli_query($link,$query);
 	$row = mysqli_fetch_assoc($result);
-	$name = $row['name'];
+	$name = $row['name']; $id = $row['personId'];
 	
 	//count the row number of the query
 	$count = mysqli_num_rows($result);
@@ -27,7 +27,9 @@
 	//check if the login match and do action
 	if($count == 1)
 	{
-		header("location: home.php?username="."$name");
+		$_SESSION['logged_in'] = "true";
+		$_SESSION['current_user'] = "$id";
+		header("location: home.php?username="."$name");		
 	}
 	else
 	{

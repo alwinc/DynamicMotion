@@ -1,5 +1,12 @@
+<?php
+		session_start();
+		if(!isset($_SESSION['logged_in']))
+		{
+			header("location: login.php");
+		}
+?>
 <!doctype html>
-<html>
+<html>	
 <head>
 <meta charset="utf-8">
 <title>Animals Map</title>
@@ -22,7 +29,7 @@ if (/*@cc_on!@*/false) {
         <!-- Check if already login then write welcome-->
         <li class="support-ac"><a href="#">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
-        <li class="support-lo"><a href="index.html">Log off</a></li>
+        <li class="support-lo"><a href="logout.php">Log off</a></li><br>
         <li class ="php-user">
           <?php
 			session_start();

@@ -1,6 +1,8 @@
 <?php
 	include('connect.inc.php');
 	
+	session_start();
+	
 	$pestType = $_POST['animaltype'];
 	$parkName = $_POST['address'];
 	$latlng = $_POST['Latlng'];
@@ -10,6 +12,7 @@
 	$autodateandtime=$_POST['autodate'];	
 	$numberOfSighting = $_POST['numberOfSighting'];
 	$markings=$_POST['sight-commond'];
+	$personId=$_SESSION['current_user'];
 	
 	if(empty($pestType) || empty($parkName) || empty($latlng) || empty($dateandtimeChoice) || empty($numberOfSighting))
 	{
@@ -36,7 +39,7 @@
 		
 		echo $chosenTime;
 		$addingQuery = "INSERT INTO  `sighting` VALUES 
-		( 'NULL','$pestType', '$parkId', '1',  '$numberOfSighting', '$chosenTime' , '$latlng' ,'$markings')";
+		( 'NULL','$pestType', '$parkId', '$personId',  '$numberOfSighting', '$chosenTime' , '$latlng' ,'$markings')";
 		
 		if(mysqli_query($link,$addingQuery))
 		{
