@@ -34,13 +34,13 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li id="home-wrap" class="current_page_item"> <a href="#">Home</a></li>
-      <li id="login-wrap"><a href="login.php">Login</a></li>
+      <li id="home-wrap"> <a href="#">Home</a></li>
+      <li id="login-wrap" class="current_page_item"><a href="login.php">Login</a></li>
       <li id="user-wrap"><a href="userRegister.php">Register</a></li>
-      <li id="account-wrap"><a href="#">MyAccount</a></li>
-      <li id="sighing-wrap"><a href="pestSightingIndex.html">Pest Sight</a></li>
-      <li id="report-wrap"><a href="#">Weekly Report</a></li>
-      <li id="register-wrap"><a href="pestRegister.html">Pest Register</a></li>
+      <li id="account-wrap"><a href="login.php">MyAccount</a></li>
+      <li id="sighing-wrap"><a href="login.php">Pest Sight</a></li>
+      <li id="report-wrap"><a href="login.php">Weekly Report</a></li>
+      <li id="register-wrap"><a href="login.php">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -80,11 +80,11 @@ if (/*@cc_on!@*/false) {
               <label class="checkbox">Keep me logged in</label>
             </li>
           </ul>
-          <ul class="support-bg"id="support-qa" name="support-qa">
+          <ul class="support-bg" id="support-qa" name="support-qa">
             <li>
               <p>Can't <a href="">log in </a>?</p>
               <p>Learn how to <a href="" onclick="document.forms[0].submit();return false;">protect your account</a>!</p>
-              <p>Don't have an account yet?<a href=""> Sign up now </a>! </p>
+              <p>Don't have an account yet?<a href="userRegister.php"> Sign up now </a>! </p>
             </li>
           </ul>
         </form>

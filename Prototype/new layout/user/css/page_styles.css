@@ -119,6 +119,11 @@ size*/
 	top: -60px;
 	left: -10px;
 }
+.support-bg-s {
+	position: relative;
+	top: -60px;
+	left: -10px;
+}
 #support-qa {
 	margin: 0 auto;
 	list-style: none;
@@ -230,12 +235,12 @@ size*/
 	top: 10px;
 }
 #mail_box {
-	height:130px;
+	height: 130px;
 	position: relative;
 	top: 10px;
 }
 #password_box {
-	height:130px;
+	height: 130px;
 	position: relative;
 	top: 30px;
 }

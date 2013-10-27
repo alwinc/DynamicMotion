@@ -24,9 +24,9 @@ if (/*@cc_on!@*/false) {
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="#">MyAccount</a></li>
+        <li class="support-ac"><a href="../myAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
-        <li class="support-lo"><a href="index.html">Log off</a></li>
+        <li class="support-lo"><a href="../../index.html">Log off</a></li>
         <li class ="php-user">
           <?php
 			session_start();
@@ -41,13 +41,13 @@ if (/*@cc_on!@*/false) {
     <!--Welcome word for user login--> 
     <!--li class="support-lg"-->    
   </div>  
-  <!-- end .accountbar -->
+  <!-- end .account bar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
       <li id="admin_pest_register-wrap" class="current_page_item"> <a href="pestRegister.php">Pest Register</a></li>
-      <li id="admin_update_past-wrap"><a href="updatePestDetail.php">Pest update</a></li>
-      <li id="admin_update_user-wrap"><a href="userUpdate.php">Update User</a></li>
-      <li id="admin_delete_user-wrap"><a href="deleteUser.php">Delete User</a></li>
+      <li id="admin_update_past-wrap"><a href="../pest/edit/updatePestDetail.php">Pest update</a></li>
+      <li id="admin_update_user-wrap"><a href="../edit/userUpdate.php">Update User</a></li>
+      <li id="admin_delete_user-wrap"><a href="../edit/deleteUser.php">Delete User</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -67,11 +67,11 @@ if (/*@cc_on!@*/false) {
         3.User update → you can update user profile
       </ol>
       <ol id="message-text">
-        4.Delete user → you can delete exsited user
+        4.Delete user → you can delete existed user
       </ol>
       <p>&nbsp;</p>
       <ol id="goback">
-        <a href="home.php">Back to Home page</a>
+        <a href="../home/home.php">Back to Home page</a>
       </ol>
     </ul>
   </div>

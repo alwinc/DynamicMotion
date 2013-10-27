@@ -21,23 +21,23 @@ if (/*@cc_on!@*/false) {
     <!-- end .header -->
     <div class="accountbar">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
-        <li class="support-hm"><a href="index.html">Home</a></li>
+        <li class="support-hm"><a href="../index.html">Home</a></li>
         <li class="support-lg"><a href="login.php">Login</a> or <a href="userRegister.php">Register</a></li>
-        <li class="support-ac"><a href="#">MyAccount</a></li>
-        <li class="support-sp"><a href="#">Support</a></li>
+        <li class="support-ac"><a href="login.php">MyAccount</a></li>
+        <li class="support-sp"><a href="login.php">Support</a></li>
       </ul>
     </div>
   </div>
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li id="home-wrap" class="current_page_item"> <a href="#">Home</a></li>
+      <li id="home-wrap" > <a href="#">Home</a></li>
       <li id="login-wrap"><a href="login.php">Login</a></li>
-      <li id="user-wrap"><a href="userRegister.php">Register</a></li>
-      <li id="account-wrap"><a href="#">MyAccount</a></li>
-      <li id="sighing-wrap"><a href="pestSightingIndex.html">Pest Sight</a></li>
-      <li id="report-wrap"><a href="#">Weekly Report</a></li>
-      <li id="register-wrap"><a href="pestRegister.html">Pest Register</a></li>
+      <li id="user-wrap" class="current_page_item"><a href="userRegister.php">Register</a></li>
+      <li id="account-wrap"><a href="login.php">MyAccount</a></li>
+      <li id="sighing-wrap"><a href="login.phpl">Pest Sight</a></li>
+      <li id="report-wrap"><a href="login.php">Weekly Report</a></li>
+      <li id="register-wrap"><a href="login.php">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -99,9 +99,9 @@ if (/*@cc_on!@*/false) {
             <li class="siteup-button"> <a href="inputData.php" onclick="document.forms['register'].submit(); return false;">
               <input type="submit" id="siteup_button" name="siteup_button" value="Sign Up"/>
               </a></li>
-            <ul class="support-bg-s "id="support-qa" name="support-qa">
+            <ul class="support-bg-s" id="support-qa" name="support-qa">
               <li>
-                <h5>Already a member ? <a href="login.php"> Go and log in </a> </h5>
+                <p>Already a member ? <a href="login.php"> Go and log in </a></p>
               </li>
             </ul>
           </ul>

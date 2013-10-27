@@ -22,7 +22,7 @@
 	{
 		if(mysqli_query($link,$addingQuery))
 		{
-			header("location: registerSuccess.html");
+			header("location: registerSuccess.php");
 		}		
 		else
 		{
