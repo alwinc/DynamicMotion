@@ -3,8 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Animals Map</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link href="css/page-styles.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/footer_styles.css" rel="stylesheet" type="text/css">
+<link href="css/account_after_styles.css" rel="stylesheet" type="text/css">
+<link href="css/warp_styles.css" rel="stylesheet" type="text/css">
+<link href="css/user_styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 </head>
 <!--[if !IE]><!--><script>
@@ -20,9 +23,9 @@ if (/*@cc_on!@*/false) {
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="#">MyAccount</a></li>
+        <li class="support-ac"><a href="../edit/myAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
-        <li class="support-lo"><a href="index.html">Log off</a></li>
+        <li class="support-lo"><a href="../../index.html">Log off</a></li>
         <li class ="php-user">
           <?php
 			session_start();
@@ -40,47 +43,47 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li id="home-wrap" class="current_page_item"> <a href="#">Home</a></li>
-      <li id="login-wrap"><a href="login.php">Login</a></li>
-      <li id="user-wrap"><a href="userRegister.php">Register</a></li>
-      <li id="account-wrap"><a href="#">MyAccount</a></li>
-      <li id="sighing-wrap"><a href="pestSightingIndex.html">Pest Sight</a></li>
-      <li id="report-wrap"><a href="#">Weekly Report</a></li>
-      <li id="register-wrap"><a href="pestRegister.html">Pest Register</a></li>
+      <li id="home-wrap"> <a href="../home/home.php">Home</a></li>
+      <li id="login-wrap"><a href="../login.php">Login</a></li>
+      <li id="user-wrap"><a href="../userRegister.php">Register</a></li>
+      <li id="account-wrap" class="current_page_item"><a href="#">MyAccount</a></li>
+      <li id="sighing-wrap"><a href="../pest/sight/pestSightingIndex.php">Pest Sight</a></li>
+      <li id="report-wrap"><a href="../report/managementReport.php">Weekly Report</a></li>
+      <li id="register-wrap"><a href="../pest/pestRegister.php">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
   <div class="delete_user">
-    <ul id="Pest_U-bg" name="Pest_U-bgg">
+    <ul id="delete-bg" name="delete-bg">
       <section class="deleteform cf">
         <form name="deleteUser" action="userDelete.php" method=POST accept-charset="utf-8">
           <ul>
-            <li id="header-signup">
-              <h4>Delete User</h4>
-            </li>
-            <li class="error" id="issue-massage"name="issue-massagee">
-              <p>
-                <?php	
+            <label id="myAccount-title-one"> Delete User </label>
+            <p class="error" id="issue-massage"name="issue-massagee">
+            <li>
+              <?php	
 						if(isset($_GET['error']))
 						{
 							echo 'Account does not exsit';
 						}
 						?>
-                <?php
+              <?php
 if(isset($_GET['success']))
                  {
                          echo 'Account has ben deleted';
                   }
 ?>
-              </p>
             </li>
-            <li id="mail_box">
-              <label for="email_signup" class="u_mail" data-icon="e">E-mail Address</label>
-              <input id="email_signup" name="email" required ="required" type="email" placeholder="Enter E-mail Address" required/>
-            </li>
-            <li class="siteup-button"> <a href="deleteUser.php" onclick="document.forms['deleteUser'].submit(); return false;">
-              <input type="submit" id="siteup_button" name="siteup_button" value="Submit"/>
-              </a></li>
+            </p>
+            <p id="myAccount-title-two">
+              <label for="email_signup" data-icon="e">E-mail Address</label>
+            </p>
+            <p id="myAccount-title-two">
+              <input name="email" required ="required" type="email" placeholder="Enter E-mail Address" required/>
+            </p>
+            <p class="confim-button"> <a href="deleteUser.php" onclick="document.forms['deleteUser'].submit(); return false;">
+              <input type="submit" id="confim_button" name="confim_button" value="Confim"/>
+              </a></p>
           </ul>
         </form>
       </section>

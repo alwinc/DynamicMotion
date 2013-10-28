@@ -6,8 +6,11 @@
 <head>
 <meta charset="utf-8">
 <title>Animals Map</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link href="css/page-styles.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/footer_styles.css" rel="stylesheet" type="text/css">
+<link href="css/account_after_styles.css" rel="stylesheet" type="text/css">
+<link href="css/warp_styles.css" rel="stylesheet" type="text/css">
+<link href="css/pest_styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 </head>
 <!--[if !IE]><!--><script>
@@ -16,7 +19,7 @@ if (/*@cc_on!@*/false) {
 }
 </script><!--<![endif]-->
 <body>
-<div class="container-pupdate">
+<div class="container-pestdetail">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a>
     <!-- end .header -->
     <div class="accountbar-after">
@@ -54,9 +57,9 @@ if (/*@cc_on!@*/false) {
     </ul>
   </div>
   <!-- end .header-warp -->
-  <div class="Pest_U">
-    <ul id="Pest_U-bg" name="Pest_U-bg">
-      <section class="loginform cf">
+  <div class="pest_register">
+    <ul id="pest_register-bg" name="pest_register-bg">
+      <section class="pestform cf">
         <form name="pest_register" action="PestUpdate.php" method="post" accept-charset="utf-8">
           <ul>
             <li><img src="image/loginpage-02.png"></li>

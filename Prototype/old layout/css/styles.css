@@ -91,12 +91,17 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .container-tracking {
 	width: 960px;
-	height: 1000px;
+	height: 1075px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .container-admin {
 	width: 960px;
 	height: 570px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-account {
+	width: 960px;
+	height: 1055px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
@@ -141,6 +146,14 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	position: relative;
 	left: 27px;
 }
+.myAccount {
+	padding: 10px 0;
+	width: 858px;/*the background width about the register form. the bottom one*/
+	height: 730px;/*the high about the black border.*/
+	background-color: #333;
+	position: relative;
+	left: 27px;/*the left position in here; top one in login-styles.css*/
+}
 .pest_register {
 	padding: 10px 0;
 	width: 858px;
@@ -152,7 +165,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .pest_tracking {
 	padding: 10px 0;
 	width: 858px;
-	height: 680px;
+	height: 750px;
 	background-color: #333;
 	position: relative;
 	left: 27px;
@@ -192,7 +205,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 /* ~~ The footer ~~ */
 .footer {
 	padding: 10px 0;
-	background-image: url(image/footer.png);
+	background-image: url(../image/footer.png);
 	width: auto;
 	height: 160px;
 	margin: 0 auto;

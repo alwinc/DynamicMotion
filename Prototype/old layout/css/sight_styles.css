@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*///////////////////////////////////
+//////// animal sighting ///////////
+/////////////////////////////////*/
+label {
+	display: block;
+	color: #00B4D5;
+	font-family: Verdana, Geneva, sans-serif;
+	height: 45px;
+}
+#pest_sighting_index-bg {
+	width: 858px;/*the backgroud width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -90px;
+}
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+ *zoom: 1;
+}
+:focus {
+	outline: 0;
+}
+.googlemap {
+	width: 670px;
+	height: 1210px;/*the height for while form.*/
+	margin: 50px auto;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+	top: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.googlemap input:not([type=submit]) {
+	padding: 5px;/*register form white border size*/
+	margin-right: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+.googlemap input[type=submit] {
+	border: none;
+	color: #fff;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.googlemap input[type=submit]:hover {
+	color: orange;
+}
+.googlemap p {
+	font-size: 14px;
+	font-weight: bold;
+	color: #00B4D5;
+}
+.googlemap a {
+	text-decoration: none;
+}
+.googlemap ul {
+	padding: 0;
+	margin: 0;
+}
+.googlemap li {
+	display: inline;
+}
+#animal-title {
+	width: 200px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #00B4D5;
+}
+.animal_wrapper {
+	width: 700px;
+	height: 100px;
+	float: left;
+}
+/*This is the position of five animal map button.*/
+.feral_fox {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-01.png);
+	background-repeat: no-repeat;
+}
+.feral_fox:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-06.png);
+	background-repeat: no-repeat;
+}
+.feral_dog {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-02.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -94px;
+	left:120px;
+}
+.feral_dog:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-07.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -94px;
+	left:120px;
+}
+.feral_cat {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-03.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -187px;
+	left: 250px;
+}
+.feral_cat:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-08.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -187px;
+	left: 250px;
+}
+.feral_rat {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-04.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -282px;
+	left: 380px;
+}
+.feral_rat:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-09.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -282px;
+	left: 380px;
+}
+.feral_rabbit {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-05.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -376px;
+	left: 510px;
+}
+.feral_rabbit:hover {
+	width: 94px;
+	height: 94px;
+	background-image: url(../image/sightpage-10.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -376px;
+	left: 510px;
+}
+/*This is top layout.*/
+sight-time {
+	position: relative;
+	left: -35px;
+}
+#map_canvas {
+	width: 600px;
+	height: 400px;
+	position: relative;
+	left: 15px;
+}
+#map-panel {
+	position: relative;
+	top: 5px;
+}
+#sighting-bottom {
+	position: relative;
+	top: -335px;
+}
+#mydate {
+	width: 167px;
+}
+#mytime {
+	width: 167px;
+}
+#autodate {
+	width: 350px;
+}
+/*this is all of input box css*/
+
+.google-go {
+	height: 21px;
+	width: 45px;
+	background-image: url(../image/loginpage-04.png);
+	background-repeat: no-repeat;
+}
+.google-gecode {
+	height: 23px;
+	width: 133px;
+	background-image: url(../image/loginpage-05.png);
+	background-repeat: no-repeat;
+}
+#autobutton {
+	height: 23px;
+	width: 79px;
+	background-image: url(../image/loginpage-06.png);
+	background-repeat: no-repeat;
+}
+#latlng {
+	width: 350px;
+}
+#sight-id {
+	width: 350px;
+}
+/*///////////////////////////////////
+///////// pest tracking ////////////
+/////////////////////////////////*/
+#Pest_track-bg {
+	width: 858px;/*the background width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -90px;
+}
+.trackingform {
+	width: 600px;
+	height: 590px;
+	margin: 50px auto;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+	top: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.trackingform ul {
+	padding: 0;
+	margin: 0;
+}
+.trackingform li {
+	display: inline;
+}
+.trackingform input[type=submit] {
+	border: none;
+	color: #fff;
+}
+.trackingform input:not([type=submit]) {
+	padding: 10px;/*register form white border size*/
+	width: 480px;
+	margin-right: 20px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+/*inside the tracking page*/
+#search_bar {
+}
+.pest_search {
+	position: relative;
+	top: 20px;
+}
+#search_input {
+	position: relative;
+	top: 10px;
+}
+.search_result {
+	position: relative;
+	top: 40px;
+}
+/*submit button in search page*/
+.submit-search {
+	position: relative;
+	top: 15px;
+	left: -30px;
+}
+.submit-search a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+#submit_button_search {
+	width: 122px;
+	height: 41px;
+	/*border: none;*/
+	font-size: 20px;
+	color: white;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+}
+#submit_button_search:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}

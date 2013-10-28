@@ -1,0 +1,207 @@
+@charset "utf-8";
+/*This is the part of account header*/
+/*///////////////////////////////////
+//////// the  user Detail //////////
+/////////////////////////////////*/
+label {
+	display: block;
+	color: #00B4D5;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#myAccount-bg {
+	width: 858px;/*the background width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -90px;
+}
+.myAccountform {
+	width: 675px;
+	height: 565px;/*the size about this register form*/
+	margin: 50px auto;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+	top: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.myAccountform ul {
+	padding: 0;
+	margin: 0;
+}
+.myAccountform li {
+	display: inline;
+	float: left;
+}
+.myAccountform p {
+	width: 400px;
+}
+.myAccountform input:not([type=submit]) {
+	padding: 10px;/*register form white border size*/
+	width: 350px;
+	margin-right: 20px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+.myAccountform input[type=submit] {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: #64c8ef; /* Old browsers */
+	background: -moz-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #64c8ef), color-stop(100%, #00a2e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #64c8ef 0%, #00a2e2 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2', GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	padding: 5px 15px;
+	margin-right: 0;
+	margin-top: 15px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+/*the header one*/
+#myAccount-title-one {
+	height: 35px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#myAccount-title-two {
+	height: 15px;
+	font-size: 15px;
+	position: relative;
+	left: 20px;
+}
+#myAccount-content {
+	font-size: 15px;
+	position: relative;
+	left: 20px;
+}
+/*update button about this website */
+.update-button {
+	position: relative;
+	top: -55px;
+	left: 370px;
+}
+.update-button a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+#update_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	font-size: 22px;
+	color: white;
+}
+#update_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
+/*delete button about this website */
+.delete-button {
+	position: relative;
+	top: -55px;
+	left: 400px;
+}
+.delete-button a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+#delete_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	font-size: 22px;
+	color: white;
+}
+#delete_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
+/*///////////////////////////////////
+///////// user deleting ////////////
+/////////////////////////////////*/
+#delete-bg {
+	width: 858px;/*the background width about the login form. the top one*/
+	background-color: #333;
+	position: relative;
+	top: -90px;
+}
+.deleteform {
+	width: 400px;
+	height: 250px;
+	margin: 50px auto;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+	top: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.deleteform ul {
+	padding: 0;
+	margin: 0;
+}
+.deleteform li {
+	display: inline;
+}
+.deleteform input:not([type=submit]) {
+	padding: 10px;/*delete form white border 
+size*/
+	width: 350px;
+	margin-right: 20px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+.deleteform input[type=submit] {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: #64c8ef; /* Old browsers */
+	background: -moz-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #64c8ef), color-stop(100%, #00a2e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #64c8ef 0%, #00a2e2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #64c8ef 0%, #00a2e2 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2', GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	padding: 5px 15px;
+	margin-right: 0;
+	margin-top: 15px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+/*confim button about this website */
+.confim-button {
+	position: relative;
+	top: 75px;
+	left: 240px;
+}
+.confim-button a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+#confim_button {
+	width: 122px;
+	height: 41px;
+	border: none;
+	background-image: url(../image/loginpage-03.png);
+	background-repeat: no-repeat;
+	font-size: 22px;
+	color: white;
+}
+#confim_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}

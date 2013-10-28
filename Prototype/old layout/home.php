@@ -6,12 +6,15 @@
 		}
 ?>
 <!doctype html>
-<html>	
+<html>
 <head>
 <meta charset="utf-8">
 <title>Animals Map</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link href="css/page-styles.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/footer_styles.css" rel="stylesheet" type="text/css">
+<link href="css/account_after_styles.css" rel="stylesheet" type="text/css">
+<link href="css/warp_styles.css" rel="stylesheet" type="text/css">
+<link href="css/home_styles.css" rel="stylesheet" type="text/css">
 <script language="javascript" type="text/javascript" src="js/imageslider.js"></script>
 </head>
 <!--[if !IE]><!--><script>
@@ -29,7 +32,8 @@ if (/*@cc_on!@*/false) {
         <!-- Check if already login then write welcome-->
         <li class="support-ac"><a href="#">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
-        <li class="support-lo"><a href="logout.php">Log off</a></li><br>
+        <li class="support-lo"><a href="logout.php">Log off</a></li>
+        <br>
         <li class ="php-user">
           <?php
 			session_start();
@@ -42,7 +46,7 @@ if (/*@cc_on!@*/false) {
       </ul>
     </div>
     <!--Welcome word for user login--> 
-    <!--li class="support-lg"-->    
+    <!--li class="support-lg"--> 
   </div>
   
   <!-- end .accountbar -->
