@@ -62,16 +62,16 @@ if (/*@cc_on!@*/false) {
         Guide Line:
       </ol>
       <ol id="message-text">
-        <a herf="../pest/pestRegister.php">1.Pest registration → you can add new pest</a>
+        <a href="../pest/pestRegister.php">1.Pest registration → you can add new pest</a>
       </ol>
       <ol id="message-text">
         2.Update pest → you can update pest profile
       </ol>
       <ol id="message-text">
-        <a herf="../edit/userUpdate.php">3.User update → you can update user profile</a>
+        <a href="../edit/userUpdate.php">3.User update → you can update user profile</a>
       </ol>
       <ol id="message-text">
-        <a herf="../edit/deleteUser.php">4.Delete user → you can delete existed user</a>
+        <a href="../edit/deleteUser.php">4.Delete user → you can delete existed user</a>
       </ol>
       <p>&nbsp;</p>
       <ol id="goback">
