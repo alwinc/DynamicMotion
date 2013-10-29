@@ -45,6 +45,15 @@ echo "<td>" . "<input type=hidden name=hidden value=" . $record['pestId'] . " </
 echo "<td>" . "<input type=submit name=update value=update " . " </td>";
 echo "</tr>";
 echo "</form>";
+if(mysqli_query($link,$updateQuery))
+    {
+        header("location: updateSuccess.php");
+    }        
+    else
+    {
+        echo "Failed <br>";
+        echo "Error: ".mysqli_error($link);
+    }
 
 }
 
