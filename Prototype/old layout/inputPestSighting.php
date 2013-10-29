@@ -30,11 +30,11 @@
 		//Get choosen time
 		if($dateandtimeChoice = "manualdateandtime")
 		{
-			$chosenTime = $dateandtime;
+			$chosenTime = date('Y-m-d H:i:s', strtotime($dateandtime));
 		}
 		else if($dateandtimeChoice = "autodateandtime")
 		{
-			$chosenTime = $autodateandtime;
+			$chosenTime = date('Y-m-d H:i:s', strtotime($autodateandtime));
 		}
 		
 		echo $chosenTime;
