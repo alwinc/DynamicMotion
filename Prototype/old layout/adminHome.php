@@ -10,8 +10,12 @@
 <head>
 <meta charset="utf-8">
 <title>Animals Map</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link href="css/page-styles.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/footer_styles.css" rel="stylesheet" type="text/css">
+<link href="css/account_after_styles.css" rel="stylesheet" type="text/css">
+<link href="css/warp_styles.css" rel="stylesheet" type="text/css">
+<link href="css/message_styles.css" rel="stylesheet" type="text/css">
+<link href="css/admin_styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 </head>
 <!--[if !IE]><!--><script>
