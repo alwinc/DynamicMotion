@@ -29,7 +29,14 @@
 	{
 		$_SESSION['logged_in'] = "true";
 		$_SESSION['current_user'] = "$id";
-		header("location: home.php?username="."$name");		
+		if($id==1)
+		{
+			header("location: adminHome.php?username="."$name");
+		}
+		else
+		{
+			header("location: home.php?username="."$name");
+		}		
 	}
 	else
 	{
