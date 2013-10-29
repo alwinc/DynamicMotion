@@ -10,12 +10,8 @@
 <head>
 <meta charset="utf-8">
 <title>Animals Map</title>
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-<link href="css/footer_styles.css" rel="stylesheet" type="text/css">
-<link href="css/account_after_styles.css" rel="stylesheet" type="text/css">
-<link href="css/warp_styles.css" rel="stylesheet" type="text/css">
-<link href="css/message_styles.css" rel="stylesheet" type="text/css">
-<link href="css/admin_styles.css" rel="stylesheet" type="text/css">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="css/page-styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 </head>
 <!--[if !IE]><!--><script>
@@ -31,7 +27,7 @@ if (/*@cc_on!@*/false) {
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="myAccount.php">MyAccount</a></li>
+        <li class="support-ac"><a href="userUpdate.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
         <li class="support-lo"><a href="index.html">Log off</a></li>
         <li class ="php-user">
@@ -54,7 +50,7 @@ if (/*@cc_on!@*/false) {
       <li id="home-wrap" class="current_page_item"> <a href="home.php">Home</a></li>
       <li id="login-wrap"><a href="login.php">Login</a></li>
       <li id="user-wrap"><a href="userRegister.php">Register</a></li>
-      <li id="account-wrap"><a href="myAccount.php">MyAccount</a></li>
+      <li id="account-wrap"><a href="userUpdate.php">MyAccount</a></li>
       <li id="sighing-wrap"><a href="pestSightingIndex.php">Pest Sight</a></li>
       <li id="report-wrap"><a href="managementReport.php">Weekly Report</a></li>
       <li id="register-wrap"><a href="pestRegister.php">Pest Register</a></li>
@@ -68,16 +64,19 @@ if (/*@cc_on!@*/false) {
         Guide Line:
       </ol>
       <ol id="message-text">
-        1.Pest registration → you can add new pest
+        <a href="pestRegister.php" id="message-text">1.Pest registration</a> → you can register new pest.
       </ol>
       <ol id="message-text">
-        2.Update pest → you can update pest profile
+        <a href="updatePestDetail.php" id="message-text">2.Update pest </a> → you can update pest profile
       </ol>
       <ol id="message-text">
-        3.User update → you can update user profile
+        <a href="DeletePest.php" id="message-text">3.Delete pest</a> → you can delete exsited pest.
       </ol>
       <ol id="message-text">
-        4.Delete user → you can delete exsited user
+        <a href="userUpdate.php" id="message-text">4.User update</a> → you can update user profile.
+      </ol>
+      <ol id="message-text">
+        <a href="deleteUser.php" id="message-text">5.Delete user</a> → you can delete existed user.
       </ol>
       <p>&nbsp;</p>
       <ol id="goback">
