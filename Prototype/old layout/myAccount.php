@@ -7,7 +7,7 @@
 ?>
 <!doctype html>
 <html>
-<head>
+<head><link rel="icon" href="image/favicon.ico">
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -30,9 +30,9 @@ if (/*@cc_on!@*/false) {
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         <li class ="php-user">
           <?php
-			if(isset($_GET['username']))
+			if(isset($_SESSION['username']))
 			{
-				echo "Welcome, ". $_GET['username'];
+				echo "Welcome, ". $_SESSION['username'];
 			}
 		?>
           <!--Welcome word for user login--> 

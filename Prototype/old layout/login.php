@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head>
+<head><link rel="icon" href="image/favicon.ico">
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">

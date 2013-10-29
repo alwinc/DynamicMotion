@@ -7,7 +7,7 @@
 ?>
 <!doctype html>
 <html>
-<head>
+<head><link rel="icon" href="image/favicon.ico">
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -35,9 +35,9 @@ if (/*@cc_on!@*/false) {
         <li class="support-lo"><a href="logout.php">Log off</a></li>
         <li class ="php-user">
           <?php
-			if(isset($_GET['username']))
+			if(isset($_SESSION['username']))
 			{
-				echo "Welcome, ". $_GET['username'];
+				echo "Welcome, ". $_SESSION['username'];
 			}
 		?>
         </li>

@@ -29,6 +29,7 @@
 	{
 		$_SESSION['logged_in'] = "true";
 		$_SESSION['current_user'] = "$id";
+		$_SESSION['username'] = "$name";
 		if($id==1)
 		{
 			header("location: adminHome.php?username="."$name");
