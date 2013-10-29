@@ -3,8 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Animals Map</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link href="css/page-styles.css" rel="stylesheet" type="text/css">
+-<link href="css/styles.css" rel="stylesheet" type="text/css">
+-<link href="css/footer_styles.css" rel="stylesheet" type="text/css">
+-<link href="css/account_after_styles.css" rel="stylesheet" type="text/css">
+-<link href="css/warp_styles.css" rel="stylesheet" type="text/css">
+-<link href="css/sight_styles.css" rel="stylesheet" type="text/css">
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 <script src="http://maps.google.com/maps?file=api&amp;v=2.133d&amp;key=ABQIAAAAjU0EJWnWPMv7oQ-jjS7dYxSPW5CJgpdgO_s4yyMovOaVh_KvvhSfpvagV18eOyDWu7VytS6Bi1CWxw"
       type="text/javascript"></script>
@@ -87,7 +91,7 @@ if (/*@cc_on!@*/false) {
 						$pestData = mysqli_query($link,$sql);
 						echo "
 						
-						<table border=1><div class=\"cell\">
+						<table  width=\"20\" border=1><div class=\"cell\">
 						<tr>
 						<th>Sighting ID</th>
 						<th>Pest ID</th>
