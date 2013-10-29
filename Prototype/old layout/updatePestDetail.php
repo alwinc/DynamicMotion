@@ -55,9 +55,9 @@ if (/*@cc_on!@*/false) {
       <li id="login-wrap"><a href="login.php">Login</a></li>
       <li id="user-wrap"><a href="userRegister.php">Register</a></li>
       <li id="account-wrap"><a href="#">MyAccount</a></li>
-      <li id="sighing-wrap"><a href="pestSightingIndex.html">Pest Sight</a></li>
+      <li id="sighing-wrap"><a href="pestSightingIndex.php">Pest Sight</a></li>
       <li id="report-wrap"><a href="#">Weekly Report</a></li>
-      <li id="register-wrap"><a href="pestRegister.html">Pest Register</a></li>
+      <li id="register-wrap"><a href="pestRegister.php">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -97,7 +97,7 @@ if (/*@cc_on!@*/false) {
             <li class="submit-button"> <a href="PestUpdate.php">
               <input type="submit" id="submit_button" name="submit_button" value="Submit"/>
               </a></li>
-            <li class="cancel-button"> <a href="cancelRegistration.html">
+            <li class="cancel-button"> <a href="cancelRegister.html">
               <input type="submit" id="cancel_button" name="cancel_button" value="Cancel"/>
               </a></li>
           </ul>
