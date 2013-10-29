@@ -20,15 +20,15 @@ if (/*@cc_on!@*/false) {
 </script><!--<![endif]-->
 <body>
 <div class="container-pestupdate">
-  <div class="header"> <a href="../index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
+  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
     <div class="accountbar-after">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="../edit/myAccount.php">MyAccount</a></li>
+        <li class="support-ac"><a href="myAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
-        <li class="support-lo"><a href="../../index.html">Log off</a></li>
+        <li class="support-lo"><a href="index.html">Log off</a></li>
         <li class ="php-user">
           <?php
 			if(isset($_GET['username']))
