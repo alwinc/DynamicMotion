@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['logged_in']))
+{
+header("location: login.php");
+}
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -28,7 +36,6 @@ if (/*@cc_on!@*/false) {
         <li class="support-lo"><a href="../../index.html">Log off</a></li>
         <li class ="php-user">
           <?php
-			session_start();
 			if(isset($_GET['username']))
 			{
 				echo "Welcome, ". $_GET['username'];
