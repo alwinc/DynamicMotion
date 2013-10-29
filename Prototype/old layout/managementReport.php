@@ -35,7 +35,7 @@ if (/*@cc_on!@*/false) {
         <li class="support-lo"><a href="logout.php">Log off</a></li>
         <li class ="php-user">
           <?php
-			session_start();
+			//session_start();
 			if(isset($_GET['username']))
 			{
 				echo "Welcome, ". $_GET['username'];
@@ -61,16 +61,31 @@ if (/*@cc_on!@*/false) {
   </div>
   <!-- end .header-warp -->
   <div class="report">
-    <ul class="reportform" id="report-bg" name="report-bg">
-      <li id ="title_report"> Management Report </li>
+    <ul class="reportform" id="report-bg" name="report-bg">      
       <li id ="main_report">
-        <p>Feral animals impact on native species by predation, competition for food and shelter, destroying habitat and may spread diseases.Typically, feral animals may also have high reproductive rates. Consequently, their populations can increase rapidly if conditions are favourable. The purpose of this website is to help NSW Parks and Wildlife track feral pest in a more efficient and effective way. Users can register a new feral pest, update an existing feral pest, record and update feral pest sightings. </p>
+        <li id ="title_report"> Management Report <br>
+        <p>TOTAL PEST SIGHTED THIS WEEK : 38</p>
+        <p>TOTAL PEST SIGHTED LAST WEEK : 0</p>
+        </li>
+        <li id ="title_report"> Pest Sighting Report<br>
+        <p>TOTAL FOX SIGHTED THIS WEEK : 10</p>
+        <p>TOTAL CAT SIGHTED THIS WEEK : 7</p>
+        <p>TOTAL DOG SIGHTED THIS WEEK : 7</p>
+        <p>TOTAL RAT SIGHTED THIS WEEK : 7</p>
+        <p>TOTAL RABBIT SIGHTED THIS WEEK : 7</p>
+        </li>
+        
+        <li id ="title_report"> Most Reported Area:<br>
+        <p>1. Conimbla National Park : 28</p>
+        <p>2. Ku-Ring-Gai National Park : 10</p>
+        </li>
+        <!--<p>Feral animals impact on native species by predation, competition for food and shelter, destroying habitat and may spread diseases.Typically, feral animals may also have high reproductive rates. Consequently, their populations can increase rapidly if conditions are favourable. The purpose of this website is to help NSW Parks and Wildlife track feral pest in a more efficient and effective way. Users can register a new feral pest, update an existing feral pest, record and update feral pest sightings. </p>
         <p>Feral animals causing most public concern and economic damage includes:</p>
         <p> Red Fox:  Mostly sighted in mainland Australia and small numbers in Tasmania</p>
         <p>European rabbit: Throughout Australia</p>
         <p> Feral cat: Throughout Australia, except in tropical rain forests</p>
         <p>Feral rat: Sighted Throughout Australia</p>
-        <p> Feral dog: Mostly sighted in urban areas of Australia </p>
+        <p> Feral dog: Mostly sighted in urban areas of Australia </p>-->
       </li>
       <li id = "table_report"> <img src="image/Trend Analysis.png"> </li>
     </ul>

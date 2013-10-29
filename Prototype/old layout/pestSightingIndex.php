@@ -38,7 +38,6 @@ if (/*@cc_on!@*/false) {
         <li class="support-lo"><a href="logout.php">Log off</a></li>
         <li class ="php-user">
           <?php
-			session_start();
 			if(isset($_GET['username']))
 			{
 				echo "Welcome, ". $_GET['username'];
@@ -85,7 +84,7 @@ if (/*@cc_on!@*/false) {
               <input type="radio" name="animaltype" id="rat" value="4" />
             </label>
             <label for="rabbit" class="feral_rabbit">
-              <input type="radio" name="animaltype" id="5" value="rabbit"/>
+              <input type="radio" name="animaltype" id="rabbit" value="5"/>
             </label>
           </p>
           <!-- end animal button -->
