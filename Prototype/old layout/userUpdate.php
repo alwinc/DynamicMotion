@@ -112,7 +112,7 @@ if (/*@cc_on!@*/false) {
               <label for="park" class="u_park" data-icon="up">National Park Name</label>
               <input id="Park_signup" name="Park_signup" required = "required" type="text" placeholder="Which National Park are you sight to it?" required/>
             </li>
-<li class="siteup-button"> <a href="inputData.php" onclick="document.forms['profileUpdate'].submit(); return false;">
+<li class="siteup-button"> <a href="updateInput.php" onclick="document.forms['profileUpdate'].submit(); return false;">
 <input type="submit" id="siteup_button" name="siteup_button" value="Submit"/>
 </a></li>
 </ul>
