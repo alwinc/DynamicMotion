@@ -35,6 +35,7 @@ if (/*@cc_on!@*/false) {
         <li class="support-lo"><a href="logout.php">Log off</a></li>
         <li class ="php-user">
           <?php
+			//session_start();
 			if(isset($_GET['username']))
 			{
 				echo "Welcome, ". $_GET['username'];
@@ -63,15 +64,79 @@ if (/*@cc_on!@*/false) {
     <ul class="reportform" id="report-bg" name="report-bg">      
       <li id ="main_report">
         <li id ="title_report"> Management Report <br>
-        <p>TOTAL PEST SIGHTED THIS WEEK : 38</p>
-        <p>TOTAL PEST SIGHTED LAST WEEK : 0</p>
+        <p>TOTAL PEST SIGHTED THIS WEEK :	
+        <?php
+			include('connect.inc.php');
+			$query = "SELECT COUNT(sightingId) as total FROM sighting WHERE `reportDate` > CURDATE() - 7";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$total = $row['total'];
+			
+			echo $total;
+        ?></p>
+        <p>TOTAL PEST SIGHTED LAST WEEK : <?php
+			include('connect.inc.php');
+			$query = "SELECT COUNT(sightingId) as total FROM sighting WHERE `reportDate` > CURDATE() - 14 AND `reportDate` < CURDATE() - 7";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$total = $row['total'];
+			
+			echo $total;
+        ?></p>
         </li>
         <li id ="title_report"> Pest Sighting Report<br>
-        <p>TOTAL FOX SIGHTED THIS WEEK : 10</p>
-        <p>TOTAL CAT SIGHTED THIS WEEK : 7</p>
-        <p>TOTAL DOG SIGHTED THIS WEEK : 7</p>
-        <p>TOTAL RAT SIGHTED THIS WEEK : 7</p>
-        <p>TOTAL RABBIT SIGHTED THIS WEEK : 7</p>
+        <p>TOTAL FOX SIGHTED THIS WEEK : <?php
+			include('connect.inc.php');
+			$query = "SELECT COUNT(sightingId) as total FROM sighting WHERE `reportDate` > CURDATE() - 7 AND `pestId` = 1;";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$total = $row['total'];
+			
+			echo $total;
+        ?></p>
+        <p>TOTAL DOG SIGHTED THIS WEEK :  <?php
+			include('connect.inc.php');
+			$query = "SELECT COUNT(sightingId) as total FROM sighting WHERE `reportDate` > CURDATE() - 7 AND `pestId` = 2;";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$total = $row['total'];
+			
+			echo $total;
+        ?></p>
+        <p>TOTAL CAT SIGHTED THIS WEEK :  <?php
+			include('connect.inc.php');
+			$query = "SELECT COUNT(sightingId) as total FROM sighting WHERE `reportDate` > CURDATE() - 7 AND `pestId` = 3;";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$total = $row['total'];
+			
+			echo $total;
+        ?></p>
+        <p>TOTAL RAT SIGHTED THIS WEEK :  <?php
+			include('connect.inc.php');
+			$query = "SELECT COUNT(sightingId) as total FROM sighting WHERE `reportDate` > CURDATE() - 7 AND `pestId` = 4;";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$total = $row['total'];
+			
+			echo $total;
+        ?></p>
+        <p>TOTAL RABBIT SIGHTED THIS WEEK :  <?php
+			include('connect.inc.php');
+			$query = "SELECT COUNT(sightingId) as total FROM sighting WHERE `reportDate` > CURDATE() - 7 AND `pestId` = 5;";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$total = $row['total'];
+			
+			echo $total;
+        ?></p>
         </li>
         
         <li id ="title_report"> Most Reported Area:<br>
@@ -86,7 +151,6 @@ if (/*@cc_on!@*/false) {
         <p>Feral rat: Sighted Throughout Australia</p>
         <p> Feral dog: Mostly sighted in urban areas of Australia </p>-->
       </li>
-      <li id = "table_report"> <img src="image/Trend Analysis.png"> </li>
     </ul>
   </div>
   <!-- end .news -->
