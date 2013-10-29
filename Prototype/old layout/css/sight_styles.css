@@ -31,7 +31,7 @@ label {
 }
 .googlemap {
 	width: 670px;
-	height: 1210px;/*the height for while form.*/
+	height: 1280px;/*the height for while form.*/
 	margin: 50px auto;
 	padding: 35px;
 	background-color: white;
@@ -102,7 +102,7 @@ label {
 	background-repeat: no-repeat;
 	position: relative;
 	top: -94px;
-	left:120px;
+	left: 120px;
 }
 .feral_dog:hover {
 	width: 94px;
@@ -111,7 +111,7 @@ label {
 	background-repeat: no-repeat;
 	position: relative;
 	top: -94px;
-	left:120px;
+	left: 120px;
 }
 .feral_cat {
 	width: 94px;
@@ -221,6 +221,28 @@ sight-time {
 #sight-id {
 	width: 350px;
 }
+.sight-update-button {
+	position: relative;
+	top: -95px;
+	left: 450px;
+}
+.sight-update-button a {
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+	left: 30px;
+}
+#sight_update_button {
+	width: 200px;
+	height: 41px;	
+	font-size: 20px;
+	color: white;
+	background-image: url(../image/loginpage-07.png);
+	background-repeat: no-repeat;
+}
+#sight_update_button:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
 /*///////////////////////////////////
 ///////// pest tracking ////////////
 /////////////////////////////////*/
@@ -291,7 +313,6 @@ sight-time {
 #submit_button_search {
 	width: 122px;
 	height: 41px;
-	/*border: none;*/
 	font-size: 20px;
 	color: white;
 	background-image: url(../image/loginpage-03.png);
