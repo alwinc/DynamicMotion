@@ -72,7 +72,7 @@ if (/*@cc_on!@*/false) {
       </ol>
       <p>&nbsp;</p>
       <ol id="goback">
-        <a href="home.html">Back to Home page</a>
+        <a href="home.php">Back to Home page</a>
       </ol>
     </ul>
   </div>
