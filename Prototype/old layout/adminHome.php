@@ -1,4 +1,11 @@
-﻿<!doctype html>
+﻿<?php
+		session_start();
+		if(!isset($_SESSION['logged_in']))
+		{
+			header("location: login.php");
+		}
+?>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
