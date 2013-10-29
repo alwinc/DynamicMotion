@@ -30,7 +30,6 @@ if (/*@cc_on!@*/false) {
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         <li class ="php-user">
           <?php
-			session_start();
 			if(isset($_GET['username']))
 			{
 				echo "Welcome, ". $_GET['username'];

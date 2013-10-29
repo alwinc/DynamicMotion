@@ -35,7 +35,6 @@ if (/*@cc_on!@*/false) {
         <li class="support-lo"><a href="logout.php">Log off</a></li>
         <li class ="php-user">
           <?php
-			//session_start();
 			if(isset($_GET['username']))
 			{
 				echo "Welcome, ". $_GET['username'];

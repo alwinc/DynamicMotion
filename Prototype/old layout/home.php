@@ -36,7 +36,6 @@ if (/*@cc_on!@*/false) {
         <br>
         <li class ="php-user">
           <?php
-			session_start();
 			if(isset($_GET['username']))
 			{
 				echo "Welcome, ". $_GET['username'];
