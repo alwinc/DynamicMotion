@@ -31,7 +31,7 @@ if (/*@cc_on!@*/false) {
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="login.php">MyAccount</a></li>
+        <li class="support-ac"><a href="myAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
         <li class="support-lo"><a href="logout.php">Log off</a></li>
         <li class ="php-user">
@@ -50,13 +50,13 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li id="home-wrap"> <a href="index.html">Home</a></li>
+      <li id="home-wrap"> <a href="home.php">Home</a></li>
       <li id="login-wrap"><a href="login.php">Login</a></li>
       <li id="user-wrap" class="current_page_item"><a href="userRegister.php">Register</a></li>
-      <li id="account-wrap"><a href="login.php">MyAccount</a></li>
-      <li id="sighing-wrap"><a href="login.php">Pest Sight</a></li>
-      <li id="report-wrap"><a href="login.php">Weekly Report</a></li>
-      <li id="register-wrap"><a href="login.php">Pest Register</a></li>
+      <li id="account-wrap"><a href="myAccount.php">MyAccount</a></li>
+      <li id="sighing-wrap"><a href="pestSightingIndex.php">Pest Sight</a></li>
+      <li id="report-wrap"><a href="managementReport.php">Weekly Report</a></li>
+      <li id="register-wrap"><a href="pestRegister.php">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
