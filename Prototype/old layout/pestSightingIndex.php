@@ -58,7 +58,7 @@ if (/*@cc_on!@*/false) {
       <li id="account-wrap"><a href="myAccount.php">MyAccount</a></li>
       <li id="sighing-wrap" class="current_page_item"><a href="pestSightingIndex.php">Pest Sight</a></li>
       <li id="report-wrap"><a href="managementReport.php">Weekly Report</a></li>
-      <li id="register-wrap"><a href="pestRegister.html">Pest Register</a></li>
+      <li id="register-wrap"><a href="pestRegister.php">Pest Register</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
@@ -67,6 +67,11 @@ if (/*@cc_on!@*/false) {
       <section class="googlemap cf">
         <form name="google-map" action="inputPestSighting.php" method="post">
           <p><img src="image/loginpage-02.png"></p>
+          <p>
+          <li class="sight-update-button"> <a href="userUpdate.php">
+            <input type="submit" id="sight_update_button" name="sight_update_button" value="Edit Previous sight"/>
+            </a> </li>
+          </p>
           <p id="animal-title">
             <label> *Select an animal: </label>
           </p>
