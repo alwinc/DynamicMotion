@@ -11,7 +11,7 @@
 
         if(mysqli_query($link, $addingPestQuery))
         {
-            header("location: confirmRegister.html");
+            header("location: confirmRegister.php");
         }
         
         else
