@@ -68,7 +68,7 @@ if (/*@cc_on!@*/false) {
         <form name="google-map" action="inputPestSighting.php" method="post">
           <p><img src="image/loginpage-02.png"></p>
           <p>
-          <li class="sight-update-button"> <a href="userUpdate.php">
+          <li class="sight-update-button"> <a href="pestSightingupdate.php">
             <input type="submit" id="sight_update_button" name="sight_update_button" value="Edit Previous sight"/>
             </a> </li>
           </p>
