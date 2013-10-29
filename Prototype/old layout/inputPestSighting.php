@@ -39,7 +39,7 @@
 		
 		echo $chosenTime;
 		$addingQuery = "INSERT INTO  `sighting` VALUES 
-		( 'NULL','$pestType', '$parkId', '$personId',  '$numberOfSighting', '$chosenTime' , '$latlng' ,'$markings')";
+		( 'NULL','$pestType', '$parkId', '$personId',  '$numberOfSighting', '$chosenTime', now() , '$latlng' ,'$markings')";
 		
 		if(mysqli_query($link,$addingQuery))
 		{
