@@ -1,9 +1,5 @@
 <?php
-		session_start();
-		if(!isset($_SESSION['logged_in']))
-		{
-			header("location: login.php");
-		}
+	session_start();	
 ?>
 <!doctype html>
 <html>
@@ -23,7 +19,7 @@ if (/*@cc_on!@*/false) {
 }
 </script><!--<![endif]-->
 <body>
-<div class="container-pestdetail">
+<div class="container-pestupdate">
   <div class="header"> <a href="../index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
     <div class="accountbar-after">
@@ -59,14 +55,19 @@ if (/*@cc_on!@*/false) {
     </ul>
   </div>
   <!-- end .header-warp -->
-  <div class="pest_register">
+  <div class="pest_update">
     <ul id="pest_register-bg" name="pest_register-bg">
-      <section class="pestform cf">
-        <form name="login" action="checklogin.php" method="post" accept-charset="utf-8">
-          <ul>
-            <li><img src="image/loginpage-02.png"></li>
-            <li id="pest-table">
-            <?php
+      <section class="pestUpdate cf">
+		<li id="logo_image"><img src="image/loginpage-02.png"></li>
+		<li id="pest_table">
+              <table>
+				<tr>
+				<th>pestId</th>
+				<th>sourceOfId</th>
+				<th>pestType</th>
+				<th>pestMarking</th>
+			</tr>
+			<?php
 		//conncect to the database
 		include('connect.inc.php');
 
@@ -87,13 +88,6 @@ if (/*@cc_on!@*/false) {
 
 		//create a viarable to store the result
 		$pestData = mysqli_query($link,$sql);
-		echo "<table border=1>
-		<tr>
-		<th>pestId</th>
-		<th>sourceOfId</th>
-		<th>pestType</th>
-		<th>pestMarking</th>
-		</tr>";
 		
 		//delete pest information
 		while($record = mysqli_fetch_array($pestData))
@@ -111,10 +105,10 @@ if (/*@cc_on!@*/false) {
 		}
 		echo "</table>";
 		?>
-          </ul>
-        </form>
-      </section>
+		</table>
+		</li>
     </ul>
+	</section>
   </div>
   <!-- end .login -->
   <div>
