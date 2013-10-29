@@ -33,7 +33,6 @@ if (/*@cc_on!@*/false) {
         <li class="support-ac"><a href="muAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
         <li class="support-lo"><a href="logout.php">Log off</a></li>
-        <br>
         <li class ="php-user">
           <?php
 			if(isset($_GET['username']))
