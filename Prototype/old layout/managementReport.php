@@ -140,8 +140,52 @@ if (/*@cc_on!@*/false) {
         </li>
         
         <li id ="title_report"> Most Reported Area:<br>
-        <p>1. Conimbla National Park : 28</p>
-        <p>2. Ku-Ring-Gai National Park : 10</p>
+        <p>1. <?php
+			include('connect.inc.php');
+			$query = "SELECT park.name as name, COUNT( sighting.parkId ) as count 
+						FROM sighting
+						JOIN park ON sighting.parkId = park.parkId
+						GROUP BY sighting.parkId
+						LIMIT 0 , 1";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$name = $row['name']; $total = $row['count'];
+			$name2 = $row['name'];
+			
+			echo $name." : ".$total." Sighting"
+        ?>
+        </p>
+        <p>2. <?php
+			include('connect.inc.php');
+			$query = "SELECT park.name as name, COUNT( sighting.parkId ) as count 
+						FROM sighting
+						JOIN park ON sighting.parkId = park.parkId
+						GROUP BY sighting.parkId
+						LIMIT 1 , 2";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$name = $row['name']; $total = $row['count'];
+			$name2 = $row['name'];
+			
+			echo $name." : ".$total." Sighting"
+        ?></p>
+        <p>3. <?php
+			include('connect.inc.php');
+			$query = "SELECT park.name as name, COUNT( sighting.parkId ) as count 
+						FROM sighting
+						JOIN park ON sighting.parkId = park.parkId
+						GROUP BY sighting.parkId
+						LIMIT 2 , 3";
+			
+			$result = mysqli_query($link,$query);
+			$row = mysqli_fetch_assoc($result);
+			$name = $row['name']; $total = $row['count'];
+			$name2 = $row['name'];
+			
+			echo $name." : ".$total." Sighting"
+        ?></p>
         </li>
         <!--<p>Feral animals impact on native species by predation, competition for food and shelter, destroying habitat and may spread diseases.Typically, feral animals may also have high reproductive rates. Consequently, their populations can increase rapidly if conditions are favourable. The purpose of this website is to help NSW Parks and Wildlife track feral pest in a more efficient and effective way. Users can register a new feral pest, update an existing feral pest, record and update feral pest sightings. </p>
         <p>Feral animals causing most public concern and economic damage includes:</p>
