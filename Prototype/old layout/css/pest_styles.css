@@ -119,6 +119,49 @@ size*/
 /*///////////////////////////////////
 ////////Pest Detail update /////////
 /////////////////////////////////*/
+.pestUpdate{
+	width: 450px;
+	height: 300px;
+	margin: 50px auto;
+	padding: 150px;
+	border-radius: 5px;
+	/*background-color: #993300;*/
+	background-color : white;
+	position: relative;
+	top: 70px;
+}
+.pestSightingDelete{
+	width: 520px;
+	height: 300px;
+	margin: 50px auto;
+	padding: 150px;
+	border-radius: 5px;
+	/*background-color: #993300;*/
+	background-color : white;
+	position: relative;
+	top: 70px;
+}
+.pestUpdate ul {
+	padding: 0;
+	margin: 0;
+}
+.pestUpdate li {
+	display: inline;
+}
+#logo_image{
+	position:relative;
+	top: -90px;
+	left:-100px;
+}
+#pest_table{
+	position:relative;
+	top: -90px;
+	left:-140px;
+}/*This is about the pest table*/
+table,tr,th,td{
+	border:1px solid #00B4D5;
+	width:80%;
+}
 /*This is the update button.*/
 .update_button {
 	width: 122px;
