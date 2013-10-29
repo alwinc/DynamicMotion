@@ -26,9 +26,9 @@ if (/*@cc_on!@*/false) {
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="../edit/myAccount.php">MyAccount</a></li>
+        <li class="support-ac"><a href="myAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
-        <li class="support-lo"><a href="../../index.html">Log off</a></li>
+        <li class="support-lo"><a href="logout.php">Log off</a></li>
         <li class ="php-user">
           <?php
 			if(isset($_GET['username']))
