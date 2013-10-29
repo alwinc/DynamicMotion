@@ -25,7 +25,7 @@ if($count == 1)
 {
     if(mysqli_query($link,$updateQuery))
     {
-        header("location: updateSuccess.html");
+        header("location: updateSuccess.php");
     }	
     else
     {
