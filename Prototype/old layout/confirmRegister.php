@@ -31,14 +31,14 @@ if (/*@cc_on!@*/false) {
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="myAccount.php">MyAccount</a></li>
+        <li class="support-ac"><a href="login.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
         <li class="support-lo"><a href="logout.php">Log off</a></li>
         <li class ="php-user">
           <?php
-			if(isset($_GET['username']))
+			if(isset($_SESSION['username']))
 			{
-				echo "Welcome, ". $_GET['username'];
+				echo "Welcome, ". $_SESSION['username'];
 			}
 		?>
         </li>
@@ -71,7 +71,7 @@ if (/*@cc_on!@*/false) {
       </ol>
       <p>&nbsp;</p>
       <ol id="goback">
-        <a href="home.php">Back to Home page</a>
+        <a href="home.html">Back to Home page</a>
       </ol>
     </ul>
   </div>

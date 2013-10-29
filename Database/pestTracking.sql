@@ -2,10 +2,10 @@
 -- version 4.0.4.1
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 28, 2013 at 06:21 AM
--- Server version: 5.6.11
--- PHP Version: 5.5.1
+-- Host: localhost
+-- Generation Time: Oct 29, 2013 at 02:46 PM
+-- Server version: 5.6.12
+-- PHP Version: 5.5.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `pesttracking`
+-- Database: `pestTracking`
 --
-CREATE DATABASE IF NOT EXISTS `pesttracking` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `pesttracking`;
+CREATE DATABASE IF NOT EXISTS `pestTracking` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `pestTracking`;
 
 -- --------------------------------------------------------
 
@@ -33,18 +33,7 @@ CREATE TABLE IF NOT EXISTS `employee` (
   `parkId` int(11) NOT NULL,
   PRIMARY KEY (`employeeId`),
   KEY `parkId` (`parkId`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
-
---
--- Dumping data for table `employee`
---
-
-INSERT INTO `employee` (`employeeId`, `parkId`) VALUES
-(1, 1),
-(2, 2),
-(3, 3),
-(4, 4),
-(5, 5);
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -57,18 +46,28 @@ CREATE TABLE IF NOT EXISTS `park` (
   `name` varchar(100) NOT NULL,
   `area` int(200) NOT NULL,
   PRIMARY KEY (`parkId`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `park`
 --
 
 INSERT INTO `park` (`parkId`, `name`, `area`) VALUES
-(1, 'Park A', 200),
-(2, 'Park B', 200),
-(3, 'Park C', 200),
-(4, 'Park D', 200),
-(5, 'Park E', 200);
+(1, 'Conimbla', 0),
+(2, 'Dorrigo', 0),
+(3, 'Abercrombie River', 0),
+(4, 'Belford', 0),
+(5, 'Cataract', 0),
+(6, 'Cocoparra', 0),
+(7, 'Coolah Tops', 0),
+(8, 'Garrawilla', 0),
+(9, 'Goobang', 0),
+(10, 'Goulburn River', 0),
+(11, 'Kalyarr', 0),
+(12, 'Mount Kaputar', 0),
+(13, 'Nangar', 0),
+(14, 'Oolambeyan', 0),
+(15, 'Weddin Mountains', 0);
 
 -- --------------------------------------------------------
 
@@ -85,18 +84,20 @@ CREATE TABLE IF NOT EXISTS `person` (
   `DOB` date NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`personId`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `person`
 --
 
 INSERT INTO `person` (`personId`, `name`, `email`, `dateRegistered`, `type`, `DOB`, `password`) VALUES
-(1, 'A a', 'a@a.com', '2013-10-01', 'Ranger', '2013-10-17', 'aaaaaaaa'),
-(2, 'B b', 'b@b.com', '2013-10-09', 'Clerical', '2013-10-11', 'bbbbbbbb'),
-(3, 'C c', 'c@c.com', '2013-10-05', 'Ranger', '2013-10-21', 'cccccccc'),
-(4, 'D d', 'c@c.com', '2013-10-15', 'Clerical', '2013-10-18', 'dddddddd'),
-(5, 'E e', 'e@e.com', '2013-10-15', 'Ranger', '2013-10-16', 'eeeeeeee');
+(1, 'admin', 'admin', '2013-10-27', 'Admin', '2013-10-27', 'admin'),
+(2, 'Albert Samuel', 'as@gmail.com', '2013-10-29', 'Ranger', '1994-11-27', 'as'),
+(3, 'Alwin Chin', 'alwin@dynamicmotion.com', '2013-10-29', 'Ranger', '1990-12-12', 'alwin'),
+(4, 'Andrew Indayang', 'andrew@dynamicmotion.com', '2013-10-29', 'Ranger', '1990-12-12', 'andrew'),
+(5, 'Victor ', 'victor@dynamicmotion.com', '2013-10-29', 'Clerical', '1990-12-12', 'victor'),
+(6, 'Winston Yang', 'winston@dynamicmotion.com', '2013-10-29', 'Clerical', '1990-12-12', 'winston'),
+(7, 'Khoi Nguyen', 'nguyen@dynamicmotion.com', '2013-10-29', 'Clerical', '1990-12-12', 'nguyen');
 
 -- --------------------------------------------------------
 
@@ -108,20 +109,20 @@ CREATE TABLE IF NOT EXISTS `pest` (
   `pestId` int(11) NOT NULL AUTO_INCREMENT,
   `soureOfId` varchar(20) NOT NULL,
   `pestType` varchar(20) NOT NULL,
-  `pestMarking` int(11) NOT NULL,
+  `pestMarking` varchar(11) NOT NULL,
   PRIMARY KEY (`pestId`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `pest`
 --
 
 INSERT INTO `pest` (`pestId`, `soureOfId`, `pestType`, `pestMarking`) VALUES
-(1, 'Collar', 'Feral Cat', 1),
-(2, 'Microchip', 'Feral Dog', 2),
-(3, 'Collar', 'Feral Rat', 3),
-(4, 'Microchip', 'European Rabbit', 4),
-(5, 'Collar', 'Red Fox', 5);
+(1, 'Collar', 'Red_Fox', 'Blue Eyes, '),
+(2, 'Collar', 'Feral_Dog', 'Black haire'),
+(3, 'Collar', 'FeralCat', 'Black and B'),
+(4, 'Collar', 'Feral_Rat', 'Black Haire'),
+(5, 'Microchip', 'European_Rabbit', 'White feath');
 
 -- --------------------------------------------------------
 
@@ -137,18 +138,7 @@ CREATE TABLE IF NOT EXISTS `phone` (
   `type` varchar(10) NOT NULL,
   `comment` varchar(255) NOT NULL,
   PRIMARY KEY (`personId`,`type`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
-
---
--- Dumping data for table `phone`
---
-
-INSERT INTO `phone` (`personId`, `countryCode`, `areaCode`, `number`, `type`, `comment`) VALUES
-(1, 1, 1, 416111111, 'Ranger', 'dummy'),
-(2, 2, 2, 416222222, 'Clerical', 'dummy'),
-(3, 3, 3, 416333333, 'Ranger', 'dummy'),
-(4, 4, 4, 416444444, 'Clerical', 'dummy'),
-(5, 5, 5, 416555555, 'Ranger', 'dummy');
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -163,22 +153,26 @@ CREATE TABLE IF NOT EXISTS `sighting` (
   `personId` int(11) NOT NULL,
   `numberOfPestsSighted` int(11) NOT NULL,
   `time` datetime NOT NULL,
-  `latitude` decimal(10,0) NOT NULL,
-  `longitude` decimal(10,0) NOT NULL,
+  `reportDate` date NOT NULL,
+  `latlng` varchar(100) NOT NULL,
   `pestDetails` varchar(300) NOT NULL,
   PRIMARY KEY (`sightingId`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `sighting`
 --
 
-INSERT INTO `sighting` (`sightingId`, `pestId`, `parkId`, `personId`, `numberOfPestsSighted`, `time`, `latitude`, `longitude`, `pestDetails`) VALUES
-(1, 1, 1, 1, 1, '2013-10-16 10:38:19', '1', '1', 'dummy'),
-(2, 2, 2, 2, 2, '2013-10-17 06:33:24', '2', '2', 'dummy'),
-(3, 3, 3, 3, 3, '2013-10-03 16:15:19', '3', '3', 'dummy'),
-(4, 4, 4, 4, 4, '2013-10-13 20:22:26', '4', '4', 'dummy'),
-(5, 5, 5, 5, 5, '2013-10-30 08:27:29', '5', '5', 'dummy');
+INSERT INTO `sighting` (`sightingId`, `pestId`, `parkId`, `personId`, `numberOfPestsSighted`, `time`, `reportDate`, `latlng`, `pestDetails`) VALUES
+(6, 3, 1, 1, 34, '0000-00-00 00:00:00', '2013-10-27', '(-33.7483333, 148.4391667)', 'Blue haired'),
+(7, 3, 2, 1, 34, '0000-00-00 00:00:00', '2013-10-29', '(-30.3401987, 152.712352)', ''),
+(12, 2, 15, 1, 3, '2013-10-29 14:43:35', '2013-10-30', '(-33.959094637319986, 148.01171779632568)', ''),
+(9, 5, 3, 1, 12, '0000-00-00 00:00:00', '2013-10-30', '(-33.91084898900759, 149.34385299682617)', ''),
+(10, 4, 7, 1, 9, '2013-10-29 14:37:32', '2013-10-30', '(-31.752948526872686, 150.07590293884277)', ''),
+(11, 1, 9, 1, 2, '2013-10-10 01:02:00', '2013-10-30', '(-32.69396307825349, 148.34967613220215)', ''),
+(13, 5, 11, 1, 4, '2013-10-29 14:43:50', '2013-10-30', '(-34.30827822549173, 144.3343448638916)', ''),
+(14, 3, 7, 1, 4, '2013-10-29 14:44:31', '2013-10-30', '(-31.05293398570514, 143.96484375)', ''),
+(15, 4, 8, 1, 5, '2013-10-04 14:02:00', '2013-10-30', '(-31.27884428039972, 149.56980228424072)', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
