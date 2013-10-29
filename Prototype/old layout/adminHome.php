@@ -77,10 +77,13 @@ if (/*@cc_on!@*/false) {
         <a href="DeletePest.php" id="message-text">3.Delete pest</a> → you can delete exsited pest.
       </ol>
       <ol id="message-text">
-        <a href="userUpdate.php" id="message-text">4.User update</a> → you can update user profile.
+        <a href="deletePestSighting.php" id="message-text">4.Delete pest sighting</a> → you can delete pest sighting.
       </ol>
       <ol id="message-text">
-        <a href="deleteUser.php" id="message-text">5.Delete user</a> → you can delete existed user.
+        <a href="userUpdate.php" id="message-text">5.User update</a> → you can update user profile.
+      </ol>
+      <ol id="message-text">
+        <a href="deleteUser.php" id="message-text">6.Delete user</a> → you can delete existed user.
       </ol>
       <p>&nbsp;</p>
       <ol id="goback">
