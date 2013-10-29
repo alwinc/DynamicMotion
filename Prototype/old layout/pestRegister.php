@@ -120,7 +120,7 @@ if (/*@cc_on!@*/false) {
             <li class="submit-button-register"> <a href="pestregistration.php" onclick="document.forms['submit'].submit(); return false;">
               <input type="submit" id="submit_button" name="submit_button" value="Submit"/>
               </a></li>
-            <li class="cancel-button-register"><a href="cancelRegistration.html">
+            <li class="cancel-button-register"><a href="cancelRegister.php">
               <input type="submit" id="cancel_button" name="cancel_button" value="Cancel"/>
               </a></li>
           </ul>
