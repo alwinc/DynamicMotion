@@ -226,3 +226,17 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-size: 1px;
 	line-height: 0px;
 }
+.container-pestupdate {
+	width: 960px;
+	height: 910px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.pest_update {
+	padding: 10px 0;
+	width: 858px;
+	height: 590px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+
