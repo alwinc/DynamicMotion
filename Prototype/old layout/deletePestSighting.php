@@ -26,9 +26,9 @@ if (/*@cc_on!@*/false) {
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="../edit/myAccount.php">MyAccount</a></li>
+        <li class="support-ac"><a href="myAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
-        <li class="support-lo"><a href="../../index.html">Log off</a></li>
+        <li class="support-lo"><a href="logout.php">Log off</a></li>
         <li class ="php-user">
           <?php
 			if(isset($_GET['username']))
@@ -51,7 +51,7 @@ if (/*@cc_on!@*/false) {
       <li id="account-wrap"><a href="myAccount.php">MyAccount</a></li>
       <li id="sighing-wrap"><a href="pestSightingIndex.php">Pest Sight</a></li>
       <li id="report-wrap"><a href="managementReport.php">Weekly Report</a></li>
-      <li id="register-wrap" class="current_page_item"><a href="pestRegister.html">Pest Register</a></li>
+      <li id="register-wrap"><a href="pestTracking.php">Pest Tracking</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
