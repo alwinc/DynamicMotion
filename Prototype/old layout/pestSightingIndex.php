@@ -58,7 +58,7 @@ if (/*@cc_on!@*/false) {
       <li id="account-wrap"><a href="myAccount.php">MyAccount</a></li>
       <li id="sighing-wrap" class="current_page_item"><a href="pestSightingIndex.php">Pest Sight</a></li>
       <li id="report-wrap"><a href="managementReport.php">Weekly Report</a></li>
-      <li id="register-wrap"><a href="pestRegister.php">Pest Register</a></li>
+      <li id="register-wrap"><a href="pestTracking.php">Pest Tracking</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
