@@ -116,7 +116,7 @@ if (/*@cc_on!@*/false) {
 							echo "</div></table>";
 					}	
 				?><br>
-              <div id="map_canvas"></div>            
+              <div id="map_canvas_Tracking"></div>            
             </li>
           </ul>
         </form>
