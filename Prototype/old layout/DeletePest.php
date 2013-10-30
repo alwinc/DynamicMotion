@@ -3,7 +3,7 @@
 ?>
 <!doctype html>
 <html>
-<head><link rel="icon" href="image/favicon.ico">
+<head>
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -20,20 +20,20 @@ if (/*@cc_on!@*/false) {
 </script><!--<![endif]-->
 <body>
 <div class="container-pestupdate">
-  <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
+  <div class="header"> <a href="../index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
     <div class="accountbar-after">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
         
         <!-- Check if already login then write welcome-->
-        <li class="support-ac"><a href="myAccount.php">MyAccount</a></li>
+        <li class="support-ac"><a href="../edit/myAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="#">Support</a></li>
-        <li class="support-lo"><a href="logout.php">Log off</a></li>
+        <li class="support-lo"><a href="../../index.html">Log off</a></li>
         <li class ="php-user">
           <?php
-			if(isset($_SESSION['username']))
+			if(isset($_GET['username']))
 			{
-				echo "Welcome, ". $_SESSION['username'];
+				echo "Welcome, ". $_GET['username'];
 			}
 		?>
         </li>
