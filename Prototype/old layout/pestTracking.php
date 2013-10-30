@@ -3,12 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Animals Map</title>
--<link href="css/styles.css" rel="stylesheet" type="text/css">
--<link href="css/footer_styles.css" rel="stylesheet" type="text/css">
--<link href="css/account_after_styles.css" rel="stylesheet" type="text/css">
--<link href="css/warp_styles.css" rel="stylesheet" type="text/css">
--<link href="css/sight_styles.css" rel="stylesheet" type="text/css">
-
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/footer_styles.css" rel="stylesheet" type="text/css">
+<link href="css/account_after_styles.css" rel="stylesheet" type="text/css">
+<link href="css/warp_styles.css" rel="stylesheet" type="text/css">
+<link href="css/sight_styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 <script src="http://maps.google.com/maps?file=api&amp;v=2.133d&amp;key=ABQIAAAAjU0EJWnWPMv7oQ-jjS7dYxSPW5CJgpdgO_s4yyMovOaVh_KvvhSfpvagV18eOyDWu7VytS6Bi1CWxw"
       type="text/javascript"></script>
@@ -63,20 +62,19 @@ if (/*@cc_on!@*/false) {
         <form name="pest_tracking" action="pestTracking.php" method="post" accept-charset="utf-8">
           <ul>
             <li><img src="image/loginpage-02.png"></li>
-			
-			<!--textbox and submit button-->
-			            <li id = "search_bar">
+            
+            <!--textbox and submit button-->
+            <li id = "search_bar">
               <label for="pest_search" class="pest_search">Search by Pest Id</label>
               <input id = "search_input" name="search_input" required type="text" placeholder="Pest Id" />
             </li>
-			
-			<!--Button Submit-->
+            
+            <!--Button Submit-->
             <li class="submit-search"> <a href="#">
               <input type="submit" id="submit_button_search" name="submit_button_search" value="Submit" onClick="showAddress('Indonesia');"/>
               </a></li>
-			  
             <li class="search_result">
-				<?php
+              <?php
 					if(isset($_POST['search_input']))
 					{
 						include_once('connect.inc.php');
@@ -115,8 +113,9 @@ if (/*@cc_on!@*/false) {
 							}
 							echo "</div></table>";
 					}	
-				?><br>
-              <div id="map_canvas_Tracking"></div>            
+				?>
+              <br>
+              <div id="map_canvas_Tracking"></div>
             </li>
           </ul>
         </form>

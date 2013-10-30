@@ -52,7 +52,6 @@ if (/*@cc_on!@*/false) {
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
       <li id="home-wrap" class="current_page_item"> <a href="home.php">Home</a></li>
-      <li id="home-wrap"> <a href="home.php">Home</a></li>
       <li id="login-wrap" class="current_page_item"><a href="login.php">Login</a></li>
       <li id="user-wrap"><a href="userRegister.php">Register</a></li>
       <li id="account-wrap"><a href="myAccount.php">MyAccount</a></li>
