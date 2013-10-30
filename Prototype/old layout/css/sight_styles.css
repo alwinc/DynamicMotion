@@ -173,6 +173,12 @@ sight-time {
 	left: -35px;
 }
 #map_canvas {
+	width: 600px;
+	height: 400px;
+	position: relative;
+	left: 15px;
+}
+#map_canvas_Tracking{
 	width: 725px;
 	height: 400px;
 	position: relative;
