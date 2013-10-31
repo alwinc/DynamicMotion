@@ -141,6 +141,13 @@ size*/
 	position: relative;
 	top: 70px;
 }
+.pestSightingDelete ul {
+	padding: 0;
+	margin: 0;
+}
+.pestSightingDelete li {
+	display: inline;
+}
 .pestUpdate ul {
 	padding: 0;
 	margin: 0;
@@ -157,7 +164,13 @@ size*/
 	position:relative;
 	top: -90px;
 	left:-140px;
-}/*This is about the pest table*/
+}
+#pest_table_delete{
+	position:relative;
+	top: -90px;
+	left:-90px;
+}
+/*this is about the pest table*/
 table,tr,th,td{
 	border:1px solid #00B4D5;
 	width:80%;

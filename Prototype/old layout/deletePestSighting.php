@@ -3,7 +3,7 @@
 ?>
 <!doctype html>
 <html>
-<head>
+<head><link rel="icon" href="image/favicon.ico">
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -97,13 +97,13 @@ while($record = mysqli_fetch_array($pestData))
 {
 	echo "<form action=deletePestSighting.php method=post>";
 	echo "<tr>";
-	echo "<td>" . "<input type=text size=7 name=sightingId value=" . $record['sightingId'] . " style=border:0px readonly></td>";
-	echo "<td>" . "<input type=text size=4 name=pestId value=" . $record['pestId'] . " style=border:0px></td>";
-	echo "<td>" . "<input type=text size=4 name=parkId value=" . $record['parkId'] . " style=border:0px></td>";
+	echo "<td>" . "<input type=text size=2 name=sightingId value=" . $record['sightingId'] . " style=border:0px readonly></td>";
+	echo "<td>" . "<input type=text size=2 name=pestId value=" . $record['pestId'] . " style=border:0px></td>";
+	echo "<td>" . "<input type=text size=2 name=parkId value=" . $record['parkId'] . " style=border:0px></td>";
 	echo "<td>" . "<input type=text size=10 name=numberOfPestsSighted value=\"" . $record['numberOfPestsSighted'] . "\" style=border:0px></td>";
-	echo "<td>" . "<input type=text size=10 name=time value=" . $record['time'] . " style=border:0px></td>";
+	echo "<td>" . "<input type=text size=13 name=time value=" . $record['time'] . " style=border:0px></td>";
 	echo "<td>" . "<input type=text name=latlng value=\"" . $record['latlng'] . "\" style=border:0px></td>";
-	echo "<td>" . "<input type=text name=pestDetails value=\"" . $record['pestDetails'] . "\" style=border:0px></td>";
+	echo "<td>" . "<input type=text size=10 name=pestDetails value=\"" . $record['pestDetails'] . "\" style=border:0px></td>";
 	echo "<td>" . "<input type=submit name=delete value=delete></td>";
 	echo "</tr>";
 	echo "</form>";

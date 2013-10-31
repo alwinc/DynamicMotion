@@ -3,7 +3,7 @@
 ?>
 <!doctype html>
 <html>
-<head>
+<head><link rel="icon" href="image/favicon.ico">
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -59,7 +59,7 @@ if (/*@cc_on!@*/false) {
     <ul id="pest_register-bg" name="pest_register-bg">
       <section class="pestUpdate cf">
 		<li id="logo_image"><img src="image/loginpage-02.png"></li>
-		<li id="pest_table">
+		<li id="pest_table_delete">
               <table>
 				<tr>
 				<th>pestId</th>
@@ -94,10 +94,10 @@ if (/*@cc_on!@*/false) {
 		{
 			echo "<form action=DeletePest.php method=post>";
 			echo "<tr>";
-			echo "<td>" . "<input type=number name=id_update value=" . $record['pestId'] . " </td>";
-			echo "<td>" . "<input type=text name=source_update value=" . $record['soureOfId'] . " </td>";
-			echo "<td>" . "<input type=text name=type_update value=" . $record['pestType'] . " </td>";
-			echo "<td>" . "<input type=text name=mark_update value=" . $record['pestMarking'] . " </td>";
+			echo "<td>" . "<input type=number size=4 name=id_update value=" . $record['pestId'] . " </td>";
+			echo "<td>" . "<input type=text size=10 name=source_update value=" . $record['soureOfId'] . " </td>";
+			echo "<td>" . "<input type=text size=10 name=type_update value=" . $record['pestType'] . " </td>";
+			echo "<td>" . "<input type=text size=10 name=mark_update value=" . $record['pestMarking'] . " </td>";
 			echo "<td>" . "<input type=hidden name=hidden value=" . $record['pestId'] . " </td>";
 			echo "<td>" . "<input type=submit name=delete value=delete " . " </td>";
 			echo "</tr>";

@@ -23,6 +23,10 @@
 	color: #999;
 	font-size: 12px;
 }
+#main-box p {
+	color: #FFF;
+	font-size: 14px;
+}
 #main-box li a:hover {
 	color: #FFF;/*When the mouse is over, the colour change to this*/
 }

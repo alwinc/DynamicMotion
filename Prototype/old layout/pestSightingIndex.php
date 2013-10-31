@@ -135,20 +135,18 @@ if (/*@cc_on!@*/false) {
               </div>-->
           <p align="right">*Drag pinpoint to report accurately.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
           <p class="sight-time">
-            <label for="manualdateandtime">
-              <input type="radio" name="dateandtime" id="manualdateandtime" />
-              Your date and time </label>
-            <input name="mydate" id="mydate" type="date" value="yyyy-mm-dd"/>
-            <input name="mytime" id="mytime" type="time" value="hh:mm"/>
-          </p>
-          <p class="sight-time">
-            <label for="autodateandtime">
+          <label for="autodateandtime">
               <input type="radio" name="dateandtime" id="autodateandtime" checked />
               Automatic date and time </label>
-            <input id="autodate" name="autodate" value="<?
-                date_default_timezone_set('Australia/Sydney');
-                echo date('Y-m-d G:i:s');
-                ?>"/>
+            <input type="hidden" id="autodate" name="autodate" value=" "/>
+           
+          </p>
+          <p class="sight-time">
+             <label for="manualdateandtime">
+              <input type="radio" name="dateandtime" id="manualdateandtime" />
+              Manual date and time </label>
+            <input name="mydate" id="mydate" type="date" value="yyyy-mm-dd"/>
+            <input name="mytime" id="mytime" type="time" value="hh:mm"/>
           </p>
           <p class="sight-report">*Number of Pest Sighted</p>
           <p>
