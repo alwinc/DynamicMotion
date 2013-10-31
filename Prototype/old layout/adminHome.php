@@ -7,7 +7,9 @@
 ?>
 <!doctype html>
 <html>
-<head><link rel="icon" href="image/favicon.ico">
+<head>
+<head>
+<link rel="icon" href="image/websitelogo.ico">
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -18,11 +20,6 @@
 <link href="css/admin_styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 </head>
-<!--[if !IE]><!--><script>
-if (/*@cc_on!@*/false) {
-    document.documentElement.className+=' ie10';
-}
-</script><!--<![endif]-->
 <body>
 <div class="container-admin">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
@@ -62,32 +59,23 @@ if (/*@cc_on!@*/false) {
   <!-- end .header-warp -->
   <div class="message-admin">
     <ul id="message-bg" name="message-bg">
-      <p>&nbsp;</p>
-      <ol id="message-title">
-        Guide Line:
-      </ol>
-      <ol id="message-text">
-        <a href="pestRegister.php" id="message-text">1.Pest registration</a> → you can register new pest.
-      </ol>
-      <ol id="message-text">
-        <a href="updatePestDetail.php" id="message-text">2.Update pest </a> → you can update pest profile
-      </ol>
-      <ol id="message-text">
-        <a href="DeletePest.php" id="message-text">3.Delete pest</a> → you can delete exsited pest.
-      </ol>
-      <ol id="message-text">
-        <a href="deletePestSighting.php" id="message-text">4.Delete pest sighting</a> → you can delete pest sighting.
-      </ol>
-      <ol id="message-text">
-        <a href="userUpdate.php" id="message-text">5.User update</a> → you can update user profile.
-      </ol>
-      <ol id="message-text">
-        <a href="deleteUser.php" id="message-text">6.Delete user</a> → you can delete existed user.
-      </ol>
-      <p>&nbsp;</p>
-      <ol id="goback">
-        <a href="home.php">Back to Home page</a>
-      </ol>
+      <section class="messageform cf">
+        <p>&nbsp;</p>
+        <ol id="message-title">
+          Guide Line:
+        </ol>
+        <ol id="admin_main_text">
+          <p id="admin-text"> <img src="image/orderedList1.png"><a href="pestRegister.php">&nbsp;Pest registration</a> → you can register new pest. </p>
+          <p id="admin-text"> <img src="image/orderedList2.png"><a href="updatePestDetail.php">&nbsp;Update pest </a> → you can update pest profile </p>
+          <p id="admin-text"> <img src="image/orderedList3.png"><a href="DeletePest.php">&nbsp;Delete pest</a> → you can delete exsited pest. </p>
+          <p id="admin-text"> <img src="image/orderedList4.png"><a href="deletePestSighting.php">&nbsp;Delete pest sighting</a> → you can delete pest sighting. </p>
+          <p id="admin-text"> <img src="image/orderedList5.png"><a href="userUpdate.php">&nbsp;User update</a> → you can update user profile. </p>
+          <p id="admin-text"> <img src="image/orderedList6.png"><a href="deleteUser.php">&nbsp;Delete user</a> → you can delete existed user. </p>
+        </ol>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p id="goback"> <a href="home.php">Back to Home page</a> </p>
+      </section>
     </ul>
   </div>
   <!-- end .message -->

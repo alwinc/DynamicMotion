@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {/*IE 10 layout only!*/
+/*///////////////////////////////////
+//////////// login page /////////////
+/////////////////////////////////*/
+.login-button {
+	position: relative;
+	top: -20px;
+	left: -33px;
+}
+#checkboxG1 {
+	width: 20px;
+	border: hidden;
+	position: relative;/*the check box*/
+	top: 14px;
+	left: -35px;
+}
+.checkbox {
+	position: relative;/*label about the check box*/
+	top: -18px;
+	left: 126px;
+}
+/*///////////////////////////////////
+//////////// home page /////////////
+/////////////////////////////////*/
+.news-bg {
+	width: 858px;
+	background-color: #333;
+	margin-top: -42px;/*It's the top position about the black border.*/
+	height: 700px;
+}
+#news-text p {
+	width: 230px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	text-decoration: none;
+	text-align: justify;
+	font-size: 14px;
+}
+.news-image-02 { /*image "Wolf and Moon"*/
+	height: 300px;
+	width: 200px;
+	background-image: url(../image/wolf.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+	top: -330px;
+	left: 340px;
+}
+.news-label-04 { /*label "Future Planning!"*/
+	position: relative;
+	top: -830px;
+	left: 595px;
+}
+.news-text-04 {
+	position: relative;
+	top: -800px;
+	left: 580px;
+}
+.news-image-03 { /*bar "Read by Future"*/
+	width: 231px;
+	height: 57px;
+	background-image: url(../image/websignlayout-22.png);
+	background-repeat: no-repeat;
+	position: relative;
+	left: 655px;
+	top: -760px;
+}
+}

@@ -8,6 +8,7 @@
 <!doctype html>
 <html>
 <head><link rel="icon" href="image/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -17,11 +18,15 @@
 <link href="css/home_styles.css" rel="stylesheet" type="text/css">
 <script language="javascript" type="text/javascript" src="js/imageslider.js"></script>
 </head>
-<!--[if !IE]><!--><script>
-if (/*@cc_on!@*/false) {
-    document.documentElement.className+=' ie10';
-}
-</script><!--<![endif]-->
+<!--[if lt IE 10]-->
+　　　　<link href="css/styles_IE.css" rel="stylesheet" type="text/css">
+<!--[endif]-->
+<!--[if lt Mozilla Firefox]-->
+　　　<link href="css/styles_firefox.css" rel="stylesheet" type="text/css">
+<!--[endif]-->
+<!--[if lt chrome]-->
+　　　　<link href="css/styles_chrome.css" rel="stylesheet" type="text/css">
+<!--[endif]-->
 <body class="background" onLoad="Marquee4(),Mouse()">
 <div class="container-After">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 

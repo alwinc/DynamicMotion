@@ -89,11 +89,10 @@ size*/
 	font-size: 25px;/*the size about the password label*/
 }
 /* The login button part*/
-.login-button:nth-of-type(1n) {	/*IE9-10*/
+.login-button {
 	position: relative;
 	top: -15px;
 	left: -33px;
-	top: 10px\9;
 }
 .login-button a {
 	text-decoration: none;
@@ -154,18 +153,16 @@ size*/
 	top: -30px;
 	left: 95px;
 }
-#checkboxG1:nth-of-type(1n) {
+#checkboxG1 {
 	width: 20px;
 	border: hidden;
 	position: relative;/*the check box*/
 	top: 14px;
 	left: -30px;
-	left: 65px\9;
 }
-.checkbox:nth-of-type(1n) {
+.checkbox {
 	position: relative;/*label about the check box*/
 	top: -16px;
-	top: -19px\9;
 	left: 126px;
 }
 /*///////////////////////////////////

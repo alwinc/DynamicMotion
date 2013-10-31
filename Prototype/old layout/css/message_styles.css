@@ -33,3 +33,34 @@
 #goback a:hover {
 	color: orange;/*When the mouse is over, the colour change to this*/
 }
+/*message admin home page*/
+.messageform {
+	width: 780px;
+	height: 450px;
+	background-color: white;
+	position: relative;
+	top: 60px;
+	left: 50px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.messageform a:hover {
+	color: orange;/*When the mouse is over, the colour change to this*/
+}
+.messageform p {
+	height: 30px;
+}
+.messageform a {
+	text-decoration: none;
+	color: #00B4D5;
+}
+#admin-text {
+	color: #333;
+	font-size: 20px;
+}
+#admin_main_text {
+	text-align: left;
+	position: relative;
+	left: 60px;
+}

@@ -3,7 +3,7 @@
 ?>
 <!doctype html>
 <html>
-<head><link rel="icon" href="image/favicon.ico">
+<head><link rel="icon" href="image/websitelogo.ico">
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -11,13 +11,12 @@
 <link href="css/account_styles.css" rel="stylesheet" type="text/css">
 <link href="css/warp_styles.css" rel="stylesheet" type="text/css">
 <link href="css/page_styles.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 10]-->
+　　　　<link href="css/styles_IE.css" rel="stylesheet" type="text/css">
+<!--[endif]-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 </head>
-<!--[if !IE]><!--><script>
-if (/*@cc_on!@*/false) {
-    document.documentElement.className+=' ie10';
-}
-</script><!--<![endif]-->
+
 <body>
 <div class="container-login">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
