@@ -90,7 +90,7 @@ if (/*@cc_on!@*/false) {
 		
 		<a href="javascript:toggleElement('a5')">Q5 : What I need to do, if I cannot find my question in F.A.Q page?</a><br><br>
 		<div id="a5" style="display:none"><b>
-			Ans : Don't Worry, just contact us<br>DYNAMIC MOTION<br>Phone: 9820-1213<br>Email: DYNAMIC_MOTION@gmail.com</b>
+			Ans : Don't Worry, just contact us<br>DYNAMIC MOTION<br>Phone: 9820-1213<br>Email: info@dynamicmotion.com</b>
 		</div>
 		<!--End of questions-->
       </section>
