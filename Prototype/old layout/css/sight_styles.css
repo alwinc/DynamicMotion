@@ -178,7 +178,7 @@ sight-time {
 	position: relative;
 	left: 15px;
 }
-#map_canvas_Tracking{
+#map_canvas_Tracking {
 	width: 725px;
 	height: 400px;
 	position: relative;
@@ -240,7 +240,7 @@ sight-time {
 }
 #sight_update_button {
 	width: 200px;
-	height: 41px;	
+	height: 41px;
 	font-size: 20px;
 	color: white;
 	background-image: url(../image/loginpage-07.png);
@@ -327,4 +327,8 @@ sight-time {
 }
 #submit_button_search:hover {
 	color: orange;/*When the mouse is over, the colour change to this*/
+}
+.tracking-table {
+	;
+	font-size: 8px;
 }
