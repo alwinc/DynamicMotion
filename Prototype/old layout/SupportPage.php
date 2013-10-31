@@ -31,7 +31,7 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li id="home-wrap"> <a href="#">Home</a></li>
+      <li id="home-wrap"> <a href="home.php">Home</a></li>
       <li id="login-wrap"><a href="login.php">Login</a></li>
       <li id="user-wrap"><a href="userRegister.php">Register</a></li>
       <li id="account-wrap" class="current_page_item"><a href="myAccount.php">MyAccount</a></li>
