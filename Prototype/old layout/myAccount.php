@@ -40,7 +40,7 @@ if (/*@cc_on!@*/false) {
         </li>
         <!-- Check if already login then write welcome-->
         <li class="support-ac"><a href="myAccount.php">MyAccount</a></li>
-        <li class="support-sp"><a href="#">Support</a></li>
+        <li class="support-sp"><a href="SupportPage.php">Support</a></li>
         <li class="support-lo"><a href="logout.php">Log off</a></li>
       </ul>
     </div>
