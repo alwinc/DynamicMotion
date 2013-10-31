@@ -1,6 +1,14 @@
+<?php
+		session_start();
+		if(!isset($_SESSION['logged_in']))
+		{
+			header("location: login.php");
+		}
+?>
 <!doctype html>
 <html>
-<head><link rel="icon" href="image/favicon.ico">
+<head>
+<link rel="icon" href="image/websitelogo.ico">
 <meta charset="utf-8">
 <title>Animals Map</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -13,11 +21,6 @@
       type="text/javascript"></script>
 <script language="javascript" type="text/javascript" src="js/google-map.js"></script>
 </head>
-<!--[if !IE]><!--><script onLoad="showAddress(Indonesia); return false">
-if (/*@cc_on!@*/false) {
-    document.documentElement.className+=' ie10';
-}
-</script><!--<![endif]-->
 <body onload="initialize()" onunload="GUnload()">
 <div class="container-tracking">
   <div class="header"> <a href="index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 

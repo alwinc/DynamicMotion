@@ -7,7 +7,7 @@
 ?>
 <!doctype html>
 <html>
-<head><link rel="icon" href="image/favicon.ico">
+<link rel="icon" href="image/websitelogo.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta charset="utf-8">
 <title>Animals Map</title>
