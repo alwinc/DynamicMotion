@@ -21,7 +21,7 @@ if (/*@cc_on!@*/false) {
     <!-- end .header -->
     <div class="accountbar">
       <ul class="accountbar-bg" id="account-bar" name="account-bar">
-        <li class="support-hm"><a href="index.html">Home</a></li>
+        <li class="support-hm"><a href="home.php">Home</a></li>
         <li class="support-lg"><a href="login.php">Login</a> or <a href="userRegister.php">Register</a></li>
         <li class="support-ac"><a href="myAccount.php">MyAccount</a></li>
         <li class="support-sp"><a href="SupportPage.php">Support</a></li>
