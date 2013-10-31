@@ -90,7 +90,7 @@
 						$pestData = mysqli_query($link,$sql);
 						echo "
 						
-						<table  width=\"30\" border=1><div class=\"cell\">
+						<table  width=\"30\" border=1 bordercolor=#00B4D5><div class=\"cell\">
 						<tr>
 						<th>Sighting ID</th>
 						<th>Pest ID</th>
