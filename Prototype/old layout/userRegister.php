@@ -35,7 +35,7 @@ if (/*@cc_on!@*/false) {
       <li id="login-wrap"><a href="login.php">Login</a></li>
       <li id="user-wrap" class="current_page_item"><a href="userRegister.php">Register</a></li>
       <li id="account-wrap"><a href="myAccount.php">MyAccount</a></li>
-      <li id="sighing-wrap"><a href="pestSighting.php">Pest Sight</a></li>
+      <li id="sighing-wrap"><a href="pestSightingIndex.php">Pest Sight</a></li>
       <li id="report-wrap"><a href="managementReport.php">Weekly Report</a></li>
       <li id="register-wrap"><a href="pestTracking.php">Pest Tracking</a></li>
     </ul>
