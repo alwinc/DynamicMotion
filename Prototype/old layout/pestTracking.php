@@ -11,7 +11,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 <script src="http://maps.google.com/maps?file=api&amp;v=2.133d&amp;key=ABQIAAAAjU0EJWnWPMv7oQ-jjS7dYxSPW5CJgpdgO_s4yyMovOaVh_KvvhSfpvagV18eOyDWu7VytS6Bi1CWxw"
       type="text/javascript"></script>
-<script language="javascript" type="text/javascript" src="js/map-google.js"></script>
+<script language="javascript" type="text/javascript" src="js/google-map.js"></script>
 </head>
 <!--[if !IE]><!--><script onLoad="showAddress(Indonesia); return false">
 if (/*@cc_on!@*/false) {
