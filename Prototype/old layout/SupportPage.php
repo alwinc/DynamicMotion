@@ -31,10 +31,10 @@ if (/*@cc_on!@*/false) {
   <!-- end .accountbar -->
   <div class="header-wrap">
     <ul class="group" id="header-one" name="header-one">
-      <li id="home-wrap" class="current_page_item"> <a href="#">Home</a></li>
+      <li id="home-wrap"> <a href="#">Home</a></li>
       <li id="login-wrap"><a href="login.php">Login</a></li>
       <li id="user-wrap"><a href="userRegister.php">Register</a></li>
-      <li id="account-wrap"><a href="myAccount.php">MyAccount</a></li>
+      <li id="account-wrap" class="current_page_item"><a href="myAccount.php">MyAccount</a></li>
       <li id="sighing-wrap"><a href="pestSightingIndex.php">Pest Sight</a></li>
       <li id="report-wrap"><a href="managementReport.php">Weekly Report</a></li>
       <li id="register-wrap"><a href="pestTracking.php">Pest Tracking</a></li>
