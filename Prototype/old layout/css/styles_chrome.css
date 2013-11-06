@@ -46,4 +46,16 @@
 	top: -850px;
 	left: 655px;
 }
+/*this is about the pest table*/
+.table-tr-title {
+	background-color: #00B4D5;
+	color: #FFF;
+	font-size: 9px;	
+}
+table {
+	width: 880px;
+	position: relative;
+	left: 35px;
+	text-align:center;
+}
 }

@@ -11,10 +11,12 @@
 <link href="css/account_after_styles.css" rel="stylesheet" type="text/css">
 <link href="css/warp_styles.css" rel="stylesheet" type="text/css">
 <link href="css/pest_styles.css" rel="stylesheet" type="text/css">
+<link href="css/styles_firefox.css" rel="stylesheet" type="text/css">
+<link href="css/styles_chrome.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="container-pestupdate">
+<div class="container-pest-delete">
   <div class="header"> <a href="../index.html"><img src="image/websitelogo-03.png" alt="" name="animal map logo" width="281" height="162" id="Insert_logo" style="background-color: #FFF; display:block;" /> </a> 
     <!-- end .header -->
     <div class="accountbar-after">
@@ -38,33 +40,34 @@
     <!--li class="support-lg"--> 
   </div>
   <!-- end .accountbar -->
-  <div class="header-wrap">
+  <div class="header-wrap-login">
     <ul class="group" id="header-one" name="header-one">
       <li id="home-wrap"> <a href="home.php">Home</a></li>
       <li id="login-wrap"><a href="login.php">Login</a></li>
       <li id="user-wrap"><a href="userRegister.php">Register</a></li>
       <li id="account-wrap"><a href="myAccount.php">MyAccount</a></li>
-      <li id="sighing-wrap"><a href="pestSightingIndex.php">Pest Sight</a></li>
+      <li id="sighing-wrap" class="current_page_item"><a href="pestSightingIndex.php">Pest Sight</a></li>
       <li id="report-wrap"><a href="managementReport.php">Weekly Report</a></li>
       <li id="register-wrap"><a href="pestTracking.php">Pest Tracking</a></li>
     </ul>
   </div>
   <!-- end .header-warp -->
-  <div class="pest_update">
-    <ul id="pest_register-bg" name="pest_register-bg">
+  <div class="pest_delete">
+    <ul id="pest_delete-bg" name="pest_delete-bg">
       <section class="pestSightingDelete cf">
 		<li id="logo_image"><img src="image/loginpage-02.png"></li>
 		<li id="pest_table">
 
               <table>
-				<tr>
+				<tr class="table-tr-title">
 				<th>Sighting ID</th>
 				<th>Pest ID</th>
 				<th>Park ID</th>
-				<th>Number of Pest Sighted</th>
+				<th>Sighting No</th>
 				<th>Sighting Time </th>
 				<th>Latitude, Longitude</th>
 				<th>Pest Markings</th>
+                <th>Delete</th>
 			</tr>
 			<?php
 
@@ -92,9 +95,9 @@ while($record = mysqli_fetch_array($pestData))
 {
 	echo "<form action=deletePestSighting.php method=post>";
 	echo "<tr>";
-	echo "<td>" . "<input type=text size=2 name=sightingId value=" . $record['sightingId'] . " style=border:0px readonly></td>";
-	echo "<td>" . "<input type=text size=2 name=pestId value=" . $record['pestId'] . " style=border:0px></td>";
-	echo "<td>" . "<input type=text size=2 name=parkId value=" . $record['parkId'] . " style=border:0px></td>";
+	echo "<td>" . "<input type=text size=10 name=sightingId value=" . $record['sightingId'] . " style=border:0px readonly></td>";
+	echo "<td>" . "<input type=text size=10 name=pestId value=" . $record['pestId'] . " style=border:0px></td>";
+	echo "<td>" . "<input type=text size=10 name=parkId value=" . $record['parkId'] . " style=border:0px></td>";
 	echo "<td>" . "<input type=text size=10 name=numberOfPestsSighted value=\"" . $record['numberOfPestsSighted'] . "\" style=border:0px></td>";
 	echo "<td>" . "<input type=text size=13 name=time value=" . $record['time'] . " style=border:0px></td>";
 	echo "<td>" . "<input type=text name=latlng value=\"" . $record['latlng'] . "\" style=border:0px></td>";
@@ -103,8 +106,6 @@ while($record = mysqli_fetch_array($pestData))
 	echo "</tr>";
 	echo "</form>";
 }
-
-echo "</table>";
 ?>
 
 		</table>

@@ -104,6 +104,16 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	height: 1055px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
+.container-pestupdate {
+	width: 960px;
+	height: 1010px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.container-pest-delete {
+	width: 1138px;
+	height: 1010px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
 .header {
 	background-color: #FFF;
@@ -202,6 +212,22 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	position: relative;
 	left: 27px;
 }
+.pest_update {
+	padding: 10px 0;
+	width: 858px;
+	height: 690px;
+	background-color: #333;
+	position: relative;
+	left: 27px;
+}
+.pest_delete {
+	padding: 10px 0;
+	width: 1015px;
+	height: 690px;
+	background-color: #333;
+	position: relative;
+	left: 5px;
+}
 /* ~~ The footer ~~ */
 .footer {
 	padding: 10px 0;
@@ -226,17 +252,3 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-size: 1px;
 	line-height: 0px;
 }
-.container-pestupdate {
-	width: 960px;
-	height: 1010px;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
-}
-.pest_update {
-	padding: 10px 0;
-	width: 858px;
-	height: 690px;
-	background-color: #333;
-	position: relative;
-	left: 27px;
-}
-

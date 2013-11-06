@@ -6,6 +6,12 @@
 	background-image: url(../image/websignlayout-01.png);
 	background-repeat: no-repeat;
 }
+.header-wrap-login {
+	border-top: none;
+	width: 1024px;
+	background-image: url(../image/websignlayout-24.png);
+	background-repeat: no-repeat;
+}
 .group:after {
 	visibility: hidden;
 	display: block;
